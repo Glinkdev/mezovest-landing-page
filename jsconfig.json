@@ -3,7 +3,7 @@
         "baseUrl": "./src",
         "jsx": "react",
         "paths": {
-            "@components": ["src/sections"],
+            "@components": ["src/components"],
             "@assets": ["./src/assets/"]
         }
     }

@@ -1,6 +1,6 @@
 import React from 'react';
 import MezovestLogo  from "../assets/images/mezovest-logo.svg";
-import Navigator from '../components/navigator';
+import Navigator from '../components/Navigator';
 import HeroSection from '../components/HeroSection';
 import ProductDetail from '../components/ProductDetail';
 import MezopayWhiteIcon from "../assets/icons/mezopay-logo-white.svg"
