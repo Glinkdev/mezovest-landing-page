@@ -12,11 +12,6 @@ module.exports = {
   rules: {
     'react-refresh/only-export-components': 'warn',
     "no-unused-vars": "off",
-    test: /\.(png|jpe?g|gif)$/i,
-    use: [
-      {
-        loader: "file-loader",
-      },
-    ],
+   
   },
 }
