@@ -88,7 +88,7 @@ function MezoEnergy() {
 
 
                 </div>
-                <div className='md:w-2/5 flex-col md:ml-24'>
+                <div className='md:w-2/5 flex-col md:ml-24 mt-4 md:mt-0'>
                     <p className='text-lg font-medium'>
                         With its scalable yet robust platform, Mezovest and its supporting partners
                         created a custom-made solution that simplifies backend complexities, showcases our
