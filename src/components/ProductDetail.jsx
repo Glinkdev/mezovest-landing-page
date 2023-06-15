@@ -56,7 +56,7 @@ function ProductDetail({ name, icon, features, action, detail, height }) {
                                     </p>) : (
                                     <ul className='text-white list-disc list-inside text-xs xl:text-base' role="list">
                                         {item.text.map((item, index) => (
-                                            <li className='font-normal text-xs xl:text-base text-white !leading-7' key={index}>{item}</li>
+                                            <li className='font-normal text-xs xl:text-base text-white !leading-7 mb-4' key={index}>{item}</li>
                                         ))}
                                     </ul>
                                 )
