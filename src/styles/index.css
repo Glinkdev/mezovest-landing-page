@@ -69,7 +69,7 @@ select:invalid {
     display: flex;
     justify-content: center;
     width: 100%;
-    min-height: 80px;
+    min-height: 8px;
 }
 
 .embla__viewport {
