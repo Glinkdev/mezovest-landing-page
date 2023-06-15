@@ -9,14 +9,14 @@ function HeroSection() {
                 <div className='flex-col w-full md:max-w-md'>
                     <div className='flex'>
                         <img src={GreenStroke} alt="green stroke" />
-                        <p className='ml-6 font-normal text-xl text-white'>We want you to succeed</p>
+                        <p className='ml-6 font-normal md:text-xl text-white'>We want you to succeed</p>
                     </div>
                     <div className='font-liquefier mt-6'>
                         <span className='text-green text-6xl md:text-7xl md:text-[100px] font-normal leading-16'>Grow your</span>
                         <br />
                         <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal leading-16'>Business</span>
                     </div>
-                    <p className='font-normal text-xl text-white mt-6'>
+                    <p className='font-normal md:text-xl text-white mt-6'>
                         Stay Ahead of the Competition with Our State-of-the-Art Commerce Solutions. Empower Your Brand with Our End-to-End Commerce Solutions.
                     </p>
                     <div className='flex py-5 justify-center max-w-[187px] bg-green mt-6'>
@@ -24,7 +24,7 @@ function HeroSection() {
                     </div>
 
                 </div>
-                <div className='flex mt-20 md:mt-0'>
+                <div className='flex mt-20 md:mt-0 justify-center'>
                     <img src={PaymentImage} alt="payment image" />
                 </div>
 3
@@ -32,7 +32,7 @@ function HeroSection() {
             <div className='flex flex-col w-full mt-40 md:mt-20' id="energy">
                 <div className='flex'>
                     <img src={GreenStroke} alt="green stroke" />
-                    <p className='ml-6 font-normal text-xl text-white'>How do we deliver on our promise?</p>
+                    <p className='ml-6 font-normal md:text-xl text-white'>How do we deliver on our promise?</p>
                 </div>
                 <div className='font-liquefier mt-6'>
                     <span className='text-green text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Finance Infrastructure</span>

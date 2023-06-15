@@ -58,12 +58,52 @@ select:invalid {
     scroll-snap-align: start;
 }
 
+.absolute-centering {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.embla {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.embla__viewport {
+    overflow-x: hidden;
+    position: absolute;
+    width: 90%;
+    margin: auto
+}
+.embla__slide {
+    flex: 0 0 208px; /* Slide covers 200px of the viewport */
+    min-width: 0;
+  }
+
+.embla__prev {
+    position: absolute;
+    left:0px;
+}
+
+.embla__next {
+    position: absolute;
+    right:0px;
+}
+.embla__container {
+    grid-column-gap: 50px;
+  }
 
 @media only screen and (min-width: 768px) {
     .rotated-text {
         writing-mode: tb-rl;
         transform: rotate(-180deg);
     }
+
+    .absolute-centering {
+        left: 61%;
+        top: 4rem;
+        transform: translate(0%);
+    }
 }
-
-

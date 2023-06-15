@@ -71,7 +71,7 @@ function FirstSection() {
     }
   ]
   return (
-    <div className='pt-7 md:pt-11 px-6 xl:px-36 !bg-darkGreen h-full min-h-screen font-poppins'>
+    <div className='py-7 md:pt-11 md:pb-24 px-6 xl:px-36 !bg-darkGreen h-full min-h-screen font-poppins '>
        <div>
         <img src={MezovestLogo} alt="Your SVG" />
        </div>
