@@ -27,7 +27,7 @@ function HeroSection() {
                 <div className='flex mt-20 md:mt-0 justify-center'>
                     <img src={PaymentImage} alt="payment image" />
                 </div>
-3
+
             </div>
             <div className='flex flex-col w-full mt-40 md:mt-20' id="energy">
                 <div className='flex'>
