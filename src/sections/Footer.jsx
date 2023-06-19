@@ -6,21 +6,46 @@ import LinkedInIcon from "../assets/icons/linkedin-icon.svg";
 
 
 function Footer() {
-  return (
-    <div className='py-7 px-6 xl:px-36 !bg-black h-full min-h-fit font-poppins flex flex-col md:flex-row justify-between text-white'>
-        <div className='grid grid-cols-3 gap-4'>
-            <p className='text-xs md:text-sm col-span-1'>© Mezovest 2023 </p>
-            <p className='text-xs md:text-sm col-span-1'>Terms of service </p>
-            <p className='text-xs md:text-sm col-span-1'> Privacy Policy</p>
+    const socials = [
+        {
+            icon: TwitterIcon,
+            link: "https://twitter.com/mezovest",
+        },
+        {
+            icon: InstagramIcon,
+            link: "https://instagram.com/mezovest",
+        },
+
+        {
+            icon: FacebookIcon,
+            link: "https://facebook.coom/mezovest",
+        },
+        {
+            icon: LinkedInIcon,
+            link: "https://linkedn.com/mezovest",
+        },
+    ]
+    return (
+        <div className='py-7 px-6 xl:px-36 !bg-black h-full min-h-fit font-poppins flex flex-col md:flex-row justify-between text-white'>
+            <div className='grid grid-cols-3 gap-4'>
+                <p className='text-xs md:text-sm col-span-1'>© Mezovest 2023 </p>
+                <p className='text-xs md:text-sm col-span-1'>Terms of service </p>
+                <p className='text-xs md:text-sm col-span-1'> Privacy Policy</p>
+            </div>
+            <div className='mt-4 md:mt-0 grid grid-cols-4 gap-2 min-w-[300px] md: max-w-full items-center  flex justify-center'>
+                {socials.map((item, index) => (
+                    <a
+                        key = { index }
+                        target = "_blank"
+                        rel = "noopener noreferrer"
+                        href = { item?.link}
+                    >
+                        <img src={item.icon} className="col-span-1 ml-4 " />
+                    </a>
+                ))}
         </div>
-        <div className='mt-4 md:mt-0 grid grid-cols-4 gap-2 min-w-[300px] md: max-w-full items-center  flex justify-center'>
-            <img src={TwitterIcon} className="col-span-1 ml-4 "/>
-            <img src={InstagramIcon} className="col-span-1 ml-4"/>
-            <img src={FacebookIcon} className="col-span-1 ml-4"/>
-            <img src={LinkedInIcon} className="col-span-1 ml-4"/>
-        </div>
-    </div>
-  )
+        </div >
+    )
 }
 
 export default Footer

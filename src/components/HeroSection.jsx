@@ -19,9 +19,13 @@ function HeroSection() {
                     <p className='font-normal md:text-xl text-white mt-6'>
                         Stay Ahead of the Competition with Our State-of-the-Art Commerce Solutions. Empower Your Brand with Our End-to-End Commerce Solutions.
                     </p>
-                    <div className='flex py-5 justify-center max-w-[187px] bg-green mt-6'>
+                    <a 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="mailto:sales@mezovest.com"
+                        className='flex py-5 justify-center max-w-[187px] bg-green mt-6 cursor-pointer'>
                         <p>Talk to sales</p>
-                    </div>
+                    </a>
 
                 </div>
                 <div className='flex mt-20 md:mt-0 justify-center'>

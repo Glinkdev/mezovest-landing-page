@@ -29,12 +29,16 @@ function ProductDetail({ name, icon, features, action, detail, height }) {
                         ))}
                     </div>
                     {action && (
-                        <div className='flex items-center justify-start w-full hidden md:flex'>
-                            <button className='bg-transparent border-white border text-base font-semibold text-white py-3.5 min-w-[200px]'>
+                        <a                         
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="mailto:sales@mezovest.com"
+                            className='flex items-center justify-start w-full hidden md:flex cursor-pointer'>
+                            <p className='bg-transparent border-white border text-base font-semibold text-white py-3.5 min-w-[200px] text-center'>
                                 {action}
 
-                            </button>
-                        </div>)}
+                            </p>
+                        </a>)}
 
                 </div>
                 <div className='w-full md:w-2/3 py-5 md:py-0'>

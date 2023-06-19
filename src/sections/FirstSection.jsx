@@ -54,7 +54,7 @@ function FirstSection() {
       name: "TECHNOLOGY",
       icon: [MezoPayIcon, MezoPayLimitedIcon, MezoCoinIcon],
       features: ["Swift Payment Processing", "Safe & Secure", "Innovative & Easy to use"],
-      height: "md:h-[598px]",
+      height: "md:h-[628px]",
       detail: [
         {
             type: "normal",

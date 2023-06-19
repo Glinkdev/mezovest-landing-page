@@ -8,7 +8,7 @@ function Navigator() {
             url: "#about"
         },
         {
-            name: "Mezo Energy Metl",
+            name: "Metl",
             url: "#energy"
         },
         {
@@ -16,8 +16,8 @@ function Navigator() {
             url: "#products"
         },
         {
-            name: "Contact Us",
-            url: "#contact"
+            name: "Blog",
+            url: "#blog"
         },
     ]
   return (
@@ -28,7 +28,7 @@ function Navigator() {
             ))}
         </div>
 
-        <div className='flex align-center w-full md:w-1/3 justify-center md:justify-end '>
+        <div className=' md:hidden flex align-center w-full md:w-1/3 justify-center md:justify-end '>
             <p className="font-poppins font-bold text-sm items-center">Coming soon</p>
             <img src={RightArrowIcon} className="ml-2 hidden md:flex" alt="right arrow icon"/>
         </div>

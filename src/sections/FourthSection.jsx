@@ -87,9 +87,13 @@ function FourthSection() {
                     </div>
 
                     <div className='w-full flex mt-8'>
-                        <button className='border border-1 border-black px-10 py-4 max-w-fit self-end'>
+                        <a 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="mailto:sales@mezovest.com"
+                            className='border border-1 border-black px-10 py-4 max-w-fit self-end'>
                             <p className='text-base font-normal whitespace-nowrap'>Contact us</p>
-                        </button>
+                        </a>
                     </div>
 
                 </div>
@@ -103,9 +107,13 @@ function FourthSection() {
                 <h5 className='font-liquefier text-[#E2FFF0] text-5xl md:text-7xl  font-normal leading-none'> towards your business?</h5>
 
                 <div className='w-full flex mt-6 justify-center'>
-                    <button className='border border-1 border-white px-10 py-4 max-w-fit self-end'>
+                    <a 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="mailto:sales@mezovest.com"
+                        className='border border-1 border-white px-10 py-4 max-w-fit self-end cursor-pointer'>
                         <p className='text-base font-normal whitespace-nowrap text-white'>Talk to sales</p>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

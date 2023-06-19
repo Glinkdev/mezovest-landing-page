@@ -1,7 +1,7 @@
 import React, { useCallback, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import useEmblaCarousel from 'embla-carousel-react';
-import Autoplay from 'embla-carousel-autoplay'
+// import Autoplay from 'embla-carousel-autoplay'
 import { styled } from 'styled-components';
 
 import MezopayWhiteIcon from "../assets/icons/mezo-pay-simple.svg"
@@ -28,7 +28,7 @@ DotButton.propTypes = {
 };
 
 function CustomerExperienceSlider() {
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false, containScroll: false,}, [Autoplay()])
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false, containScroll: true, watchDrag: true})
     const [prevBtnEnabled, setPrevBtnEnabled] = useState(false)
     const [nextBtnEnabled, setNextBtnEnabled] = useState(false)
     const [selectedIndex, setSelectedIndex] = useState(0)
@@ -110,9 +110,13 @@ function CustomerExperienceSlider() {
 
                                     <div className='w-full justify-center flex'>
 
-                                        <button className='border border-1 border-white px-10 py-4 max-w-fit self-end'>
+                                        <a 
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            href="mailto:sales@mezovest.com"
+                                            className='border border-1 border-white px-10 py-4 max-w-fit self-end'>
                                             <p className='text-base font-normal whitespace-nowrap'>{item?.action}</p>
-                                        </button>
+                                        </a>
 
                                     </div>
                                 </div>
