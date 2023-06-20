@@ -46,7 +46,7 @@ function MezoEnergy() {
                         <br />
                         <span className='text-2xl md:text-4xl'>(METL)</span>
                     </div>
-                    <p className='mt-7 text-sm'>
+                    <p className='mt-7 text-lg font-medium'>
                         Mezoenergy trading limited is an energy company that has a big reputation in
                         gas trading with supply chains across the country. The company was established
                         in 2021 and is positioned to be the fastest growing gas trading company in Nigeria.
@@ -55,7 +55,7 @@ function MezoEnergy() {
                         With our beautiful and innovative composite gas cylinder, we have also been able to win
                         the trust of end-users who share the same core values as we do.
                     </p>
-                    <p className='mt-4 text-sm'>
+                    <p className='mt-4 text-lg font-medium'>
                         In partnership with mezovest, we provide gas financing where we deliver high
                         quality cooking gas to our vendors. Hundreds of small businesses have leveraged
                         this credit system to grow their business as well as several stakeholders in the
@@ -79,7 +79,7 @@ function MezoEnergy() {
             </div>
             <div className='w-full flex flex-col md:flex-row mt-12'>
                 <span>Discover how Mezoenergy helped businesses in the food industry.</span>
-                <a className='flex text-green md:ml-2 cursor-pointer'>Read more <img src={GreenArrowIcon} alt="green arrow icon" className='ml-2' /></a>
+                
             </div>
             <div className='w-full flex flex-col md:flex-row mt-12'>
                 <div className='md:w-3/5 flex flex-col md:flex-row justify-center relative align-center'>
