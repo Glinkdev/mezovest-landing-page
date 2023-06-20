@@ -1,6 +1,7 @@
 import React, { useCallback, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import useEmblaCarousel from 'embla-carousel-react';
+import { WheelGesturesPlugin } from 'embla-carousel-wheel-gestures'
 // import Autoplay from 'embla-carousel-autoplay'
 import { styled } from 'styled-components';
 
@@ -12,82 +13,86 @@ import MezoCoinIcon from "../assets/icons/mezocoin-logo-white.svg";
 
 const DotButton = (props) => {
     const { selected, onClick } = props
-  
+
     return (
-      <button
-        className={'embla__dot'.concat(selected ? ' embla__dot--selected' : '')}
-        type="button"
-        onClick={onClick}
-      />
+        <button
+            className={'embla__dot'.concat(selected ? ' embla__dot--selected' : '')}
+            type="button"
+            onClick={onClick}
+        />
     )
 }
 
 DotButton.propTypes = {
-    selected: PropTypes?.string?.isRequired, 
+    selected: PropTypes?.string?.isRequired,
     onClick: PropTypes?.func?.isRequired,
 };
 
 function CustomerExperienceSlider() {
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false, containScroll: true, watchDrag: true})
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false, containScroll: true, watchDrag: true }, [WheelGesturesPlugin()])
     const [prevBtnEnabled, setPrevBtnEnabled] = useState(false)
     const [nextBtnEnabled, setNextBtnEnabled] = useState(false)
     const [selectedIndex, setSelectedIndex] = useState(0)
     const [scrollSnaps, setScrollSnaps] = useState([])
 
-    
-  
+    console.log(nextBtnEnabled, "nextBtnEnabled", prevBtnEnabled)
+
     const scrollPrev = useCallback(
-      () => emblaApi && emblaApi.scrollPrev(),
-      [emblaApi],
+        () => emblaApi && emblaApi.scrollPrev(),
+        [emblaApi],
     )
     const scrollNext = useCallback(
-      () => emblaApi && emblaApi.scrollNext(),
-      [emblaApi],
+        () => emblaApi && emblaApi.scrollNext(),
+        [emblaApi],
     )
     const scrollTo = useCallback(
-      (index) => emblaApi && emblaApi.scrollTo(index),
-      [emblaApi],
+        (index) => emblaApi && emblaApi.scrollTo(index),
+        [emblaApi],
     )
-  
+
     const onInit = useCallback((emblaApi) => {
-      setScrollSnaps(emblaApi.scrollSnapList())
+        setScrollSnaps(emblaApi.scrollSnapList())
     }, [])
-  
+
     const onSelect = useCallback((emblaApi) => {
-      setSelectedIndex(emblaApi.selectedScrollSnap())
-      setPrevBtnEnabled(emblaApi.canScrollPrev())
-      setNextBtnEnabled(emblaApi.canScrollNext())
+        setSelectedIndex(emblaApi.selectedScrollSnap())
+        setPrevBtnEnabled(emblaApi.canScrollPrev())
+        setNextBtnEnabled(emblaApi.canScrollNext())
     }, [])
-  
+
     useEffect(() => {
-      if (!emblaApi) return
-  
-      onInit(emblaApi)
-      onSelect(emblaApi)
-      emblaApi.on('reInit', onInit)
-      emblaApi.on('reInit', onSelect)
-      emblaApi.on('select', onSelect)
+        if (!emblaApi) return
+
+        onInit(emblaApi)
+        onSelect(emblaApi)
+        emblaApi.on('reInit', onInit)
+        emblaApi.on('reInit', onSelect)
+        emblaApi.on('select', onSelect)
     }, [emblaApi, onInit, onSelect])
 
     const productDetail = [
         {
             icon: MetlLogoIcon,
             action: "Learn More",
+            actionUrl: "mezoeneergy.com",
             detail: "METL  uses supply chain infrastructures like logistic, micro distribution centres (MDCs) to supply cooking gas to her vendors."
         },
         {
             icon: MezopayWhiteIcon,
             action: "Try Now",
+            actionUrl: "mezopay.mezovest.com",
             detail: "Enjoy fast & secure sending and receiving of money, bills payment, purchase of cooking gas and shop from your favourite stores."
         },
         {
             icon: MezoPayLimitedIcon,
             action: "Coming Soon",
+            actionUrl: "",
             detail: "Get an online presence with our one page storefront, receive online & offline payments & share invoices create invoices"
         },
         {
             icon: MezoCoinIcon,
             action: "Coming Soon",
+            actionUrl: "",
             detail: "Introducing our commodity exchange to enable buyers and sellers trade various commodities starting with cooking gas (aka LPG)"
         }
     ]
@@ -110,13 +115,20 @@ function CustomerExperienceSlider() {
 
                                     <div className='w-full justify-center flex'>
 
-                                        <a 
+                                        {item?.actionUrl ? (<a
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            href="mailto:sales@mezovest.com"
-                                            className='border border-1 border-white px-10 py-4 max-w-fit self-end'>
+                                            href={item?.actionUrl ? `https://${item?.actionUrl}` : ""}
+                                            className={`${item?.actionUrl ? "cursor-poiter" : "cursor-default"} border border-1 border-white px-10 py-4 max-w-fit self-end `} >
                                             <p className='text-base font-normal whitespace-nowrap'>{item?.action}</p>
                                         </a>
+                                        ) : (
+                                            <button
+                                                className={`${item?.actionUrl ? "cursor-poiter" : "cursor-default"} border border-1 border-white px-10 py-4 max-w-fit self-end `}
+                                            >
+                                                <p className='text-base font-normal whitespace-nowrap'>{item?.action}</p>
+                                            </button>
+                                        )}
 
                                     </div>
                                 </div>
@@ -125,15 +137,29 @@ function CustomerExperienceSlider() {
                     </div>
                 </div>
             </div>
-            <div className="embla__dots flex justify-center flex-row mt-10 space-x-1">
+            <div className="sm:hidden embla__dots flex justify-center flex-row mt-10 space-x-1">
                 {productDetail.map((_, index) => (
-                <DotButton
-                    key={index}
-                    selected={index === selectedIndex}
-                    onClick={() => scrollTo(index)}
-                />
+
+                    <DotButton
+                        key={index}
+                        selected={index === selectedIndex}
+                        onClick={() => scrollTo(index)}
+                    />
                 ))}
-      </div>
+            </div>
+            <div className="hidden sm:flex embla__dots flex justify-center flex-row mt-10 space-x-1">
+                {productDetail.map((_, index) => {
+                    if (index === 0 || index === 1) {
+                        return (
+                            <DotButton
+                                key={index}
+                                selected={index === selectedIndex}
+                                onClick={() => scrollTo(index)}
+                            />
+                        )
+                    }
+                })}
+            </div>
 
 
         </SliderStyles>

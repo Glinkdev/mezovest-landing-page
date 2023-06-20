@@ -1,5 +1,6 @@
 import React from 'react';
-import MezovestLogo  from "../assets/images/mezovest-logo.svg";
+import MezovestLogo  from "../assets/icons/mezovest-white-logo.svg"
+//"../assets/images/mezovest-logo.svg";
 import Navigator from '../components/Navigator';
 import HeroSection from '../components/HeroSection';
 import ProductDetail from '../components/ProductDetail';
@@ -8,6 +9,8 @@ import MetlLogoIcon from "../assets/icons/metl-logo-white.svg";
 import MezoPayIcon from "../assets/icons/mezo-pay-white.svg";
 import MezoPayLimitedIcon from "../assets/icons/mezo-pay-limited-icon.svg";
 import MezoCoinIcon from "../assets/icons/mezocoin-logo-white.svg";
+import EmailIcon from "../assets/icons/email-icon.svg";
+import CallIcon from "../assets/icons/call-icon.svg";
 
 
 function FirstSection() {
@@ -17,6 +20,8 @@ function FirstSection() {
       icon: [MezopayWhiteIcon],
       features: ["Cash Icon", "Inventory Loan"],
       action: "Talk to sales",
+      actionType: "mail",
+      actionUrl: "",
       height: "md:h-[478px]",
       detail: [
         {
@@ -38,6 +43,8 @@ function FirstSection() {
       icon: [MetlLogoIcon],
       features: ["Reliability", "Innovative", "Safety", "Quantity"],
       action: "Learn more",
+      actionType:"link",
+      actionUrl: "mezoenergy.com",
       height: "md:h-[598px]",
       detail: [
         {
@@ -70,10 +77,40 @@ function FirstSection() {
       ]
     }
   ]
+  const contactOptions =[
+    {
+      icon: "",
+      title: "Email Us",
+      description: "hello@mezovest.com",
+      type: "mail",
+    },
+    {
+      icon: "",
+      title: "Phone Us",
+      description: "+234 812 345 6789",
+      type: "call"
+    }
+  ]
   return (
     <div className='py-7 md:pt-11 md:pb-24 px-6 xl:px-36 !bg-darkGreen h-full min-h-screen font-poppins '>
-       <div>
-        <img src={MezovestLogo} alt="Your SVG" />
+       <div className='flex justify-between'>
+        <img src={MezovestLogo} alt="Mezovest Logo" className='h-[40px]' />
+        <div className='hidden md:flex'>
+          <a href="mailto:hello@mezovest.com" className='flex cursor-pointer'>
+              <img src={EmailIcon} alt="mezovest email icon" />
+              <div className='text-white ml-2'>
+                <p className='font-semibold'>Email us</p>
+                <p className='text-xs'>hello@mezovest.com</p>
+              </div>
+          </a>
+          <a href="tel:+234 812 345 6789" className='flex cursor-pointer ml-6'>
+              <img src={CallIcon} alt="mezovest email icon"/>
+              <div className='text-white ml-2'>
+                <p className='font-semibold'>Call Us</p>
+                <p className='text-xs'>+234 812 345 6789</p>
+              </div>
+          </a>
+        </div>
        </div>
        <Navigator />
        <HeroSection />

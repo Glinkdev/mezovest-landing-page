@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import PrevIcon from "../assets/icons/prev-icon.svg";
 import NextIcon from "../assets/icons/next-icon.svg";
@@ -10,9 +10,13 @@ import PearlLogo from "../assets/images/pearl-logo-icon.svg";
 import Autoplay from 'embla-carousel-autoplay'
 
 function ClientSlider() {
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, containScroll: true,}, [Autoplay()])
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false, containScroll: true, }, [Autoplay()]);
+    const [prevBtnEnabled, setPrevBtnEnabled] = useState(false)
+    const [nextBtnEnabled, setNextBtnEnabled] = useState(false)
 
-    const clientImages = [BurgerKingImage, KfcImage, CroppedAsset, JaysDinner, PearlLogo]
+    console.log(emblaApi ? emblaApi.slideNodes() : "")
+
+    const clientImages = [BurgerKingImage, CroppedAsset, JaysDinner, PearlLogo]
 
     const scrollPrev = useCallback(() => {
         if (emblaApi) emblaApi.scrollPrev()
@@ -21,6 +25,21 @@ function ClientSlider() {
     const scrollNext = useCallback(() => {
         if (emblaApi) emblaApi.scrollNext()
     }, [emblaApi])
+
+    const onSelect = useCallback((emblaApi) => {
+        setPrevBtnEnabled(emblaApi.canScrollPrev())
+        setNextBtnEnabled(emblaApi.canScrollNext())
+    }, [])
+
+    console.log(nextBtnEnabled)
+
+    useEffect(() => {
+        if (!emblaApi) return
+
+        onSelect(emblaApi)
+        emblaApi.on('reInit', onSelect)
+        emblaApi.on('select', onSelect)
+    }, [emblaApi, onSelect])
 
     return (
         <div className="embla">
@@ -33,12 +52,16 @@ function ClientSlider() {
                     ))}
                 </div>
             </div>
-            <button className="embla__prev flex items-center h-20" onClick={scrollPrev}>
-                <img src={PrevIcon} />
-            </button>
-            <button className="embla__next flex items-center h-20" onClick={scrollNext}>
-                <img src={NextIcon} />
-            </button>
+            {prevBtnEnabled && (
+                <button className="embla__prev flex items-center h-20" onClick={scrollPrev}>
+                    <img src={PrevIcon} />
+                </button>
+            )}
+            {nextBtnEnabled && (
+                <button className="embla__next flex items-center h-20" onClick={scrollNext}>
+                    <img src={NextIcon} />
+                </button>
+            )}
         </div>
     )
 }

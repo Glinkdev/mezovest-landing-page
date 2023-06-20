@@ -4,7 +4,7 @@ import MezopayWhiteIcon from "../assets/icons/mezopay-logo-white.svg";
 import ShieldIcon from "../assets/icons/shield-icon.svg";
 
 
-function ProductDetail({ name, icon, features, action, detail, height }) {
+function ProductDetail({ name, icon, features, action, detail, height, actionType, actionUrl}) {
 
     return (
         <div className={`${height} flex md:flex-row flex-col w-full font-poppins  mt-20`} >
@@ -32,7 +32,7 @@ function ProductDetail({ name, icon, features, action, detail, height }) {
                         <a                         
                             target="_blank"
                             rel="noopener noreferrer"
-                            href="mailto:sales@mezovest.com"
+                            href={actionType === "mail" ? "mailto:sales@mezovest.com" : `https://${actionUrl}`}
                             className='flex items-center justify-start w-full hidden md:flex cursor-pointer'>
                             <p className='bg-transparent border-white border text-base font-semibold text-white py-3.5 min-w-[200px] text-center'>
                                 {action}
@@ -53,25 +53,23 @@ function ProductDetail({ name, icon, features, action, detail, height }) {
                     {detail && detail.map((item, index) => (
                         <div key={index} className="md:pl-16 md:pt-2 md:pr-10">
 
-                            {
-                                item.type === "normal" ? (
-                                    <p className='font-normal text-xs xl:text-base text-white mb-8 !leading-7'>
-                                        {item.text}
-                                    </p>) : (
-                                    <ul className='text-white list-disc list-inside text-xs xl:text-base' role="list">
-                                        {item.text.map((item, index) => (
-                                            <li className='font-normal text-xs xl:text-base text-white !leading-7 mb-4' key={index}>{item}</li>
-                                        ))}
-                                    </ul>
-                                )
-                            }
+                            {item.type === "normal" ? (
+                                <p className='font-normal text-xs xl:text-base text-white mb-8 !leading-7'>
+                                    {item.text}
+                                </p>
+                            ):(
+                                <ul className='text-white list-disc list-inside text-xs xl:text-base' role="list">
+                                    {item.text.map((item, index) => (
+                                        <li className='font-normal text-xs xl:text-base text-white !leading-7 mb-4' key={index}>{item}</li>
+                                    ))}
+                                </ul>
+                            )}
                         </div>
                     ))}
                     {action && (
                         <div className='flex items-center justify-center w-full md:hidden flex mt-10'>
                             <button className='bg-transparent border-white border text-base font-semibold text-white py-3.5 min-w-[200px]'>
                                 {action || "Talk to sales"}
-
                             </button>
                         </div>)}
                 </div>
@@ -88,6 +86,8 @@ ProductDetail.propTypes = {
     action: PropTypes.string.isRequired,
     detail: PropTypes?.array?.isRequired,
     height: PropTypes.string.isRequired, // Add the missing prop type validation
+    actionType: PropTypes.string.isRequired,
+    actionUrl: PropTypes.string.isRequired,
 };
 
 export default ProductDetail
