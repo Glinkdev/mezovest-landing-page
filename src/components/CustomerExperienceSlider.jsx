@@ -74,7 +74,7 @@ function CustomerExperienceSlider() {
         {
             icon: MetlLogoIcon,
             action: "Learn More",
-            actionUrl: "mezoeneergy.com",
+            actionUrl: "mezoenergy.com",
             detail: "METL  uses supply chain infrastructures like logistic, micro distribution centres (MDCs) to supply cooking gas to her vendors."
         },
         {
