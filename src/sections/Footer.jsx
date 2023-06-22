@@ -18,11 +18,11 @@ function Footer() {
 
         {
             icon: FacebookIcon,
-            link: "https://facebook.coom/mezovest",
+            link: "https://facebook.com/mezovest",
         },
         {
             icon: LinkedInIcon,
-            link: "https://linkedn.com/mezovest",
+            link: "https://www.linkedin.com/company/mezovestinc/",
         },
     ]
     return (
