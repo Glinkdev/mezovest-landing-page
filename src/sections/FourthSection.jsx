@@ -97,7 +97,7 @@ function FourthSection() {
                     </div>
 
                 </div>
-                <div className='md:w-1/2 mt-10 md:mt-0'>
+                <div className='md:w-1/2 mt-10 md:mt-0 flex justify-end'>
                     <img src={MerchantImage} alt="mezo pay terminal" />
                 </div>
 

@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import { styled } from 'styled-components';
 import useEmblaCarousel from 'embla-carousel-react';
 import PrevIcon from "../assets/icons/prev-icon.svg";
 import NextIcon from "../assets/icons/next-icon.svg";
@@ -42,28 +43,38 @@ function ClientSlider() {
     }, [emblaApi, onSelect])
 
     return (
-        <div className="embla">
-            <div className="embla__viewport" ref={emblaRef}>
-                <div className="embla__container flex">
-                    {clientImages.map((item, index) => (
-                        <div className="embla__slide flex justify-center align-center" key={index}>
-                            <img className="h-20" src={item} />
-                        </div>
-                    ))}
+        <Styles>
+            <div className="embla">
+                <div className="embla__viewport" ref={emblaRef}>
+                    <div className="embla__container flex">
+                        {clientImages.map((item, index) => (
+                            <div className="embla__slide flex justify-center align-center" key={index}>
+                                <img className="h-20" src={item} />
+                            </div>
+                        ))}
+                    </div>
                 </div>
+                {prevBtnEnabled && (
+                    <button className="embla__prev flex items-center h-20" onClick={scrollPrev}>
+                        <img src={PrevIcon} />
+                    </button>
+                )}
+                {nextBtnEnabled && (
+                    <button className="embla__next flex items-center h-20" onClick={scrollNext}>
+                        <img src={NextIcon} />
+                    </button>
+                )}
             </div>
-            {prevBtnEnabled && (
-                <button className="embla__prev flex items-center h-20" onClick={scrollPrev}>
-                    <img src={PrevIcon} />
-                </button>
-            )}
-            {nextBtnEnabled && (
-                <button className="embla__next flex items-center h-20" onClick={scrollNext}>
-                    <img src={NextIcon} />
-                </button>
-            )}
-        </div>
+        </Styles>
     )
 }
 
 export default ClientSlider
+
+const Styles = styled.div`
+    @media only screen and (min-width: 1400px){
+        .embla__container{
+            justify-content: center
+        }
+    }
+`

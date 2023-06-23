@@ -6,6 +6,7 @@ import LinkedInIcon from "../assets/icons/linkedin-icon.svg";
 
 
 function Footer() {
+    var dt = new Date()
     const socials = [
         {
             icon: TwitterIcon,
@@ -27,10 +28,10 @@ function Footer() {
     ]
     return (
         <div className='py-7 px-6 xl:px-36 !bg-black h-full min-h-fit font-poppins flex flex-col md:flex-row justify-between text-white'>
-            <div className='grid grid-cols-3 gap-4'>
-                <p className='text-xs md:text-sm col-span-1'>© Mezovest 2023 </p>
-                <p className='text-xs md:text-sm col-span-1'>Terms of service </p>
-                <p className='text-xs md:text-sm col-span-1'> Privacy Policy</p>
+            <div className='grid grid-cols-1 '>
+                <p className='text-xs md:text-sm col-span-1'>© {dt.getFullYear()} Mezovest Limited (Company No.1685627). All rights reserved. </p>
+                {/* <p className='text-xs md:text-sm col-span-1'>Terms of service </p>
+                <p className='text-xs md:text-sm col-span-1'> Privacy Policy</p> */}
             </div>
             <div className='mt-4 md:mt-0 grid grid-cols-4 gap-2 min-w-[300px] md: max-w-full items-center  flex justify-center'>
                 {socials.map((item, index) => (

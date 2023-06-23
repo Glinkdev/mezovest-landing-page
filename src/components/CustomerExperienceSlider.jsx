@@ -201,4 +201,12 @@ const SliderStyles = styled.div`
         background: #02CB63 !important;
     }
 
+    @media only screen and (min-width: 1900px){
+        .embla__container{
+            justify-content: center
+        }
+        .embla__dot {
+            display: none;
+        }
+    }
 `

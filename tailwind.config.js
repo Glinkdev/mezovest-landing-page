@@ -11,10 +11,14 @@ export default {
         darkGreen: "#203035",
         green: "#02CB63"
       },
+      screens: {
+        "2xl": '2220px',
+      }
     },
     letterSpacing: {
       wide: "0.5em"
-    }
+    },
+    
   },
   plugins: [
   ],

@@ -62,25 +62,26 @@ function MezoEnergy() {
                         LPG value chain.
                     </p>
 
+                    <div className='flex align-center justify-between mt-9 max-w-[1000px]'>
+                        {qualities.map((item, index) => (
+                            <div className='flex flex-col' key={index}>
+                                <img src={item.icon} className="h-9" />
+                                <p className='text-sm mt-1'>{item.title}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <div className='w-full flex flex-col md:flex-row mt-12'>
+                <span>Discover how Mezoenergy helped businesses in the food industry.</span>
 
+            </div>
                 </div>
-                <div className=' md:w-2/5 mt-10 md:mt-0 flex'>
+                <div className=' md:w-2/5 mt-10 md:mt-0 flex justify-end'>
                     <img src={MezoEnergyImage} alt="Mezo Energy Image" className='md:w-[834px]' />
                 </div>
 
             </div>
-            <div className='flex align-center md:w-3/5 justify-between mt-9'>
-                {qualities.map((item, index) => (
-                    <div className='flex flex-col' key={index}>
-                        <img src={item.icon} className="h-9" />
-                        <p className='text-sm mt-1'>{item.title}</p>
-                    </div>
-                ))}
-            </div>
-            <div className='w-full flex flex-col md:flex-row mt-12'>
-                <span>Discover how Mezoenergy helped businesses in the food industry.</span>
-                
-            </div>
+
+            
             <div className='w-full flex flex-col md:flex-row mt-12'>
                 <div className='md:w-3/5 flex flex-col md:flex-row justify-center relative align-center'>
                     <img className='w-full md:w-[435px]' src={PearlRestaurantImage} />
@@ -94,8 +95,8 @@ function MezoEnergy() {
                         created a custom-made solution that simplifies backend complexities, showcases our
                         high-end product offering and enhances the customer journey as we continue to expand.
                     </p>
-                    <p className='text-lg font-medium mt-10'><span className='font-bold'>-Emeka Igwe </span>{" "}Co-Founder</p>
-                    <p className='text-lg font-medium'>Pearl Restaurant</p>
+                    <p className='text-lg font-medium mt-10'><span className='font-bold'>-Emeka Igwe </span>{" "}CEO</p>
+                    <p className='text-lg font-medium'>Terrrafoam</p>
                 </div>
 
             </div>

@@ -33,12 +33,12 @@ function HeroSection() {
                 </div>
 
             </div>
-            <div className='flex flex-col w-full mt-40 md:mt-20' id="energy">
+            <div className='flex flex-col w-full mt-40' id="energy">
                 <div className='flex'>
                     <img src={GreenStroke} alt="green stroke" />
                     <p className='ml-6 font-normal md:text-xl text-white'>How do we deliver on our promise?</p>
                 </div>
-                <div className='font-liquefier mt-6'>
+                <div className='font-liquefier mt-6 '>
                     <span className='text-green text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Finance Infrastructure</span>
                     <br />
                     <span className='text-white text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Technology<span className='text-2xl md:text-4xl'>(F.I.T)</span></span>
