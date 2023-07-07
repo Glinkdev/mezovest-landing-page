@@ -4,7 +4,7 @@ import StarIcon from "../../../assets/icons/star-icon.svg"
 
 function CustomerFeedback() {
     return (
-        <div className='py-7 md:pt-36 pb-20 px-6 xl:px-36 h-full min-h-fit font-poppins !bg-[#F1F1F180] flex gap-10 overflow-y-scroll w-full'>
+        <div className='py-7 md:pt-36 pb-20 px-6 xl:px-36 h-full min-h-fit font-poppins !bg-[#F1F1F180] flex gap-10 overflow-y-scroll w-full justify-center'>
             <div className='w-[237px] md:w-[345px] min-h-[437px] shadow-lg bg-white'>
                 <div className='w-full'>
                     <img src={HumanFace} />
