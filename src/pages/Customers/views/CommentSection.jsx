@@ -4,7 +4,7 @@ import StarIcon from "../../../assets/icons/star-icon.svg"
 
 function CommentSection() {
     return (
-        <div className='py-7 md:pt-14 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins hidden md:flex relative h-[700px]'>
+        <div className='py-7 md:pt-14 pb-20 px-6 xl:px-36 !bg-white font-poppins hidden md:flex relative h-[700px]'>
             <div className='w-[447px] p-6 border border-black rounded-2xl absolute top-24 left-40'>
                 <div className='gap-4 flex border-b border-black pb-4'>
                     <img src={ProfileImage} />
