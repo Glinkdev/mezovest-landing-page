@@ -13,6 +13,9 @@ export default {
       },
       screens: {
         "2xl": '2220px',
+      },
+      backgroundImage:{
+        'heroImage': 'url(./src/assets/images/mezo-hero-img.png)'
       }
     },
     letterSpacing: {

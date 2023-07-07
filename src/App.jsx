@@ -1,20 +1,23 @@
 import React from "react"
-import FirstSection from "./sections/FirstSection";
-import SecondSection from "./sections/SecondSection";
-import ThirdSection from "./sections/ThirdSection";
-import FourthSection from "./sections/FourthSection";
-import Footer from "./sections/Footer";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from "./pages/Home";
+import NewHome from "./pages/NewHome";
+import Payments from "./pages/Payments";
+import Customers from "./pages/Customers";
+
 
 function App() {
 
   return (
-    <>
-      <FirstSection />
-      <SecondSection />
-      <ThirdSection />
-      <FourthSection />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/new" element={<NewHome />} />
+        <Route path="/payment" element={<Payments />} />
+        <Route path="/customers" element={<Customers />} />
+        {/* <Route path="/*" element={<NewHome />} /> */}
+      </Routes>
+    </Router>
   )
 }
 

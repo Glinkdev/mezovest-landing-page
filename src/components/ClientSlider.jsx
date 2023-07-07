@@ -8,6 +8,8 @@ import KfcImage from "../assets/images/kfc-image.svg";
 import CroppedAsset from "../assets/images/cropped-asset.svg";
 import JaysDinner from "../assets/images/jays-dinner.svg";
 import PearlLogo from "../assets/images/pearl-logo-icon.svg";
+import TasteeLogo from "../assets/icons/tastee-logo.svg";
+import CactusLogo from "../assets/icons/cactus-logo-black.svg";
 import Autoplay from 'embla-carousel-autoplay'
 
 function ClientSlider() {
@@ -17,7 +19,7 @@ function ClientSlider() {
 
     console.log(emblaApi ? emblaApi.slideNodes() : "")
 
-    const clientImages = [BurgerKingImage, CroppedAsset, JaysDinner, PearlLogo]
+    const clientImages = [BurgerKingImage, CroppedAsset, JaysDinner, PearlLogo, TasteeLogo, CactusLogo]
 
     const scrollPrev = useCallback(() => {
         if (emblaApi) emblaApi.scrollPrev()
