@@ -3,7 +3,7 @@ import MezovestLogo from "../../../assets/icons/mezovest-white-logo.svg"
 //"../assets/images/mezovest-logo.svg";
 import Navigator from '../components/Navigator';
 import HeroSection from '../components/HeroSection';
-import MezopayWhiteIcon from "../../../assets/icons/mezopay-logo-white.svg"
+import MezHeroImg from "../../../assets/icons/mez-hero-img.svg"
 import MetlLogoIcon from "../../../assets/icons/metl-logo-white.svg";
 import MezoPayIcon from "../../../assets/icons/mezo-pay-white.svg";
 import MezoPayLimitedIcon from "../../../assets/icons/mezo-pay-limited-icon.svg";
@@ -22,7 +22,8 @@ function GrowSection() {
         <HeroSection />
 
       </div>
-      <div className="w-full md:w-1/2 bg-heroImage bg-no-repeat bg-cover h-[500px] md:h-auto">
+      <div className="w-full md:w-1/2  bg-no-repeat bg-cover h-[500px] md:h-auto">
+        <img src={MezHeroImg} className="h-full w-full"/>
       </div>
 
     </div>
