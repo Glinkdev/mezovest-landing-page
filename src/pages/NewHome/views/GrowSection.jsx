@@ -15,9 +15,9 @@ function GrowSection() {
   return (
     <div className='h-full min-h-screen font-poppins flex flex-col md:flex-row '>
       <div className='py-7 md:pt-11 md:pb-36 px-6 xl:pl-36  !bg-darkGreen w-full md:w-1/2 flex flex-col'>
-        <div className='flex justify-between'>
+        <a className='flex justify-between' href="/">
           <img src={MezovestLogo} alt="Mezovest Logo" className='h-[40px]' />
-        </div>
+        </a>
         <Navigator />
         <HeroSection />
 
