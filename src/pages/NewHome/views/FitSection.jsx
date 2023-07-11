@@ -6,7 +6,7 @@ import MezoPhoneImage from "../../../assets/images/mez-phone-img.png";
 
 
 function FitSection() {
-    const [showLongText, setShowLongText] = useState([])
+    const [showLongText, setShowLongText] = useState(["Finance","Infrastructure","Technology" ])
 
     const fitDetails = [
         {
