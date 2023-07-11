@@ -69,7 +69,8 @@ function FitSection() {
                         </ul>
                     </div>
                 </div>
-                <div className='hidden md:w-1/2 mt-10 md:mt-0 md:flex justify-end relative'>
+                <div className="hidden md:flex w-1/2 justify-end">
+                <div className='md:w-[700px] mt-10 md:mt-0 md:flex justify-end relative'>
                     <div className='h-[417px] w-[241px] absolute top-10 right-10 z-20'>
                         <img src={MezoBagImage} alt="Mezo Energy Image" />
                     </div>
@@ -81,6 +82,8 @@ function FitSection() {
                     </div>
                    
                 </div>
+                </div>
+               
 
             </div>
 

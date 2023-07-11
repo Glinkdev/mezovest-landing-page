@@ -1,50 +1,151 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { styled } from 'styled-components';
 import RightArrowIcon from "../../../assets/icons/right-arrow-icon.svg"
+import DropDownIcon from "../../../assets/icons/dropdown-icon.svg"
+import NairaIcon from "../../../assets/icons/naira-icon.svg"
+import CommerceIcon from "../../../assets/icons/commerce-icon.svg"
+import DistributionIcon from "../../../assets/icons/distribution-icon.svg"
 
 
 function Navigator() {
+    const navigate = useNavigate()
+    const [openSubmenu, setOpenSubMenu] = useState(false)
     const navigation = [
         {
-            name: "Solutions",
-            url: "#solutions"
-        },
-        {
             name: "Support",
-            url: "#support"
+            url: "/customers"
         },
         {
             name: "Pricing",
-            url: "#pricing"
+            url: "/payment"
         },
         {
             name: "About us",
-            url: "#about"
+            url: "/customers"
         },
         {
             name: "Blog",
-            url: "#blog"
+            url: "/customers"
         },
     ]
-  return (
-    <div className='flex justify-between  bg-green px-3 py-5 md:py-7 md:px-14 font-poppins w-full md:absolute mt-14 md:w-[80%]'>
-        <div className='flex justify-center md:justify-between w-full'>
+    const subMenu = [
+        {
+            name: "Payment",
+            icon: NairaIcon,
+            subItems: [
+                {
+                    name: "Accept Payment",
+                    route: "/payment"
+                },
+                {
+                    name: "Send Money",
+                    route: "/payment"
+                },
+                {
+                    name: "Payment Links",
+                    route: "/payment"
+                }
+            ]
+        },
+        {
+            name: "Commerce",
+            icon: CommerceIcon,
+            subItems: [
+                {
+                    name: "Storefront - e commerce",
+                    route: "/customers"
+                },
+                {
+                    name: "Invoicing",
+                    route: "/customers"
+                },
+                {
+                    name: "Credit / Loan",
+                    route: "/customers"
+                }
+            ]
+        },
+        {
+            name: "Distribution",
+            icon: DistributionIcon,
+            subItems: [
+                {
+                    name: "Logistics",
+                    route: "/"
+                },
+                {
+                    name: "Supply Chain",
+                    route: "/"
+                },
+            ]
+        }
+    ]
 
-        
-        <div className='hidden md:flex justify-between align-center w-3/6'>
-            {navigation.map((item, index) => (
-                <a key={index} href={item.url} className="pointer font-bold text-sm">{item.name}</a>
-            ))}
-        </div>
-        <a className="pointer font-bold text-sm flex">Get started <img src={RightArrowIcon} className="ml-2"/>
-            
-        </a>
-        </div>
+    const routeTo = (route) => {
+        navigate(route)
+    }
+    return (
+        <Styled>
+            <div className='flex justify-between  bg-green px-3 py-5 md:py-7 md:px-14 font-poppins w-full md:absolute mt-14 md:w-[80%]'>
+                <div className='flex justify-center md:justify-between w-full'>
 
-        
-        
+                    <div className='hidden md:flex justify-between align-center w-3/6'>
+                        <div className='relative'>
+                            <div className='flex' onClick={() => setOpenSubMenu(!openSubmenu)}>
+                                <p className="cursor-pointer font-bold text-sm">
+                                    {"Solutions"}
+                                </p>
+                                <img src={DropDownIcon} />
+                            </div>
+                            {openSubmenu &&
+                                <div className='sub-menu-modal gap-8 absolute mt-4 z-50'>
+                                    {subMenu.map((item, index) => (
+                                        <div className='flex gap-4' key={index}>
+                                            <div>
+                                                <img src={item.icon} />
+                                            </div>
+                                            <div className='flex flex-col text-xs w-[180px]'>
+                                                <p className='font-semibold text-green pb-2 border-b border-gray-300'>{item.name}</p>
+                                                <div className='flex flex-col gap-2 mt-2'>
+                                                    {item.subItems.map((subItem, index) => (
+                                                        <p className='text-black font-medium cursor-pointer whitespace-nowrap' key={index} onClick={() => routeTo(subItem.route)}>{subItem.name}</p>
+                                                    ))}
+                                                </div>
 
-    </div>
-  )
+                                            </div>
+
+                                        </div>
+                                    ))}
+
+                                </div>
+                            }
+                        </div>
+
+
+                        {navigation.map((item, index) => (
+                            <a key={index} href={item.url} className="pointer font-bold text-sm">{item.name}</a>
+                        ))}
+                    </div>
+                    <a className="pointer font-bold text-sm flex">Get started <img src={RightArrowIcon} className="ml-2" />
+
+                    </a>
+                </div>
+            </div>
+        </Styled>
+    )
 
 }
 export default Navigator
+
+const Styled = styled.div`
+    .sub-menu-modal {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 5px 17px 0px rgba(0, 0, 0, 0.21);
+    }
+
+`

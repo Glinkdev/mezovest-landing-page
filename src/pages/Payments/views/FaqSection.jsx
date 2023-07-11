@@ -40,7 +40,6 @@ function FaqSection() {
     ]
 
     const showLeftText = (e) => {
-        console.log(showLeftMoreDetails.includes(e),showLeftMoreDetails )
         if (showLeftMoreDetails.includes(e)) {
             const newList = showLeftMoreDetails.map((item) => {
                 if(item !== e){
@@ -48,7 +47,6 @@ function FaqSection() {
                 }
                 
             })
-            console.log(newList, "newList")
             setShowLeftMoreDetails([...newList])
             return
         }

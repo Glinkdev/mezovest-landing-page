@@ -54,7 +54,9 @@ function OnlineSection() {
                                 <img src={RightArrowIcon} alt="right arrow icon" />
                                 <div className='flex whitespace-break-spaces justify-center'>
                                     <a href="" className='text-xs md:text-sm justify-center items-center font-bold text-green text-underline ml-2 underline-offset-2 cursor-pointer underline whitespace-nowrap float-left'>{item?.title}</a>
-                                    <span className='text-xs md:text-sm ml-2 text-black font-normal !no-underline underline-offset-0'>{item?.description}</span>
+                                    <span className='hidden md:flex text-xs md:text-sm ml-2 text-black font-normal !no-underline underline-offset-0'>{item?.description}</span>
+                                    <br />
+                                    <span className='flex md:hidden text-xs md:text-sm ml-2 text-black font-normal !no-underline underline-offset-0'>{item?.description}</span>
                                 </div>
 
                             </div>
@@ -64,11 +66,11 @@ function OnlineSection() {
 
                     <div className='w-full flex mt-10 md:mt-36'>
                         <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="mailto:sales@mezovest.com"
+                            // target="_blank"
+                            // rel="noopener noreferrer"
+                            // href="mailto:sales@mezovest.com"
                             className='border border-2 border-black px-14 py-6 max-w-fit self-end'>
-                            <p className='text-lg font-normal whitespace-nowrap'>Get started</p>
+                            <p className='text-lg font-normal whitespace-nowrap'>Coming Soon</p>
                         </a>
                     </div>
 

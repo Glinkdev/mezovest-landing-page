@@ -76,9 +76,9 @@ function FourthSection() {
                         {features.map((item, index) => (
                             <div className='flex mt-6 align-center' key={index}>
                                 <img src={RightArrowIcon} alt="right arrow icon" />
-                                <div className='flex whitespace-break-spaces justify-center'>
+                                <div className='flex flex-col sm:flex-row whitespace-break-spaces justify-center align-center'>
                                     <a href="" className='text-xs md:text-sm justify-center items-center font-bold text-green text-underline ml-2 underline-offset-2 cursor-pointer underline whitespace-nowrap float-left'>{item?.title}</a>
-                                    <span className='text-xs md:text-sm ml-2 text-black font-normal !no-underline underline-offset-0'>{item?.description}</span>
+                                    <span className='flex text-xs md:text-sm ml-2 text-black font-normal !no-underline underline-offset-0'>{item?.description}</span>
                                 </div>
 
                             </div>

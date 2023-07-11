@@ -17,7 +17,6 @@ function ClientSlider() {
     const [prevBtnEnabled, setPrevBtnEnabled] = useState(false)
     const [nextBtnEnabled, setNextBtnEnabled] = useState(false)
 
-    console.log(emblaApi ? emblaApi.slideNodes() : "")
 
     const clientImages = [BurgerKingImage, CroppedAsset, JaysDinner, PearlLogo, TasteeLogo, CactusLogo]
 
@@ -33,8 +32,6 @@ function ClientSlider() {
         setPrevBtnEnabled(emblaApi.canScrollPrev())
         setNextBtnEnabled(emblaApi.canScrollNext())
     }, [])
-
-    console.log(nextBtnEnabled)
 
     useEffect(() => {
         if (!emblaApi) return

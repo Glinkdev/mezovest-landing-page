@@ -35,7 +35,6 @@ function CustomerExperienceSlider() {
     const [selectedIndex, setSelectedIndex] = useState(0)
     const [scrollSnaps, setScrollSnaps] = useState([])
 
-    console.log(nextBtnEnabled, "nextBtnEnabled", prevBtnEnabled)
 
     const scrollPrev = useCallback(
         () => emblaApi && emblaApi.scrollPrev(),

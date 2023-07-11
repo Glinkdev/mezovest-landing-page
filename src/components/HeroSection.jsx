@@ -5,8 +5,8 @@ import GreenStroke from "../assets/icons/green-stroke.svg"
 function HeroSection() {
     return (
         <div className='flex-col'>
-            <div className='flex flex-col md:flex-row mt-10 md:mt-20 justify-between'>
-                <div className='flex-col w-full md:max-w-md'>
+            <div className='flex flex-col md:flex-row mt-10 md:mt-20 xl:mt-36 justify-between'>
+                <div className='flex-col w-full md:max-w-md '>
                     <div className='flex'>
                         <img src={GreenStroke} alt="green stroke" />
                         <p className='ml-6 font-normal md:text-xl text-white'>We want you to succeed</p>

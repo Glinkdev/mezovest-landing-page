@@ -13,7 +13,7 @@ function HeroSection() {
     const PaymentLogos = [SSlogo, Tlogo, Tasteelogo, Pearllogo, RollingGrilllogo, Jaylogo, GeorgeLogo]
     return (
         <div className='flex flex-col md:flex-row md:mt-20'>
-            <div className='flex flex-col lg:flex-row mt-10 md:mt-20 justify-between relative'>
+            <div className='flex flex-col lg:flex-row mt-10 md:mt-20 xl:mt-36 justify-between relative'>
                 <div className='flex-col w-full md:w-3/5'>
                     <div className='flex'>
                         <img src={GreenStroke} alt="green stroke" />
@@ -29,11 +29,11 @@ function HeroSection() {
                     </p>
                     <div className='flex gap-4 w-full'>
                         <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="mailto:sales@mezovest.com"
+                            // target="_blank"
+                            // rel="noopener noreferrer"
+                            // href="mailto:sales@mezovest.com"
                             className='hidden md:flex p-4 md:px-8 justify-center items-center  bg-green mt-6 cursor-pointer'>
-                            <p className='whitespace-nowrap'>Get started</p>
+                            <p className='whitespace-nowrap'>Coming Soon</p>
                         </a>
                         <a
                             target="_blank"
