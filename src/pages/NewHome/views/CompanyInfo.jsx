@@ -30,9 +30,9 @@ function CompanyInfo() {
         <div className='py-7 md:pt-14 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins flex md:flex-row flex-col justify-between md:gap-28'>
             <div className='flex flex-col md:w-1/5'>
                 <img src={MezoVestLogo} className="max-w-[200px]" />
-                <p className='mt-4 text-sm'>Sales: +234 706 323 1603</p>
-                <p className='mt-2 text-sm'>Help Desk: +234 902 447 2417</p>
-                <p className='mt-2 text-sm'>No 36 Turnbull Road, Ikoyi, Lagos, Nigeria. </p>
+                <p className='mt-10 md:text-sm whitespace-nowrap'>Sales: +234 706 323 1603</p>
+                <p className='mt-2 md:text-sm whitespace-nowrap'>Help Desk: +234 902 447 2417</p>
+                <p className='mt-2 md:text-sm'>No 36 Turnbull Road, Ikoyi, Lagos, Nigeria. </p>
                 <div className='hidden md:flex mt-6'>
                     <div className='mt-4 md:mt-0 grid grid-cols-4 gap-2 items-center  flex justify-center'>
                         {socials.map((item, index) => (
