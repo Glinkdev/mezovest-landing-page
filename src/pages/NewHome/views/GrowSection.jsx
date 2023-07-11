@@ -23,7 +23,7 @@ function GrowSection() {
 
       </div>
       <div className="w-full md:w-1/2  bg-no-repeat bg-cover h-[500px] md:h-auto">
-        <img src={MezHeroImg} className="h-full w-full"/>
+        <img src={MezHeroImg} className="h-full w-full object-cover"/>
       </div>
 
     </div>
