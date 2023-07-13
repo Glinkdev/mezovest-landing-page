@@ -48,7 +48,8 @@ function FourthSection() {
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-16 '>Merchants</h5>
                     </div>
                     <p className='text-sm mt-8'>
-                        With our robust - yet easy to use platform that lets you sell wherever your customers are — offline, nationwide, and everywhere in-between. Process payments <span className='font-bold'>offline</span> as well using our super fast and secure <span className='font-bold'>POS Terminal</span>
+                    With our robust - yet easy to use secure POS terminal that lets you sell to your customers, process card payments, generate invoices, purchase cooking gas if you run a restaurant and many more
+                     {/* <span className='font-bold'>offline</span> as well using our super fast and secure <span className='font-bold'>POS Terminal</span> */}
                     </p>
 
                     <div className='w-full flex mt-6'>
