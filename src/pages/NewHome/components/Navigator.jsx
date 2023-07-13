@@ -40,7 +40,7 @@ function Navigator() {
                 },
                 {
                     name: "Send Money",
-                    route: "/payment"
+                    route: "/send"
                 },
                 {
                     name: "Payment Links",
@@ -54,7 +54,7 @@ function Navigator() {
             subItems: [
                 {
                     name: "Storefront - e commerce",
-                    route: "/customers"
+                    route: "/storefront"
                 },
                 {
                     name: "Invoicing",

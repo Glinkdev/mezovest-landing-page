@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import NewHome from "./pages/NewHome";
 import Payments from "./pages/Payments";
 import Customers from "./pages/Customers";
+import SendMoney from "./pages/SendMoney";
+import StoreFront from "./pages/StoreFront";
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
         <Route path="/new" element={<Home />} />
         <Route path="/payment" element={<Payments />} />
         <Route path="/customers" element={<Customers />} />
+        <Route path="/send" element={<SendMoney />} />
+        <Route path="/storefront" element={<StoreFront />} />
         {/* <Route path="/*" element={<NewHome />} /> */}
       </Routes>
     </Router>
