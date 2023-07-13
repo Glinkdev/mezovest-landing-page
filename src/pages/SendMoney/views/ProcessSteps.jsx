@@ -1,5 +1,5 @@
 import React from 'react';
-import ProcessStepImage from "../../../assets/images/send-money-process-steps.svg";
+import ProcessStepImage from "../../../assets/images/payment-process-steps.svg";
 
 function ProcessSteps() {
     return (
