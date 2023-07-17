@@ -8,13 +8,12 @@ import CtaSection from "./views/CtaSection";
 import CompanyInfo from "../NewHome/views/CompanyInfo";
 import Footer from "../../sections/Footer";
 
-function StoreFront() {
+function SecurePayment() {
 
     return (
         <>
             <AcceptPayemntSection />
             <OfflineSection />
-            <OnlineSection />
             <ProcessSteps />
             <FaqSection />
             <CtaSection />
@@ -24,4 +23,4 @@ function StoreFront() {
     )
 }
 
-export default StoreFront
+export default SecurePayment

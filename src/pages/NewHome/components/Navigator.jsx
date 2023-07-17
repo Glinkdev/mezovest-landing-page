@@ -58,11 +58,15 @@ function Navigator() {
                 },
                 {
                     name: "Invoicing",
-                    route: "/customers"
+                    route: "/invoicing"
                 },
                 {
                     name: "Credit / Loan",
-                    route: "/customers"
+                    route: "/loan"
+                },
+                {
+                    name: "Secure Payment",
+                    route: "/secure-payment"
                 }
             ]
         },

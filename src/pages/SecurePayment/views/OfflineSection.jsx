@@ -1,20 +1,23 @@
 import React from 'react'
 import GreenStroke from "../../../assets/icons/green-stroke.svg"
-import OfflineImage from "../../../assets/images/offline-image.png";
+import RemoteBusinessImage from "../../../assets/images/remote-business-image.png";
 import MezoBagImage from "../../../assets/images/mez-shopbag-img.png";
 import MezoPhoneImage from "../../../assets/images/mez-phone-img.png";
 
 
 function OfflineSection() {
-
     const fitDetails = [
         {
-            details:"One - time payments:",
-            moreDetails: " Make instant transfers from Mezopay  to Mezopay, Mezopay to other wallet, and Mezopay to local banks"
+            details:"An Online Vendor?",
+            moreDetails: "Receive payments from your customers with ease by simply generating and sending them a Mezopay payment link"
         },
         {
-            details: "Need Content here:",
+            details: "Recurring payment?",
             moreDetails: "With our scheduled payment function you can pay salaries and other recurring payments."
+        },
+        {
+            details: "Need Donations?",
+            moreDetails: "Raise money by creating a Mezovest donations link."
         },
 
     ]
@@ -25,30 +28,34 @@ function OfflineSection() {
                 <div className='flex flex-col md:w-1/2'>
                     <div className='flex'>
                         <img src={GreenStroke} alt="black stroke" />
-                        <p className='ml-2 text-xl font-normal'>Thrill your customers with a</p>
+                        <p className='ml-2 text-xl font-normal'>Accept payments for your</p>
                     </div>
                     <div className='font-liquefier mt-7'>
-                        <span className='text-green text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Stunning</span>
+                        <span className='text-green text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Remote</span>
                         <br />
-                        <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Product Display</span>
+                        <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Business</span>
                         <br />
                     </div>
                     <div className='mt-6'>
-                        <p>Showcase your products in captivating style with stunning displays that grab attention, engage customers, and boost sales. </p>
+                        <p>Unleash payment simplicity with our virtual cash register, no website needed. Accept hassle-free payments.</p>
                     </div>
                     <div className='flex gap-4 w-full mt-4'>
-                       
-                        <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="mailto:sales@mezovest.com"
-                            className='flex py-5 px-10 justify-center items-center text-black mt-6 cursor-pointer border-2 border-black'>
-                            <p>Create your storefront</p>
-                        </a>
+                        <p>Are you;</p>
+                    </div>
+                    <div className='mt-10'>
+                        <ul className='text-black list-disc list-inside text-xs xl:text-base' role="list">
+                            {fitDetails.map((item, index) => {
+                                return (
+                                    <li className=' xl:text-base text-black !leading-7 mb-4' key={index}>
+                                        <span className=' mr-2 font-bold'>{item.details} <span className='font-normal'>{item.moreDetails}</span></span>
+                                    </li>
+                                )
+                            })}
+                        </ul>
                     </div>
                 </div>
-                <div className='hidden md:w-1/2  md:flex justify-end relative'>
-                   <img src={OfflineImage} alt="Mezo Energy Image" />
+                <div className='flex md:w-1/2  md:flex justify-end relative'>
+                   <img src={RemoteBusinessImage} alt="Mezo Energy Image" />
                 </div>
 
             </div>

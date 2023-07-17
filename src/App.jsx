@@ -6,6 +6,10 @@ import Payments from "./pages/Payments";
 import Customers from "./pages/Customers";
 import SendMoney from "./pages/SendMoney";
 import StoreFront from "./pages/StoreFront";
+import SecurePayment from "./pages/SecurePayment";
+import Invoicing from "./pages/Invoicing";
+import Loan from "./pages/Loan";
+import Supply from "./pages/Supply";
 
 
 function App() {
@@ -19,6 +23,10 @@ function App() {
         <Route path="/customers" element={<Customers />} />
         <Route path="/send" element={<SendMoney />} />
         <Route path="/storefront" element={<StoreFront />} />
+        <Route path="/secure-payment" element={<SecurePayment />} />
+        <Route path="/invoicing" element={<Invoicing />} />
+        <Route path="/loan" element={<Loan />} />
+        <Route path="/supply" element={<Supply />} />
         {/* <Route path="/*" element={<NewHome />} /> */}
       </Routes>
     </Router>

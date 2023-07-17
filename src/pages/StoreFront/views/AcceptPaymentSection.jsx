@@ -9,7 +9,7 @@ import CallIcon from "../../../assets/icons/call-icon.svg";
 function AcceptPayemntSection() {
   return (
     <div className='py-7 md:pt-11 md:pb-24 px-6 xl:px-36 !bg-darkGreen h-full min-h-screen font-poppins '>
-      <a className='flex justify-between' href="/">
+      <a className='flex justify-between w-full' href="/">
         <img src={MezovestLogo} alt="Mezovest Logo" className='h-[40px]' />
         <div className='hidden md:flex'>
           <a href="mailto:hello@mezovest.com" className='flex cursor-pointer'>
