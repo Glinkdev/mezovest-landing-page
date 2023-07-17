@@ -96,7 +96,7 @@ function Navigator() {
 
                     <div className='hidden md:flex justify-between align-center w-3/6'>
                         <div className='relative'>
-                            <div className='flex' onClick={() => setOpenSubMenu(!openSubmenu)}>
+                            <div className='flex cursor-pointer' onClick={() => setOpenSubMenu(!openSubmenu)}>
                                 <p className="cursor-pointer font-bold text-sm">
                                     {"Solutions"}
                                 </p>
