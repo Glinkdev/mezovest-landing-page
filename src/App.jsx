@@ -10,6 +10,8 @@ import SecurePayment from "./pages/SecurePayment";
 import Invoicing from "./pages/Invoicing";
 import Loan from "./pages/Loan";
 import Supply from "./pages/Supply";
+import Collaboration from "./pages/Collaboration";
+import POS from "./pages/POS";
 
 
 function App() {
@@ -27,7 +29,9 @@ function App() {
         <Route path="/invoicing" element={<Invoicing />} />
         <Route path="/loan" element={<Loan />} />
         <Route path="/supply" element={<Supply />} />
-        {/* <Route path="/*" element={<NewHome />} /> */}
+        <Route path="/collaboration" element={<Collaboration />} />
+        <Route path="/pos" element={<POS />} />
+        <Route path="/*" element={<NewHome />} />
       </Routes>
     </Router>
   )

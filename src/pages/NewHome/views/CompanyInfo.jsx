@@ -27,7 +27,7 @@ function CompanyInfo() {
         },
     ]
     return (
-        <div className='py-7 md:pt-14 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins flex md:flex-row flex-col justify-between md:gap-28'>
+        <div className='py-7 md:pt-14 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins flex md:flex-row flex-col justify-between md:gap-28 max-w-[1400px] m-auto'>
             <div className='flex flex-col md:w-1/5'>
                 <img src={MezoVestLogo} className="max-w-[200px]" />
                 <p className='mt-10 md:text-sm whitespace-nowrap'>Sales: +234 706 323 1603</p>

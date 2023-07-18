@@ -45,6 +45,10 @@ function Navigator() {
                 {
                     name: "Payment Links",
                     route: "/payment"
+                },
+                {
+                    name: "POS",
+                    route: "/pos"
                 }
             ]
         },
@@ -76,11 +80,11 @@ function Navigator() {
             subItems: [
                 {
                     name: "Logistics",
-                    route: "/"
+                    route: "/collaboration"
                 },
                 {
                     name: "Supply Chain",
-                    route: "/"
+                    route: "/supply"
                 },
             ]
         }
