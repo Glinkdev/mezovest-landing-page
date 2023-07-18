@@ -30,13 +30,13 @@ function HeroSection() {
                             target="_blank"
                             rel="noopener noreferrer"
                             href="mailto:sales@mezovest.com"
-                            className='hidden md:flex p-4 md:px-8 justify-center items-center  bg-green mt-6 cursor-pointer'>
+                            className='w-full md:w-fit flex p-4 md:px-8 justify-center items-center  bg-green mt-6 cursor-pointer'>
                             <p className='whitespace-nowrap'>Request a POS terminal</p>
                         </a>
                     </div>
                 </div>
 
-                <div className='flex mt-20 md:mt-0 justify-end md:w-1/2 max-h-[400px] md:max-h-full right-0 absolute '>
+                <div className='flex mt-20 md:mt-0 justify-end md:w-1/2 max-h-[400px] md:max-h-full right-0 md:absolute '>
 
                     <img src={PaymentImage} alt="payment image" className='flex h-full md:-right-20' />
                 </div>

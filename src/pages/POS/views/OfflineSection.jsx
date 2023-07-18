@@ -20,7 +20,7 @@ function OfflineSection() {
     ]
 
     return (
-        <div className='py-7 md:pt-12 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
+        <div className='mt-[500px] md:mt-0 py-7 md:pt-12 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
             <div className='flex flex-col lg:flex-row w-full gap-10'>
                 <div className='flex flex-col md:w-1/2'>
                     {/* <div className='flex'>

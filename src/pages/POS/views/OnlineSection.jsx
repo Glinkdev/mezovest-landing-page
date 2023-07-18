@@ -34,17 +34,17 @@ function OnlineSection() {
     return (
         <div className='py-7 md:pt-20 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
             <div className='font-liquefier mt-6 flex flex-col'>
-                <span className='text-black text-6xl md:text-7xl md:text-[100px] font-normal  !leading-[3.75rem] lg:whitespace-nowrap'>Compatible with <span className='text-black'>Mezopay</span></span>
+                <span className='text-black text-6xl md:text-7xl md:text-[100px] font-normal  !leading-[3.75rem]'>Compatible with <span className='text-black'>Mezopay</span></span>
                 <br />
                 <span className='text-black text-6xl md:text-7xl md:text-[100px] font-normal !leading-[3.75rem]'><span className='text-green'>Business</span> to power your </span>
                 <br/>
                 <span className='text-black text-6xl md:text-7xl md:text-[100px] font-normal !leading-[3.75rem]'>whole business</span>
             </div>
-            <div className='flex flex-col-reverse flex-col lg:flex-row w-full mt-20 gap-20 justify-between'>
-                <div className='md:w-4/7 mt-10 md:mt-0 flex '>
+            <div className='flex flex-col lg:flex-row w-full mt-20 md:gap-20 justify-between'>
+                <div className='md:w-4/7 mt-10 md:mt-0 flex justify-center '>
                     <img src={MerchantImage} alt="mezo pay terminal" />
                 </div>
-                <div className='md:w-3/7'>
+                <div className='md:w-3/7 flex justify-center'>
                     <img src={PosImage} alt="mezo pay terminal" />
                 </div>
 

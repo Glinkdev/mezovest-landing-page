@@ -135,8 +135,13 @@ function Navigator() {
                             <a key={index} href={item.url} className="pointer font-bold text-sm">{item.name}</a>
                         ))}
                     </div>
-                    <a className="pointer font-bold text-sm flex">Get started <img src={RightArrowIcon} className="ml-2" />
-
+                    <a 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="mailto:sales@mezovest.com"
+                        className="pointer font-bold text-sm flex">
+                            Talk to sales 
+                        <img src={RightArrowIcon} className="ml-2" />
                     </a>
                 </div>
             </div>
