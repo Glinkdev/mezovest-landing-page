@@ -29,7 +29,7 @@ function Footer() {
     return (
         <div className='py-7 px-6 xl:px-36 !bg-black h-full min-h-fit font-poppins flex flex-col md:flex-row  text-white'>
             <div className='flex justify-between w-full'>
-                <p className='text-xs md:text-sm col-span-1'>© Copyright  2003 - {dt.getFullYear()} 2023 Mezovest Ind. Ltd.  </p>
+                <p className='text-xs md:text-sm col-span-1'>© Copyright  2003 - {dt.getFullYear()} Mezovest Ind. Ltd.  </p>
                 <p className='text-xs md:text-sm col-span-1'>Terms & Conditions  |   Privacy Policy </p>
                 
             </div>
