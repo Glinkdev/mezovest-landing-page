@@ -36,7 +36,7 @@ function HeroSection() {
                     </div>
                 </div>
 
-                <div className='flex mt-20 md:mt-0 justify-end md:w-1/2 max-h-[400px] md:max-h-full right-0 md:absolute '>
+                <div className='flex mt-20 md:mt-0 justify-center md:justify-end md:w-1/2 max-h-[400px] md:max-h-full right-0 md:absolute '>
 
                     <img src={PaymentImage} alt="payment image" className='flex h-full md:-right-20' />
                 </div>
