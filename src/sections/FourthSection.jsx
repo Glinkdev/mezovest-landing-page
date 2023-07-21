@@ -10,23 +10,23 @@ function FourthSection() {
         {
             title: "Accept Payments",
             description: "from your customers",
-            link: ""
+            link: "/payment"
         },
         {
             title: "Send money",
             description: "to over 1 million mezopay users and other banks",
-            link: ""
+            link: "/send"
         },
         {
             title: "Create a payment link",
             description: "for your customers to pay you with a single click",
-            link: ""
+            link: "/secure-payment"
         },
-        {
-            title: "Create storefront",
-            description: " to reach your online customers",
-            link: ""
-        }
+        // {
+        //     title: "Create storefront",
+        //     description: " to reach your online customers",
+        //     link: ""
+        // }
     ]
     return (
         <div className='py-7 md:pt-14 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
@@ -78,7 +78,7 @@ function FourthSection() {
                             <div className='flex mt-6 align-center' key={index}>
                                 <img src={RightArrowIcon} alt="right arrow icon" />
                                 <div className='flex flex-col sm:flex-row whitespace-break-spaces justify-center align-center'>
-                                    <a href="" className='text-xs md:text-sm justify-center items-center font-bold text-green text-underline ml-2 underline-offset-2 cursor-pointer underline whitespace-nowrap float-left'>{item?.title}</a>
+                                    <a href={item.link} className='text-xs md:text-sm justify-center items-center font-bold text-green text-underline ml-2 underline-offset-2 cursor-pointer underline whitespace-nowrap float-left'>{item?.title}</a>
                                     <span className='flex text-xs md:text-sm ml-2 text-black font-normal !no-underline underline-offset-0'>{item?.description}</span>
                                 </div>
 

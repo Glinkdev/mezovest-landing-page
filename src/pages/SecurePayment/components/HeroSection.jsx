@@ -42,7 +42,7 @@ function HeroSection() {
                                 rel="noopener noreferrer"
                                 href="mailto:sales@mezovest.com"
                                 className='flex p-4 md:px-8 justify-center items-center text-white mt-6 cursor-pointer border-2 border-white'>
-                                <p className='whitespace-nowrap'>Explore our products</p>
+                                <p className='whitespace-nowrap'>Talk to Sales</p>
                             </a>
                         </div>
                         <div className='flex gap-10 w-full overflow-x-scroll mt-10'>

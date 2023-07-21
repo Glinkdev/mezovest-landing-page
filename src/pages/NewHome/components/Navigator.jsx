@@ -95,7 +95,7 @@ function Navigator() {
     }
     return (
         <Styled>
-            <div className='flex justify-between  bg-green px-3 py-5 md:py-7 md:px-14 font-poppins w-full md:absolute mt-14 md:w-[80%]'>
+            <div className='flex justify-between  bg-green px-3 py-5 md:py-7 md:px-14 font-poppins w-full md:absolute mt-8 md:w-[80%]'>
                 <div className='flex justify-center md:justify-between w-full'>
 
                     <div className='hidden md:flex justify-between align-center w-3/6'>

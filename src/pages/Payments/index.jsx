@@ -15,7 +15,7 @@ function Payments() {
             <AcceptPayemntSection />
             <OfflineSection />
             <OnlineSection />
-            <ProcessSteps />
+            {/* <ProcessSteps /> */}
             <FaqSection />
             <CtaSection />
             <CompanyInfo />

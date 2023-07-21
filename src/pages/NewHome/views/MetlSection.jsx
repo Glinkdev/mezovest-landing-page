@@ -1,4 +1,5 @@
-import React, { useCallback } from 'react'
+import React, { useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
 import BlackStroke from "../../../assets/icons/black-stroke.svg";
 import MezoEnergyImage from "../../../assets/images/mezo-energy.svg";
 import RelaiabilityIcon from "../../../assets/icons/reliability-icon.svg";
@@ -11,6 +12,7 @@ import PearlLogo from "../../../assets/images/pearl-logo.svg";
 import ClientSlider from '../../../components/ClientSlider';
 
 function MetlSection() {
+    const navigate=useNavigate()
 
     const qualities = [
         {
@@ -30,6 +32,9 @@ function MetlSection() {
             icon: QualityIcon,
         }
     ]
+    const moveToReadMore = () => {
+        navigate("/customers")
+    }
     return (
         <div className='py-7 md:pt-36 pb-20 px-6 xl:px-36 h-full min-h-fit font-poppins !bg-[#F1F1F180]'>
 
@@ -73,7 +78,7 @@ function MetlSection() {
             </div>
 
 
-            <div className='flex align-center justify-between mt-12 md:mt-28'>
+            <div className='flex align-center justify-between mt-12 md:mt-28 max-w-[800px]'>
                 {qualities.map((item, index) => (
                     <div className='flex flex-col' key={index}>
                         <img src={item.icon} className="h-12 fill-green" />
@@ -83,7 +88,7 @@ function MetlSection() {
             </div>
 
             <div className='w-full flex flex-col md:flex-row mt-12 md:mt-28 flex'>
-                <span className='flex flex-col md:flex-row'>Discover how Mezoenergy helped businesses in the food industry. <span className='md:ml-2 text-green whitespace-nowrap flex '>Read more <img src={GreenArrowIcon} alt="right-icon" className='ml-2' /></span></span>
+                <span className='flex flex-col md:flex-row'>Discover how Mezoenergy helped businesses in the food industry. <span onClick={moveToReadMore} className='md:ml-2 text-green whitespace-nowrap flex cursor-pointer '>Read more <img src={GreenArrowIcon} alt="right-icon" className='ml-2' /></span></span>
             </div>
 
             <div className='w-full flex flex-col md:flex-row mt-12'>

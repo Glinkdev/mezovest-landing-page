@@ -29,7 +29,7 @@ function FitSection() {
 
     const showText = (e) => {
         if(showLongText.includes(e)){
-            const newList = showLongText.map((item)=> item.name  !== e )
+            const newList = showLongText.filter((item)=> {return item !== e})
             setShowLongText(newList)
             return
         }
@@ -49,7 +49,7 @@ function FitSection() {
                         <br />
                         <span className='text-green text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Infrastructure</span>
                         <br />
-                        <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Infrastructure</span>
+                        <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Technology</span>
                         <br />
                         <span className='text-2xl md:text-4xl'>(F.I.T)</span>
                     </div>

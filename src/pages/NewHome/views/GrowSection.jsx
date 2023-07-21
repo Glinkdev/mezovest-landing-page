@@ -1,20 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MezovestLogo from "../../../assets/icons/mezovest-white-logo.svg"
-//"../assets/images/mezovest-logo.svg";
+import { createModal } from "react-prompt-modal";
 import Navigator from '../components/Navigator';
 import HeroSection from '../components/HeroSection';
 import MezHeroImg from "../../../assets/icons/mez-hero-img.svg"
 import EmailIcon from "../../../assets/icons/email-icon.svg";
 import CallIcon from "../../../assets/icons/call-icon.svg";
+import MenuBar from "../../../assets/icons/mobile-menu-icon.svg";
+import MobileMenu from '../../../components/MobileMenu';
 
 
 function GrowSection() {
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
 
+  const handleAddToCart = () => {
+    const modal = createModal({
+      component: MobileMenu,
+    });
+    modal.open();
+  };
   return (
     <div className='h-full min-h-screen font-poppins flex flex-col md:flex-row '>
       <div className='py-7 md:pt-11 md:pb-36 px-6 xl:pl-36  !bg-darkGreen w-full md:w-1/2 flex flex-col'>
-        <a className='flex justify-between absolute top-10 w-screen left-0 px-6 xl:pl-36' href="/">
-          <img src={MezovestLogo} alt="Mezovest Logo" className='h-[40px]' />
+        <div className='flex justify-between absolute top-10 w-screen left-0 px-6 xl:pl-36' >
+          <a href="/" className='flex '>
+            <img src={MezovestLogo} alt="Mezovest Logo" className='h-[40px]' />
+          </a>
+
           <div className='hidden md:flex'>
             <a href="mailto:hello@mezovest.com" className='flex cursor-pointer'>
               <img src={EmailIcon} alt="mezovest email icon" />
@@ -31,8 +43,14 @@ function GrowSection() {
               </div>
             </a>
           </div>
-        </a>
-        <Navigator />
+          <div className='flex md:hidden' onClick={() => handleAddToCart()}>
+            <img src={MenuBar} alt="mezovest email icon" />
+          </div>
+        </div>
+        <div className='mt-8'>
+          <Navigator />
+        </div>
+
         <HeroSection />
 
       </div>

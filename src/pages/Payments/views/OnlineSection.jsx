@@ -8,28 +8,28 @@ function OnlineSection() {
         {
             title: "Accept Payments",
             description: "from your customers",
-            link: ""
+            link: "/payment"
         },
         {
             title: "Send money",
             description: "to over 1 million mezopay users and other banks",
-            link: ""
+            link: "/send"
         },
         {
             title: "Create a payment link",
             description: "for your customers to pay you with a single click",
-            link: ""
+            link: "/secure-payment"
         },
         {
             title: "Mezogateway",
             description: "to reach your online customers",
             link: ""
         },
-        {
-            title: "Create storefront",
-            description: " to reach your online customers",
-            link: ""
-        }
+        // {
+        //     title: "Create storefront",
+        //     description: " to reach your online customers",
+        //     link: ""
+        // }
     ]
     return (
         <div className='py-7 md:pt-20 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
@@ -53,7 +53,7 @@ function OnlineSection() {
                             <div className='flex mt-10 align-center' key={index}>
                                 <img src={RightArrowIcon} alt="right arrow icon" />
                                 <div className='flex whitespace-break-spaces justify-center'>
-                                    <a href="" className='text-xs md:text-sm justify-center items-center font-bold text-green text-underline ml-2 underline-offset-2 cursor-pointer underline whitespace-nowrap float-left'>{item?.title}</a>
+                                    <a href={item.link} className='text-xs md:text-sm justify-center items-center font-bold text-green text-underline ml-2 underline-offset-2 cursor-pointer underline whitespace-nowrap float-left'>{item?.title}</a>
                                     <span className='hidden md:flex text-xs md:text-sm ml-2 text-black font-normal !no-underline underline-offset-0'>{item?.description}</span>
                                     <br />
                                     <span className='flex md:hidden text-xs md:text-sm ml-2 text-black font-normal !no-underline underline-offset-0'>{item?.description}</span>
