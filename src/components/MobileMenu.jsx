@@ -26,7 +26,7 @@ function MobileMenu({ show, close, }) {
         },
         {
             name: "Blog",
-            url: "/customers"
+            url: "https://blog.mezovest.com"
         },
     ]
     const subMenu = [
