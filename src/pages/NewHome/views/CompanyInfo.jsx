@@ -49,41 +49,40 @@ function CompanyInfo() {
                 </div>
             </div>
             <div className='flex mt-8 md:mt-0 w-full justify-between md:w-2/5'>
-                <div className='w-1/3'>
-                    <p className='font-bold text-sm '>Products</p>
-                    <p className='mt-2 text-sm'>Mezopay</p>
-                    <p className='mt-2 text-sm'>Mezopay Business</p>
-                    <p className='mt-2 text-sm'>Mezogateway</p>
-                    <p className='mt-2 text-sm'>Storefront</p>
-                    <p className='mt-2 text-sm'>POS Terminals</p>
+                <div className='w-1/3 gap-10'>
+                    <p className='font-bold text-md '>Products</p>
+                    <p className='mt-6 text-sm mt-10'>Mezopay</p>
+                    <p className='mt-4 text-sm whitespace-nowrap'>Mezopay Business</p>
+                    <p className='mt-4 text-sm'>Mezogateway</p>
+                    <p className='mt-4 text-sm'>Storefront</p>
+                    <p className='mt-4 text-sm'>POS Terminals</p>
                 </div>
 
                 <div className='w-1/3'>
-                    <p className='font-bold text-sm'>Mezovest</p>
-                    <p className='mt-2 text-sm'>Mezo Energy</p>
-                    <p className='mt-2 text-sm'>Spatch</p>
+                    <p className='font-bold text-md'>Mezovest</p>
+                    <p className='mt-6 text-sm'>Mezo Energy</p>
+                    <p className='mt-4 text-sm'>Spatch</p>
                     <p className='font-bold text-sm mt-6'>Developers</p>
-                    <p className='mt-2 text-sm'>API Documentation</p>
-                    <p className='mt-2 text-sm'>API Integrations</p>
+                    <p className='mt-6 text-sm whitespace-nowrap'>API Documentation</p>
+                    <p className='mt-4 text-sm'>API Integrations</p>
                 </div>
             </div>
             <div className='flex mt-8 md:mt-0 w-full justify-between md:w-2/5'>
 
                 <div className='w-1/3'>
-                    <p className='font-bold text-sm'>Industry Plays</p>
-                    <p className='mt-2 text-sm'>Transportation</p>
-                    <p className='mt-2 text-sm'>Energy - LPG</p>
-                    <p className='mt-2 text-sm'>Food & Beaverage</p>
-                    <p className='mt-2 text-sm'>Finance</p>
+                    <p className='font-bold text-md whitespace-nowrap'>Why Mezovest</p>
+                    <p className='mt-6 text-sm whitespace-nowrap'>Why choose Mezovest</p>
+                    <p className='mt-4 text-sm'>Testimonials</p>
+                    <p className='mt-4 text-sm'>For Restaurants</p>
+                    <p className='mt-4 text-sm'>For Cooking Gas Vendors</p>
                 </div>
 
                 <div className='w-1/3'>
-                    <p className='font-bold text-sm'>Company</p>
-                    <p className='mt-2 text-sm'>About Us</p>
-                    <p className='mt-2 text-sm'>News</p>
-                    <p className='mt-2 text-sm'>Community</p>
-                    <p className='mt-2 text-sm'>Leadership</p>
-                    <p className='mt-2 text-sm'>Careers</p>
+                    <p className='font-bold text-md'>Company</p>
+                    <p className='mt-6 text-sm'>About Us</p>
+                    <p className='mt-4 text-sm'>Blog</p>
+                    <p className='mt-4 text-sm'>Community</p>
+                    <p className='mt-4 text-sm'>Careers</p>
                 </div>
 
             </div>

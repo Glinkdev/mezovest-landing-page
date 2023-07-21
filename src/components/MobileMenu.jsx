@@ -16,10 +16,10 @@ function MobileMenu({ show, close, }) {
             name: "Support",
             url: "/customers"
         },
-        {
-            name: "Pricing",
-            url: "/payment"
-        },
+        // {
+        //     name: "Pricing",
+        //     url: "/payment"
+        // },
         {
             name: "About us",
             url: "/customers"
@@ -80,11 +80,11 @@ function MobileMenu({ show, close, }) {
             subItems: [
                 {
                     name: "Logistics",
-                    route: "/collaboration"
+                    route: "/logistics"
                 },
                 {
                     name: "Supply Chain",
-                    route: "/supply"
+                    route: "/supply-chain"
                 },
             ]
         }

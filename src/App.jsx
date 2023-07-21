@@ -28,8 +28,8 @@ function App() {
         <Route path="/secure-payment" element={<SecurePayment />} />
         <Route path="/invoicing" element={<Invoicing />} />
         <Route path="/loan" element={<Loan />} />
-        <Route path="/supply" element={<Supply />} />
-        <Route path="/collaboration" element={<Collaboration />} />
+        <Route path="/supply-chain" element={<Supply />} />
+        <Route path="/logistics" element={<Collaboration />} />
         <Route path="/pos" element={<POS />} />
         <Route path="/*" element={<NewHome />} />
       </Routes>

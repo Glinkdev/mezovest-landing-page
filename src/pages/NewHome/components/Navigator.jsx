@@ -16,17 +16,17 @@ function Navigator() {
             name: "Support",
             url: "/customers"
         },
-        {
-            name: "Pricing",
-            url: "/payment"
-        },
+        // {
+        //     name: "Pricing",
+        //     url: "/payment"
+        // },
         {
             name: "About us",
             url: "/customers"
         },
         {
             name: "Blog",
-            url: "/customers"
+            url: "https://blog.mezovest.com"
         },
     ]
     const subMenu = [
@@ -80,11 +80,11 @@ function Navigator() {
             subItems: [
                 {
                     name: "Logistics",
-                    route: "/collaboration"
+                    route: "/logistics"
                 },
                 {
                     name: "Supply Chain",
-                    route: "/supply"
+                    route: "/supply-chain"
                 },
             ]
         }
