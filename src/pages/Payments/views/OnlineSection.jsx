@@ -23,7 +23,7 @@ function OnlineSection() {
         {
             title: "Mezogateway",
             description: "to reach your online customers",
-            link: ""
+            link: "http://mezovest.com/mezogateway"
         },
         // {
         //     title: "Create storefront",
@@ -46,7 +46,7 @@ function OnlineSection() {
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none'>For <span className='text-green'>Online</span></h5>
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none '>Customers</h5>
                     </div>
-                    <p className='text-sm mt-8'>One platform that lets you sell wherever your customers are — online, anywhere in the world, and everywhere in-between.</p>
+                    <p className='text-sm mt-8'>Our solution that lets you sell wherever your customers are online anywhere in the world</p>
 
                     <div className='flex flex-col mt-6'>
                         {features.map((item, index) => (
