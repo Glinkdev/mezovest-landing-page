@@ -22,7 +22,7 @@ function GrowSection() {
   return (
     <div className='h-full min-h-screen font-poppins flex flex-col md:flex-row '>
       <div className='py-7 md:pt-11 md:pb-36 px-6 xl:pl-36  !bg-darkGreen w-full md:w-1/2 flex flex-col'>
-        <div className='flex justify-between absolute top-10 w-[90%] left-0 px-6 xl:pl-36 m-auto' >
+        <div className='flex justify-between md:absolute top-10 w-full md:w-[90%] left-0 px-6 xl:pl-36 m-auto' >
           <a href="/" className='flex '>
             <img src={MezovestLogo} alt="Mezovest Logo" className='h-[40px]' />
           </a>
@@ -47,7 +47,7 @@ function GrowSection() {
             <img src={MenuBar} alt="mezovest email icon" />
           </div>
         </div>
-        <div className='mt-8 absolute w-[81%]'>
+        <div className='mt-2 md:mt-8 md:absolute w-full md:w-[81%]'>
           <Navigator />
         </div>
 
