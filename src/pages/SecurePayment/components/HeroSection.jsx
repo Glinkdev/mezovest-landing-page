@@ -14,8 +14,8 @@ function HeroSection() {
     const PaymentLogos = [SSlogo, Tlogo, Tasteelogo, Pearllogo, RollingGrilllogo, Jaylogo, GeorgeLogo]
     return (
         <>
-            <div className='flex flex-col md:flex-row md:mt-20 w-full relative'>
-                <div className='flex flex-col lg:flex-row mt-10 md:mt-20 xl:mt-36 justify-between relative w-full gap-8'>
+            <div className='flex flex-col md:flex-row  w-full relative'>
+                <div className='flex flex-col lg:flex-row mt-10 md:mt-14 justify-between relative w-full gap-8'>
                     <div className='flex-col w-full md:w-3/5'>
                         <div className='flex'>
                             <img src={GreenStroke} alt="green stroke" />

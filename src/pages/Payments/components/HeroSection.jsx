@@ -1,5 +1,5 @@
 import React from 'react';
-import PaymentImage from "../../../assets/images/phone-mockup.png";
+import PaymentImage from "../../../assets/images/phone-mockup.svg";
 import GreenStroke from "../../../assets/icons/green-stroke.svg";
 import SSlogo from "../../../assets/icons/ss-logo-white.svg";
 import Tlogo from "../../../assets/icons/t-white-icon.svg";
@@ -12,8 +12,8 @@ import GeorgeLogo from "../../../assets/icons/george-white-icon.svg";
 function HeroSection() {
     const PaymentLogos = [SSlogo, Tlogo, Tasteelogo, Pearllogo, RollingGrilllogo, Jaylogo, GeorgeLogo]
     return (
-        <div className='flex flex-col md:flex-row md:mt-20'>
-            <div className='flex flex-col lg:flex-row mt-10 md:mt-20 xl:mt-36 justify-between relative'>
+        <div className='flex flex-col md:flex-row '>
+            <div className='flex flex-col lg:flex-row mt-10 xl:mt-14 justify-between relative'>
                 <div className='flex-col w-full md:w-3/5'>
                     <div className='flex'>
                         <img src={GreenStroke} alt="green stroke" />
@@ -52,8 +52,8 @@ function HeroSection() {
 
                 </div>
 
-                <div className='flex mt-20 md:mt-0 justify-start md:w-2/5 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden'>
-                    <img src={PaymentImage} alt="payment image" className='flex h-full  lg:absolute md:-bottom-[130px] md:-right-20 md:h-[667px]' />
+                <div className='flex mt-20 md:mt-0 justify-end md:w-2/5 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden'>
+                    <img src={PaymentImage} alt="payment image" className='flex h-full md:-bottom-[130px] md:-right-20 md:h-[667px]' />
                 </div>
                 
 

@@ -12,8 +12,8 @@ import PaymentImage from "../../../assets/images/supply-image.svg"
 function HeroSection() {
     const PaymentLogos = [SSlogo, Tlogo, Tasteelogo, Pearllogo, RollingGrilllogo, Jaylogo, GeorgeLogo]
     return (
-        <div className='flex flex-col md:flex-row md:mt-20 w-full'>
-            <div className='flex flex-col lg:flex-row mt-10 md:mt-20 xl:mt-36 justify-between relative w-full'>
+        <div className='flex flex-col md:flex-row  w-full'>
+            <div className='flex flex-col lg:flex-row mt-10 md:mt-14 justify-between relative w-full'>
                 <div className='flex-col w-full md:w-1/2'>
                     <div className='flex'>
                         <img src={GreenStroke} alt="green stroke" />
@@ -52,7 +52,7 @@ function HeroSection() {
 
                 </div>
 
-                <div className='flex mt-20 md:mt-0 justify-start md:w-1/2 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden'>
+                <div className='flex mt-20 md:mt-0 justify-end md:w-1/2 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden'>
 
                     <img src={PaymentImage} alt="payment image" className='flex h-full md:-right-20' />
                 </div>
