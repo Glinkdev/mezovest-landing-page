@@ -62,7 +62,7 @@ function MezoEnergy() {
                         LPG value chain.
                     </p>
 
-                    <div className='flex align-center justify-between mt-9 max-w-[1000px]'>
+                    <div className='flex align-center justify-between mt-9 max-w-[1000px] m-auto'>
                         {qualities.map((item, index) => (
                             <div className='flex flex-col' key={index}>
                                 <img src={item.icon} className="h-9" />

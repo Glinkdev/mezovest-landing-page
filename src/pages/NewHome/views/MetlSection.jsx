@@ -78,7 +78,7 @@ function MetlSection() {
             </div>
 
 
-            <div className='flex align-center justify-between mt-12 md:mt-28 max-w-[800px]'>
+            <div className='flex align-center justify-between mt-12 md:mt-28 max-w-[800px] m-auto'>
                 {qualities.map((item, index) => (
                     <div className='flex flex-col' key={index}>
                         <img src={item.icon} className="h-12 fill-green" />
