@@ -6,36 +6,56 @@ function FaqSection() {
     const leftFaq = [
         {
             key:"pay",
-            heading: "How does your gas supply ensure consistency and reliability?",
-            moreDetails: "We have established strategic partnerships and operate Micro-distribution Centers (MDCs) in key locations, allowing us to meet the demand for gas consistently. Our robust supply chain ensures reliable and timely delivery, minimizing any disruptions to your business operations."
+            heading: "How reliable is Mezovest's logistics solution?",
+            moreDetails: "Mezovest is committed to providing reliable logistics services. We have a track record of delivering goods safely and on time, ensuring customer satisfaction."
         },
         {
             key: "accept",
-            heading: "What measures do you have in place to maintain the quality and safety of the gas supplied?",
-            moreDetails: "We adhere to strict quality control standards and regulatory requirements to ensure the gas supplied is of the highest quality and safety. Our supply chain includes thorough monitoring, testing, and maintenance procedures to ensure compliance and customer satisfaction."
+            heading: "What regions does Mezovest cover for its logistics services?",
+            moreDetails: "We have an extensive network that covers Lagos for now."
         },
         {
             key: "method",
-            heading: "What payment methods are supported?",
-            moreDetails: "We support a wide range of payment methods, including credit cards, debit cards, mobile wallets, and online banking, ensuring convenience for both you and your customers."
+            heading: "Can Mezovest handle both small and large-scale logistics operations?",
+            moreDetails: "Absolutely! Mezovest caters to businesses of all sizes. Whether you need to transport a single item or manage a large-scale logistics operation, we have the capacity and expertise to handle it."
+        },
+        {
+            key: "acpt",
+            heading: "How can I track my shipments with Mezovest's logistics solution?",
+            moreDetails: "We provide a user-friendly tracking system that allows you to monitor the progress of your shipments in real-time. You can easily access tracking information through our online platform or mobile app."
+        },
+        {
+            key: "mhod",
+            heading: "Are there any insurance options available for goods transported through Mezovest's logistics services?",
+            moreDetails: "Mezovest offers insurance options to protect your goods during transportation. Our team can provide you with details and assist you in choosing the appropriate coverage for your specific needs."
         },
     ]
 
     const rightFaq = [
         {
             key:"speed",
-            heading: "How can I be assured of fair and competitive pricing for the gas supplied?",
-            moreDetails: "We strive to offer competitive pricing for our gas supply, considering market conditions and industry standards. Our transparent pricing policy ensures you receive fair rates for the gas you purchase, allowing you to manage your costs effectively."
+            heading: "What safety measures does Mezovest have in place to ensure the security of transported goods?",
+            moreDetails: "We prioritize the safety and security of goods entrusted to us. Mezovest implements strict security protocols, including proper packaging, tracking systems, and trained personnel, to ensure the safe delivery of your goods."
         },
         {
             key: "fees",
-            heading: "AWhat happens in the event of an emergency or supply disruption?",
-            moreDetails: "We have contingency plans in place to address emergencies and supply disruptions. Our dedicated team is available to handle any unforeseen situations promptly, ensuring minimal impact on your business and swift resolution of the issue."
+            heading: "Can Mezovest handle specialized logistics requirements, such as temperature-controlled or fragile goods?",
+            moreDetails: "Yes, Mezovest is equipped to handle specialized logistics requirements. We have experience in transporting temperature-controlled items, fragile goods, and other specialized cargo. Please let us know your specific needs, and we will tailor our services accordingly."
         },
         {
             key: "integration",
-            heading: "Can I track the status of my gas supply and receive updates on deliveries?",
-            moreDetails: "Yes, we provide real-time tracking and regular updates on the status of your gas supply and deliveries. Our advanced logistics system allows you to stay informed and plan your operations accordingly, enhancing visibility and convenience."
+            heading: "What is Mezovest's approach to customer service in the logistics sector?",
+            moreDetails: "Customer satisfaction is at the heart of our operations. We strive to provide excellent customer service by promptly addressing inquiries, providing regular updates, and ensuring a smooth logistics experience for our clients."
+        },
+        {
+            key: "aept",
+            heading: "How can I request a logistics service from Mezovest?",
+            moreDetails: "Requesting a logistics service is simple. You can reach out to our dedicated customer support team through our website or contact our logistics department directly. We will guide you through the process and ensure a seamless experience."
+        },
+        {
+            key: "ethod",
+            heading: "What sets Mezovest apart from other logistics service providers?",
+            moreDetails: "Mezovest stands out due to our commitment to reliability, customer-centric approach, extensive network, and ability to handle various logistics requirements. We aim to exceed customer expectations and establish long-term partnerships based on trust and exceptional service."
         },
     ]
 
@@ -77,11 +97,11 @@ function FaqSection() {
                         return (
                             <div className={`${index === 0 ? "border-t border-b": ""} py-7 border-b border-black`} key={index}>
                                 <div className='flex justify-between text-base'>
-                                    <span className="font-bold text-xl w-4/5">{item.heading}</span>
+                                    <span className="font-bold text-md w-4/5">{item.heading}</span>
                                     <span className='font-bold text-xl cursor-pointer w-1/5 text-end' onClick={() => showLeftText(item.heading)}>{!showLongDetails ? "+" : "-"}</span>
                                 </div>
                                 {showLongDetails && (
-                                    <p className='mt-4 text-lg'>{item.moreDetails}</p>
+                                    <p className='mt-4 text-md'>{item.moreDetails}</p>
                                 )}
                             </div>
                         )
@@ -93,11 +113,11 @@ function FaqSection() {
                         return (
                             <div className={`${index === 0 ? "md:border-t md:border-b": ""} py-7 border-b border-black`} key={index}>
                                 <div className='flex justify-between text-base'>
-                                    <span className="font-bold text-xl w-4/5">{item.heading}</span>
+                                    <span className="font-bold text-md w-4/5">{item.heading}</span>
                                     <span className='font-bold text-xl cursor-pointer w-1/5 text-end' onClick={() => showRightText(item.heading)}>{!showLongDetails ? "+" : "-"}</span>
                                 </div>
                                 {showLongDetails && (
-                                    <p className='mt-4 text-lg'>{item.moreDetails}</p>
+                                    <p className='mt-4 text-md'>{item.moreDetails}</p>
                                 )}
                             </div>
                         )
