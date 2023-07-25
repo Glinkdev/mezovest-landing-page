@@ -1,5 +1,5 @@
 import React from 'react';
-import ProcessStepImage from "../../../assets/images/loan-process-steps.svg";
+import ProcessStepImage from "../../../assets/images/loan-money-process-steps.svg";
 
 function ProcessSteps() {
     return (
@@ -12,7 +12,7 @@ function ProcessSteps() {
                 </div>
 
             </div>
-            <div className='py-7 md:pt-20 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins overflow-x-scroll max-w-screen'>
+            <div className='py-7 md:pt-20 pb-20 pl-6 xl:pl-36 !bg-white h-full min-h-fit font-poppins overflow-x-scroll max-w-screen'>
 
                 <img src={ProcessStepImage} className="w-full min-w-[800px]  " />
 
