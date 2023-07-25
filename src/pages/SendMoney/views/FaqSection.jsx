@@ -6,36 +6,56 @@ function FaqSection() {
     const leftFaq = [
         {
             key:"pay",
-            heading: "Is your payment solution secure?",
-            moreDetails: "Absolutely! We prioritize the security of your transactions and utilize industry-standard encryption protocols to safeguard your sensitive information."
+            heading: "Is Mezovest a secure platform for sending money?",
+            moreDetails: "Absolutely! Mezovest prioritizes the security of your transactions. We employ robust encryption and authentication measures to ensure that your money is sent safely and securely."
         },
         {
             key: "accept",
-            heading: "Can I accept payments from customers across different locations?",
-            moreDetails: "Yes, our payment solution allows you to accept payments from customers nationwide, regardless of their location."
+            heading: "How reliable is Mezovest for sending money to partners?",
+            moreDetails: "Mezovest is built on a reliable infrastructure that guarantees seamless and efficient money transfers. Our platform is designed to provide a dependable experience for businesses when sending funds to their partners."
         },
         {
             key: "method",
-            heading: "What payment methods are supported?",
-            moreDetails: "We support a wide range of payment methods, including credit cards, debit cards, mobile wallets, and online banking, ensuring convenience for both you and your customers."
+            heading: "Can I trust Mezovest with large or frequent money transfers?",
+            moreDetails: "Absolutely! Mezovest is designed to handle transactions of all sizes, including large or frequent money transfers. You can trust us to facilitate your financial transactions with reliability and efficiency."
+        },
+        {
+            key: "accet",
+            heading: "What payment methods are available for sending money with Mezovest?",
+            moreDetails: "Mezovest supports various payment methods, including bank transfers and digital wallets. You have the flexibility to choose the most convenient option for sending money to your partners."
+        },
+        {
+            key: "metho",
+            heading: "How long does it take for the recipient to receive the money?",
+            moreDetails: "The speed of money transfers with Mezovest depends on factors such as the recipient's bank processing time. However, we strive to ensure that your funds are delivered in a timely manner to your partners."
         },
     ]
 
     const rightFaq = [
         {
             key:"speed",
-            heading: "How quickly will I receive customer payments?",
-            moreDetails: "You can expect fast and reliable settlement times, with funds typically deposited into your account within a specified timeframe, ensuring smooth cash flow for your business."
+            heading: "Can I track the status of my money transfers on Mezovest?",
+            moreDetails: "Yes, Mezovest provides a comprehensive transaction history and tracking feature. You can easily monitor the progress of your money transfers, giving you peace of mind and transparency."
         },
         {
             key: "fees",
-            heading: "Are there any hidden fees or additional charges?",
-            moreDetails: "We believe in transparency, and our pricing structure is designed to be clear and straightforward. We provide you with a breakdown of all applicable fees, so you know exactly what to expect."
+            heading: "Are there any hidden fees or additional charges when sending money with Mezovest?",
+            moreDetails: "Mezovest believes in transparent pricing. We provide a clear fee structure, ensuring that you are aware of any charges associated with your money transfers. No hidden fees, just honest and upfront pricing."
         },
         {
             key: "integration",
-            heading: "Can I integrate your payment solution with my existing business systems?",
-            moreDetails: "Yes, our payment solution is designed to be easily integrated with various business systems, such as e-commerce platforms, point-of-sale (POS) systems, and accounting software, allowing for seamless operations."
+            heading: "What if there is an issue or discrepancy with a money transfer?",
+            moreDetails: "Our dedicated customer support team is available to assist you with any issues or discrepancies you may encounter. We are committed to resolving any concerns and ensuring a smooth money transfer experience."
+        },
+        {
+            key: "fee",
+            heading: "Can Mezovest help with international money transfers?",
+            moreDetails: "Absolutely! Mezovest supports both domestic and international money transfers, allowing you to send funds to your partners across borders. We make cross-border transactions simple and reliable."
+        },
+        {
+            key: "intion",
+            heading: "How can Mezovest benefit my business in the long run?",
+            moreDetails: "By utilizing Mezovest's secure and reliable money transfer solution, you can streamline your financial processes, enhance your business relationships, and ensure prompt payments to your partners. We are here to support your financial needs every step of the way."
         },
     ]
 
@@ -77,11 +97,11 @@ function FaqSection() {
                         return (
                             <div className={`${index === 0 ? "border-t border-b": ""} py-7 border-b border-black`} key={index}>
                                 <div className='flex justify-between text-base'>
-                                    <span className="font-bold text-xl w-4/5">{item.heading}</span>
+                                    <span className="font-bold text-md w-4/5">{item.heading}</span>
                                     <span className='font-bold text-xl cursor-pointer w-1/5 text-end' onClick={() => showLeftText(item.heading)}>{!showLongDetails ? "+" : "-"}</span>
                                 </div>
                                 {showLongDetails && (
-                                    <p className='mt-4 text-lg'>{item.moreDetails}</p>
+                                    <p className='mt-4 text-md'>{item.moreDetails}</p>
                                 )}
                             </div>
                         )
@@ -93,11 +113,11 @@ function FaqSection() {
                         return (
                             <div className={`${index === 0 ? "md:border-t md:border-b": ""} py-7 border-b border-black`} key={index}>
                                 <div className='flex justify-between text-base'>
-                                    <span className="font-bold text-xl w-4/5">{item.heading}</span>
+                                    <span className="font-bold text-md w-4/5">{item.heading}</span>
                                     <span className='font-bold text-xl cursor-pointer w-1/5 text-end' onClick={() => showRightText(item.heading)}>{!showLongDetails ? "+" : "-"}</span>
                                 </div>
                                 {showLongDetails && (
-                                    <p className='mt-4 text-lg'>{item.moreDetails}</p>
+                                    <p className='mt-4 text-md'>{item.moreDetails}</p>
                                 )}
                             </div>
                         )

@@ -6,36 +6,56 @@ function FaqSection() {
     const leftFaq = [
         {
             key:"pay",
-            heading: "Is your payment solution secure?",
-            moreDetails: "Absolutely! We prioritize the security of your transactions and utilize industry-standard encryption protocols to safeguard your sensitive information."
+            heading: "How secure are payment links with Mezovest?",
+            moreDetails: "Mezovest prioritizes the security of your transactions. Our payment links utilize industry-standard encryption and security measures to ensure the safety of your payments. You can trust that your financial information is protected."
         },
         {
             key: "accept",
-            heading: "Can I accept payments from customers across different locations?",
-            moreDetails: "Yes, our payment solution allows you to accept payments from customers nationwide, regardless of their location."
+            heading: "Can I trust Mezovest's payment links for receiving payments?",
+            moreDetails: "Absolutely! Mezovest's payment links are designed to provide a reliable and hassle-free payment experience. We have implemented robust systems and protocols to ensure seamless and secure transactions for both businesses and customers."
         },
         {
             key: "method",
-            heading: "What payment methods are supported?",
-            moreDetails: "We support a wide range of payment methods, including credit cards, debit cards, mobile wallets, and online banking, ensuring convenience for both you and your customers."
+            heading: "Are there any hidden fees or charges associated with using Mezovest's payment links?",
+            moreDetails: "Mezovest believes in transparency. We provide clear information about our fees and charges, so you can make informed decisions. You can trust that our pricing is fair, upfront, and competitive."
+        },
+        {
+            key: "acept",
+            heading: "How quickly will I receive payments through Mezovest's payment links?",
+            moreDetails: "The speed of payment processing depends on various factors, including the payment method used and the bank's processing times. However, Mezovest strives to facilitate swift payment transfers, ensuring you receive your funds in a timely manner."
+        },
+        {
+            key: "mthod",
+            heading: "What happens if there is an issue with a payment made through a Mezovest payment link?",
+            moreDetails: "Our dedicated customer support team is here to assist you. If you encounter any issues or have concerns about a payment made through our platform, we will work diligently to resolve them and ensure your satisfaction."
         },
     ]
 
     const rightFaq = [
         {
             key:"speed",
-            heading: "How quickly will I receive customer payments?",
-            moreDetails: "You can expect fast and reliable settlement times, with funds typically deposited into your account within a specified timeframe, ensuring smooth cash flow for your business."
+            heading: "Can Mezovest support international payments through payment links?",
+            moreDetails: "Yes! Mezovest enables seamless international payments through our payment links. Whether you have customers or partners overseas, our platform allows you to request and receive payments internationally."
         },
         {
             key: "fees",
-            heading: "Are there any hidden fees or additional charges?",
-            moreDetails: "We believe in transparency, and our pricing structure is designed to be clear and straightforward. We provide you with a breakdown of all applicable fees, so you know exactly what to expect."
+            heading: "How can Mezovest's payment links benefit my business?",
+            moreDetails: "Mezovest's payment links offer convenience, efficiency, and a professional payment solution for your business. By using our links, you can streamline your payment processes, improve cash flow, and provide a seamless payment experience for your customers."
         },
         {
             key: "integration",
-            heading: "Can I integrate your payment solution with my existing business systems?",
-            moreDetails: "Yes, our payment solution is designed to be easily integrated with various business systems, such as e-commerce platforms, point-of-sale (POS) systems, and accounting software, allowing for seamless operations."
+            heading: "Is it easy to set up and use Mezovest's payment links?",
+            moreDetails: "Response: Absolutely! Mezovest has designed our platform to be user-friendly and intuitive. Setting up and using our payment links is simple and straightforward, allowing you to start accepting payments with ease."
+        },
+        {
+            key: "fes",
+            heading: "Can I customize Mezovest's payment links to match my brand?",
+            moreDetails: "Yes! Mezovest understands the importance of branding. You can customize your payment links with your brand name, providing a professional and consistent brand experience for your customers."
+        },
+        {
+            key: "intetion",
+            heading: "What if my customers are hesitant to use payment links?",
+            moreDetails: "We understand that some customers may have reservations about new payment methods. We recommend educating your customers about the security and convenience of Mezovest's payment links. Once they see the benefits, they will feel more confident in using this reliable payment solution."
         },
     ]
 
@@ -77,11 +97,11 @@ function FaqSection() {
                         return (
                             <div className={`${index === 0 ? "border-t border-b": ""} py-7 border-b border-black`} key={index}>
                                 <div className='flex justify-between text-base'>
-                                    <span className="font-bold text-xl w-4/5">{item.heading}</span>
+                                    <span className="font-bold text-md w-4/5">{item.heading}</span>
                                     <span className='font-bold text-xl cursor-pointer w-1/5 text-end' onClick={() => showLeftText(item.heading)}>{!showLongDetails ? "+" : "-"}</span>
                                 </div>
                                 {showLongDetails && (
-                                    <p className='mt-4 text-lg'>{item.moreDetails}</p>
+                                    <p className='mt-4 text-md'>{item.moreDetails}</p>
                                 )}
                             </div>
                         )
@@ -93,11 +113,11 @@ function FaqSection() {
                         return (
                             <div className={`${index === 0 ? "md:border-t md:border-b": ""} py-7 border-b border-black`} key={index}>
                                 <div className='flex justify-between text-base'>
-                                    <span className="font-bold text-xl w-4/5">{item.heading}</span>
+                                    <span className="font-bold text-md w-4/5">{item.heading}</span>
                                     <span className='font-bold text-xl cursor-pointer w-1/5 text-end' onClick={() => showRightText(item.heading)}>{!showLongDetails ? "+" : "-"}</span>
                                 </div>
                                 {showLongDetails && (
-                                    <p className='mt-4 text-lg'>{item.moreDetails}</p>
+                                    <p className='mt-4 text-md'>{item.moreDetails}</p>
                                 )}
                             </div>
                         )

@@ -6,36 +6,56 @@ function FaqSection() {
     const leftFaq = [
         {
             key:"pay",
-            heading: "Is your payment solution secure?",
-            moreDetails: "Absolutely! We prioritize the security of your transactions and utilize industry-standard encryption protocols to safeguard your sensitive information."
+            heading: "Is Mezovest a reliable payment solution?",
+            moreDetails: "Absolutely! Mezovest is built on a robust and secure platform that ensures seamless and reliable payment processing for businesses. We prioritize the trust and satisfaction of our customers."
         },
         {
             key: "accept",
-            heading: "Can I accept payments from customers across different locations?",
-            moreDetails: "Yes, our payment solution allows you to accept payments from customers nationwide, regardless of their location."
+            heading: "How secure is Mezovest for accepting payments?",
+            moreDetails: "Security is our top priority. Mezovest employs advanced encryption and data protection measures to safeguard sensitive payment information. Your customers can feel confident that their transactions are secure."
         },
         {
             key: "method",
-            heading: "What payment methods are supported?",
-            moreDetails: "We support a wide range of payment methods, including credit cards, debit cards, mobile wallets, and online banking, ensuring convenience for both you and your customers."
+            heading: "Can I integrate Mezovest with my existing business systems?",
+            moreDetails: "Yes, Mezovest offers easy integration with various POS systems, websites, and mobile apps. Our dedicated support team is available to assist you throughout the integration process."
+        },
+        {
+            key: "acept",
+            heading: "What payment methods does Mezovest support?",
+            moreDetails: "Mezovest supports a wide range of payment methods, including debit cards, credit cards, mobile wallets, and bank transfers. We aim to provide your customers with a convenient and flexible payment experience."
+        },
+        {
+            key: "mhod",
+            heading: "How long does it take for funds to be deposited into my account?",
+            moreDetails: "With Mezovest, funds are typically deposited into your account within a few minutes. We strive to ensure timely and efficient settlements for your transactions."
         },
     ]
 
     const rightFaq = [
         {
             key:"speed",
-            heading: "How quickly will I receive customer payments?",
-            moreDetails: "You can expect fast and reliable settlement times, with funds typically deposited into your account within a specified timeframe, ensuring smooth cash flow for your business."
+            heading: "Can I track and reconcile my transactions with Mezovest?",
+            moreDetails: "Yes, Mezovest provides comprehensive transaction reporting and reconciliation tools. You can easily track and manage your payments, ensuring accurate record-keeping for your business."
         },
         {
             key: "fees",
-            heading: "Are there any hidden fees or additional charges?",
-            moreDetails: "We believe in transparency, and our pricing structure is designed to be clear and straightforward. We provide you with a breakdown of all applicable fees, so you know exactly what to expect."
+            heading: "What if I encounter any issues or need support with Mezovest?",
+            moreDetails: "We have a dedicated customer support team available to assist you with any questions or concerns you may have. Simply reach out to us, and we'll be happy to provide the support you need."
         },
         {
             key: "integration",
-            heading: "Can I integrate your payment solution with my existing business systems?",
-            moreDetails: "Yes, our payment solution is designed to be easily integrated with various business systems, such as e-commerce platforms, point-of-sale (POS) systems, and accounting software, allowing for seamless operations."
+            heading: "Are there any hidden fees or additional charges with Mezovest?",
+            moreDetails: "Transparency is important to us. Mezovest offers competitive pricing with no hidden fees. Our fee structure is clear and straightforward, ensuring you know exactly what to expect."
+        },
+        {
+            key: "fes",
+            heading: "Can Mezovest help me with chargebacks or disputes?",
+            moreDetails: "Yes, Mezovest provides dispute resolution services to help you navigate chargebacks or customer disputes. We work closely with you to ensure fair and timely resolutions."
+        },
+        {
+            key: "ingration",
+            heading: "How can Mezovest benefit my business in the long term?",
+            moreDetails: "By leveraging Mezovest, you can enhance your customers' payment experience, increase sales, and streamline your financial processes. Our reliable and user-friendly solution helps you focus on growing your business with peace of mind."
         },
     ]
 
@@ -77,11 +97,11 @@ function FaqSection() {
                         return (
                             <div className={`${index === 0 ? "border-t border-b": ""} py-7 border-b border-black`} key={index}>
                                 <div className='flex justify-between text-base'>
-                                    <span className="font-bold text-xl w-4/5">{item.heading}</span>
+                                    <span className="font-bold text-md w-4/5">{item.heading}</span>
                                     <span className='font-bold text-xl cursor-pointer w-1/5 text-end' onClick={() => showLeftText(item.heading)}>{!showLongDetails ? "+" : "-"}</span>
                                 </div>
                                 {showLongDetails && (
-                                    <p className='mt-4 text-lg'>{item.moreDetails}</p>
+                                    <p className='mt-4 text-md'>{item.moreDetails}</p>
                                 )}
                             </div>
                         )
@@ -93,11 +113,11 @@ function FaqSection() {
                         return (
                             <div className={`${index === 0 ? "md:border-t md:border-b": ""} py-7 border-b border-black`} key={index}>
                                 <div className='flex justify-between text-base'>
-                                    <span className="font-bold text-xl w-4/5">{item.heading}</span>
+                                    <span className="font-bold text-md w-4/5">{item.heading}</span>
                                     <span className='font-bold text-xl cursor-pointer w-1/5 text-end' onClick={() => showRightText(item.heading)}>{!showLongDetails ? "+" : "-"}</span>
                                 </div>
                                 {showLongDetails && (
-                                    <p className='mt-4 text-lg'>{item.moreDetails}</p>
+                                    <p className='mt-4 text-md'>{item.moreDetails}</p>
                                 )}
                             </div>
                         )
