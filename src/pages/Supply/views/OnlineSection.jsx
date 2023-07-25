@@ -35,16 +35,16 @@ function OnlineSection() {
         <div className='py-7 md:pt-20 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
             <div className='flex flex-col-reverse flex-col lg:flex-row w-full mt-20 gap-20'>
                 <div className='md:w-1/2 mt-10 md:mt-0 flex '>
-                    <img src={MerchantImage} alt="mezo pay terminal" />
+                    <img src={MerchantImage} alt="mezo pay terminal" className='h-full' />
                 </div>
                 <div className='md:w-1/2'>
                     <div className='flex'>
                         <img src={SmallGreenStroke} />
-                        <p className='ml-3'>Also accept payments</p>
+                        <p className='ml-3'>Enhanced customer experience</p>
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>
-                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none text-green'>Last-Mile </h5>
-                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none '>Delivery Excellence</h5>
+                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal md:leading-[5rem] text-green'>Last-Mile </h5>
+                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal md:leading-[5rem] '>Delivery Excellence</h5>
                     </div>
                     <p className='text-sm mt-8'>{"Enhance your customer experience with our last-mile delivery solution. We specialize in providing reliable and efficient delivery services directly to your customers' doorsteps. Our experienced delivery personnel ensure smooth and timely deliveries, leaving a positive impression on your customers and fostering long-term loyalty."}</p>
                 </div>

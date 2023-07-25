@@ -28,13 +28,13 @@ function OfflineSection() {
                         <p className='ml-2 text-xl font-normal'>Get it when you need it</p>
                     </div>
                     <div className='font-liquefier mt-7'>
-                        <span className='text-green text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Quick Approval</span>
+                        <span className='text-green text-5xl md:text-7xl md:text-[100px] font-normal md:!leading[4rem]'>Quick Approval</span>
                         <br />
-                        <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-16 md:whitespace-nowrap'>& Disbursement</span>
+                        <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading[4rem] md:whitespace-nowrap'>& Disbursement</span>
                         <br />
                     </div>
                     <div className='mt-6'>
-                        <p>Experience the convenience of quick and seamless approval for your Credit Loan. Our streamlined process ensures that you can access the funds you need when you need them, without unnecessary delays or paperwork.</p>
+                        <p>Experience the convenience of quick and seamless approval for your loan. Our streamlined process ensures that you can access the funds you need when you need them, without unnecessary delays or paperwork. No collateral is required</p>
                     </div>
                 </div>
                 <div className='flex md:w-2/5  md:flex justify-end relative'>

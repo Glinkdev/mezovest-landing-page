@@ -27,13 +27,13 @@ function Footer() {
         },
     ]
     return (
-        <div className='py-7 px-6 xl:px-36 !bg-black h-full min-h-fit font-poppins flex flex-col md:flex-row justify-between text-white'>
-            <div className='grid grid-cols-1 '>
-                <p className='text-xs md:text-sm col-span-1'>© {dt.getFullYear()} Mezovest Limited (Company No.1685627). All rights reserved. </p>
-                {/* <p className='text-xs md:text-sm col-span-1'>Terms of service </p>
-                <p className='text-xs md:text-sm col-span-1'> Privacy Policy</p> */}
+        <div className='py-7 px-6 xl:px-36 !bg-black h-full min-h-fit font-poppins flex flex-col md:flex-row  text-white'>
+            <div className='flex justify-between w-full'>
+                <p className='text-xs md:text-sm col-span-1'>© Copyright  2003 - {dt.getFullYear()} Mezovest Ind. Ltd.  </p>
+                <p className='text-xs md:text-sm col-span-1'>Terms & Conditions  |   Privacy Policy </p>
+                
             </div>
-            <div className='mt-4 md:mt-0 grid grid-cols-4 gap-2 min-w-[300px] md: max-w-full items-center  flex justify-center'>
+            {/* <div className='mt-4 md:mt-0 grid grid-cols-4 gap-2 min-w-[300px] md: max-w-full items-center  flex justify-center'>
                 {socials.map((item, index) => (
                     <a
                         key = { index }
@@ -43,8 +43,8 @@ function Footer() {
                     >
                         <img src={item.icon} className="col-span-1 ml-4 " />
                     </a>
-                ))}
-        </div>
+                ))} 
+        </div> */}
         </div >
     )
 }

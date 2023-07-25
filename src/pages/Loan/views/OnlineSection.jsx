@@ -43,10 +43,10 @@ function OnlineSection() {
                         <p className='ml-3'>Take Advantage Of Our</p>
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>
-                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none text-green'>Flexible</h5>
-                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none '>Repayment <br/> Options</h5>
+                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none md:!leading-[5rem] text-green'>Flexible</h5>
+                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none md:!leading-[5rem] '>Repayment <br/> Options</h5>
                     </div>
-                    <p className='text-sm mt-8'>Take control of your financial journey with our Credit Loan. Enjoy the freedom of flexible repayment options designed to suit your unique circumstances.</p>
+                    <p className='text-md mt-8'>Take control of your financial journey with our Loan. Enjoy the freedom of flexible repayment options designed to suit your unique circumstances.</p>
 
                 </div>
 

@@ -28,14 +28,14 @@ function OfflineSection() {
                         <p className='ml-2 text-xl font-normal'>We make sending money</p>
                     </div> */}
                     <div className='mt-7'>
-                        <span className='text-green text-3xl md:text-[40px] font-semibold leading-16'>Battery or plug-in <span className='text-black'>operation</span></span>
+                        <span className='text-green text-3xl md:text-[40px] font-semibold leading-16 md:whitespace-nowrap'>Battery or plug-in <span className='text-black'>operation</span></span>
                         <br />
                     </div>
                     <div className='mt-2'>
                         <p>Mezovest Point of sale (POS) packs a powerful battery to ensure reliability and more profit in sales.</p>
                     </div>
 
-                    <div className='mt-10'>
+                    <div className='mt-10 md:mt-20'>
                         <span className='text-green text-3xl md:text-[40px] font-semibold leading-16'>Fast & Secure <span className='text-black'>Payment</span></span>
                         <br />
                     </div>

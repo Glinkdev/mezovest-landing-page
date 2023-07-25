@@ -32,7 +32,7 @@ function OfflineSection() {
                 <div className='flex flex-col md:w-1/2'>
                     <div className='flex'>
                         <img src={GreenStroke} alt="black stroke" />
-                        <p className='ml-2 text-xl font-normal'>How do we deliver our promise?</p>
+                        <p className='ml-2 text-xl font-normal'>Collect payments anywhere</p>
                     </div>
                     <div className='font-liquefier mt-7'>
                         <span className='text-green text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>From Offline</span>
@@ -41,9 +41,10 @@ function OfflineSection() {
                         <br />
                     </div>
                     <div className='mt-6'>
-                        <p>One platform that lets you sell wherever your customers are — online, anywhere in the world, and everywhere in-between. One </p>
+                        <p>Collect payments with ease from your customers in person by getting them to pay with their debit cards, or with their Mezopay wallet balance. </p> <br />
+                        <span>Embrace the future of payments with Mezovest! Say goodbye to cash-only transactions and accept payments from offline customers effortlessly. Whether debit cards or Mezopay wallet balance, we've got you covered. No more missed sales or inconveniences - watch your revenue soar with our seamless POS solution.</span>
                     </div>
-                    <div className='mt-10'>
+                    {/* <div className='mt-10'>
                         <ul className='text-black list-disc list-inside text-xs xl:text-base' role="list">
                             {fitDetails.map((item, index) => {
                                 return (
@@ -53,15 +54,15 @@ function OfflineSection() {
                                 )
                             })}
                         </ul>
-                    </div>
-                    <div className='flex gap-4 w-full mt-14'>
-                        <a
+                    </div> */}
+                    <div className='flex gap-4 w-full mt-10'>
+                        {/* <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="mailto:sales@mezovest.com"
                             className='flex py-4 px-8 justify-center text-white items-center  bg-green mt-6 cursor-pointer'>
                             <p>Learn More</p>
-                        </a>
+                        </a> */}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"

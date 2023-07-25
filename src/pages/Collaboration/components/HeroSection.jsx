@@ -17,14 +17,14 @@ function HeroSection() {
                 <div className='flex-col w-full md:w-1/2'>
                     <div className='flex'>
                         <img src={GreenStroke} alt="green stroke" />
-                        <p className='ml-6 font-normal md:text-xl text-white'>Prompt delivery</p>
+                        <p className='ml-6 font-normal md:text-xl text-white'>Keep your business ahead with</p>
                     </div>
                     <div className='font-liquefier mt-6'>
-                        <span className='text-green text-6xl md:text-7xl md:text-[100px] font-normal leading-16 md:whitespace-nowrap'>Micro Distribution </span>
+                        <span className='text-green text-6xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem] md:whitespace-nowrap'>Effective Supplier </span>
                         <br />
-                        <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal leading-16'>Centres</span>
+                        <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>Collaboration</span>
                     </div>
-                    <p className='font-normal md:text-xl text-white mt-6'>
+                    <p className='font-normal md:text-md text-white mt-6'>
                         {"Enhance your supply chain collaboration through our extensive network of MDCs in Lagos and Abuja, enabling us to meet your demand consistently as well as customer satisfaction."}
                     </p>
                     <div className='flex gap-4 w-full'>

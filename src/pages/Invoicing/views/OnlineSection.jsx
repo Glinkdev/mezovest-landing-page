@@ -42,12 +42,12 @@ function OnlineSection() {
                         <img src={SmallGreenStroke} />
                         <p className='ml-3'>Stay in profits with our eccentric</p>
                     </div>
-                    <div className='flex flex-col mt-6 md:mt-10'>
-                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none text-green'>Streamlined </h5>
-                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none '>Billing Process</h5>
+                    <div className='flex flex-col mt-6 leading-snug'>
+                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal  text-green !leading-[5rem]'>Streamlined </h5>
+                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal !leading-[5rem]'>Billing Process</h5>
                     </div>
                     <p className='text-sm mt-8'>Simplify your billing process and save time with our streamlined invoicing system. Generate and send professional invoices in just a few clicks, eliminating manual paperwork and reducing errors.</p>
-                    <div className='w-full flex mt-10 md:mt-10'>
+                    {/* <div className='w-full flex mt-10 md:mt-10'>
                         <a
                             // target="_blank"
                             // rel="noopener noreferrer"
@@ -55,7 +55,7 @@ function OnlineSection() {
                             className='border border-2 border-black px-14 py-6 max-w-fit self-end'>
                             <p className='text-lg font-normal whitespace-nowrap'>Coming Soon</p>
                         </a>
-                    </div>
+                    </div> */}
 
                 </div>
 

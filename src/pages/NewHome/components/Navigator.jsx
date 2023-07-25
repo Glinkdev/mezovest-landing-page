@@ -44,7 +44,7 @@ function Navigator() {
                 },
                 {
                     name: "Payment Links",
-                    route: "/payment"
+                    route: "/secure-payment"
                 },
                 {
                     name: "POS",

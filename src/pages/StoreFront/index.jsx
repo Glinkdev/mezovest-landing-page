@@ -15,8 +15,8 @@ function StoreFront() {
             <AcceptPayemntSection />
             <OfflineSection />
             <OnlineSection />
-            <ProcessSteps />
-            <FaqSection />
+            {/* <ProcessSteps /> */}
+            {/* <FaqSection /> */}
             <CtaSection />
             <CompanyInfo />
             <Footer />

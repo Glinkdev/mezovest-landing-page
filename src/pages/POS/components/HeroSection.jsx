@@ -20,12 +20,12 @@ function HeroSection() {
                         <p className='ml-6 font-normal md:text-xl text-white'>Cards and QR code payments with</p>
                     </div>
                     <div className='font-liquefier mt-6'>
-                        <span className='text-green text-6xl md:text-7xl md:text-[100px] font-normal leading-16 md:whitespace-nowrap'>Mezovest</span>
+                        <span className='text-green text-6xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem] md:whitespace-nowrap'>Mezovest</span>
                         <br />
-                        <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal leading-16'>Point of Sale <br/> (P.O.S)</span>
+                        <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>Point of Sale <br/> (P.O.S)</span>
                     </div>
                     
-                    <div className='flex gap-4 w-full'>
+                    <div className='flex gap-4 w-full md:mt-20'>
                         <a
                             target="_blank"
                             rel="noopener noreferrer"

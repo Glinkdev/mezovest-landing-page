@@ -2,6 +2,7 @@ import React from 'react';
 import SmallGreenStroke from "../../../assets/icons/short-green-stroke.svg";
 import MerchantImage from "../../../assets/images/mezo-business-image.svg";
 import PosImage from "../../../assets/images/terminal-image.svg";
+import ArrrowIcon from "../../../assets/images/long-arrow.svg";
 
 function OnlineSection() {
     const features = [
@@ -48,7 +49,9 @@ function OnlineSection() {
                     <img src={PosImage} alt="mezo pay terminal" />
                 </div>
 
-
+            </div>
+            <div className='hidden md:flex '>
+                <p className='font-bold mr-10'>Transform your business from this</p> <img src={ArrrowIcon}/><p className='font-bold  ml-10'>to this</p>
             </div>
         </div>
     )

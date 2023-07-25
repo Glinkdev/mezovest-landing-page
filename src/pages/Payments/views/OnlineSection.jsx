@@ -46,11 +46,11 @@ function OnlineSection() {
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none'>For <span className='text-green'>Online</span></h5>
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none '>Customers</h5>
                     </div>
-                    <p className='text-sm mt-8'>Our solution that lets you sell wherever your customers are online anywhere in the world</p>
+                    <p className='text-sm mt-8'>Solutions that lets you sell wherever your customers are — online, anywhere nationwide, and everywhere in-between.</p>
 
-                    <div className='flex flex-col mt-6'>
+                    <div className='flex flex-col mt-10 gap-14'>
                         {features.map((item, index) => (
-                            <div className='flex mt-10 align-center' key={index}>
+                            <div className='flex  align-center' key={index}>
                                 <img src={RightArrowIcon} alt="right arrow icon" />
                                 <div className='flex whitespace-break-spaces justify-center'>
                                     <a href={item.link} className='text-xs md:text-sm justify-center items-center font-bold text-green text-underline ml-2 underline-offset-2 cursor-pointer underline whitespace-nowrap float-left'>{item?.title}</a>
@@ -66,11 +66,11 @@ function OnlineSection() {
 
                     <div className='w-full flex mt-10 md:mt-36'>
                         <a
-                            // target="_blank"
-                            // rel="noopener noreferrer"
-                            // href="mailto:sales@mezovest.com"
-                            className='border border-2 border-black px-14 py-6 max-w-fit self-end'>
-                            <p className='text-lg font-normal whitespace-nowrap'>Coming Soon</p>
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="mailto:sales@mezovest.com"
+                            className='border border-2 border-black px-10 py-4 max-w-fit self-end'>
+                            <p className='text-lg font-normal whitespace-nowrap'>Talk to sales</p>
                         </a>
                     </div>
 

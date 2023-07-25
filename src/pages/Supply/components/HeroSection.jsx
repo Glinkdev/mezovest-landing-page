@@ -20,9 +20,9 @@ function HeroSection() {
                         <p className='ml-6 font-normal md:text-xl text-white'>Eliminate your logistics hassles with our</p>
                     </div>
                     <div className='font-liquefier mt-6'>
-                        <span className='text-green text-6xl md:text-7xl md:text-[100px] font-normal leading-16 md:whitespace-nowrap'>Prompt  </span>
+                        <span className='text-green text-6xl md:text-7xl md:text-[100px] font-normal leading-16 md:whitespace-nowrap'>Prompt  deliveries</span>
                         <br />
-                        <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal leading-16'>deliveries nationwide</span>
+                        <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal leading-16'> nationwide</span>
                     </div>
                     <p className='font-normal md:text-xl text-white mt-6'>
                         {"Streamline your business operations with our logistics solution. Say goodbye to logistics hassles and effortlessly deliver your products to your customers. Experience seamless efficiency and focus on growing your business with ease."}
@@ -52,9 +52,9 @@ function HeroSection() {
 
                 </div>
 
-                <div className='flex mt-20 md:mt-0 justify-center md:justify-end md:w-1/2 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden'>
+                <div className='flex mt-10 md:mt-0 justify-center md:justify-end md:w-1/2  max-h-[400px] md:max-h-full  relative'>
 
-                    <img src={PaymentImage} alt="payment image" className='flex h-full md:-right-20' />
+                    <img src={PaymentImage} alt="payment image" className='flex md:-right-20 md:absolute md:-right-36' />
                 </div>
                 
 

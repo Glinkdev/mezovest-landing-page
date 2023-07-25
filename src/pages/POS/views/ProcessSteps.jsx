@@ -6,9 +6,9 @@ function ProcessSteps() {
         <>
             <div className='pt-7 md:pt-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins '>
                 <div className='font-liquefier mt-6 flex flex-col'>
-                    <span className='text-green text-6xl md:text-7xl md:text-[100px] font-normal leading-16 lg:whitespace-nowrap'>Start Processing Payments</span>
+                    <span className='text-green text-6xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem] lg:whitespace-nowrap'>Request a POS Terminal</span>
                     <br />
-                    <span className='text-black text-6xl md:text-7xl md:text-[100px] font-normal leading-16'>In These Easy Steps</span>
+                    <span className='text-black text-6xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>In These Easy Steps</span>
                 </div>
 
             </div>

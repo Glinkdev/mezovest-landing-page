@@ -28,9 +28,9 @@ function OfflineSection() {
                         <p className='ml-2 text-xl font-normal'>We make sending money</p>
                     </div>
                     <div className='font-liquefier mt-7'>
-                        <span className='text-green text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Custom <br /> Invoice </span>
+                        <span className='text-green text-5xl md:text-7xl md:text-[100px] font-normal !leading-[5rem]'>Custom <br /> Invoice </span>
                         <br />
-                        <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Templates</span>
+                        <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal !leading-[5rem]'>Templates</span>
                         <br />
                     </div>
                     <div className='mt-6'>

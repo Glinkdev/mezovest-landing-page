@@ -14,7 +14,7 @@ function SendMoney() {
         <>
             <AcceptPayemntSection />
             <OfflineSection />
-            <OnlineSection />
+            {/* <OnlineSection /> */}
             <ProcessSteps />
             <FaqSection />
             <CtaSection />

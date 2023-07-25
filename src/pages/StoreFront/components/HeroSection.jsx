@@ -24,8 +24,8 @@ function HeroSection() {
                         <br />
                         <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal leading-16'>Storefront</span>
                     </div>
-                    <p className='font-normal md:text-xl text-white mt-6'>
-                        {"Effortlessly transfer funds to your trusted partners, ensuring swift and secure transactions for seamless collaboration."}
+                    <p className='font-normal md:text-md text-white mt-6'>
+                        {"Unlock the potential of your business with our ecommerce storefront solution. Seamlessly showcase and sell your products online. Elevate your brand and maximize your sales with a user-friendly and customizable online store."}
                     </p>
                     <div className='flex gap-4 w-full'>
                         <a

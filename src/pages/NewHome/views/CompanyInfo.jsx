@@ -62,9 +62,9 @@ function CompanyInfo() {
                     <p className='font-bold text-md'>Mezovest</p>
                     <p className='mt-6 text-sm'>Mezo Energy</p>
                     <p className='mt-4 text-sm'>Spatch</p>
-                    <p className='font-bold text-sm mt-6'>Developers</p>
-                    <p className='mt-6 text-sm whitespace-nowrap'>API Documentation</p>
-                    <p className='mt-4 text-sm'>API Integrations</p>
+                    <p className='font-bold text-sm mt-6 opacity-10'>Developers</p>
+                    <p className='mt-6 text-sm whitespace-nowrap opacity-10'>API Documentation</p>
+                    <p className='mt-4 text-sm opacity-10'>API Integrations</p>
                 </div>
             </div>
             <div className='flex mt-8 md:mt-0 w-full justify-between md:w-2/5'>

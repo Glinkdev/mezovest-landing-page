@@ -39,11 +39,11 @@ function OfflineSection() {
                     <div className='flex gap-4 w-full mt-4'>
                        
                         <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="mailto:sales@mezovest.com"
+                            // target="_blank"
+                            // rel="noopener noreferrer"
+                            // href="mailto:sales@mezovest.com"
                             className='flex py-5 px-10 justify-center items-center text-black mt-6 cursor-pointer border-2 border-black'>
-                            <p>Create your storefront</p>
+                            <p>Coming soon</p>
                         </a>
                     </div>
                 </div>

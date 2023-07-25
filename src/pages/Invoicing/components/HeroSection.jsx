@@ -52,9 +52,9 @@ function HeroSection() {
 
                 </div>
 
-                <div className='flex mt-20 md:mt-0 justify-center md:justify-end md:w-1/2 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden'>
+                <div className='flex mt-20 md:mt-0 justify-center md:justify-end items-start md:w-1/2 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden'>
 
-                    <img src={HeroImage} alt="payment image" className='flex h-full md:-right-20' />
+                    <img src={HeroImage} alt="payment image" className='flex md:-right-20' />
                 </div>
                 
 

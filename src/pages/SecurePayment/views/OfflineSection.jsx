@@ -9,7 +9,7 @@ function OfflineSection() {
     const fitDetails = [
         {
             details:"An Online Vendor?",
-            moreDetails: "Receive payments from your customers with ease by simply generating and sending them a Mezopay payment link"
+            moreDetails: "Receive payments from your customers with ease by simply generating and sending them a payment link via any of our products "
         },
         {
             details: "Recurring payment?",
@@ -17,7 +17,7 @@ function OfflineSection() {
         },
         {
             details: "Need Donations?",
-            moreDetails: "Raise money by creating a Mezovest donations link."
+            moreDetails: "Raise money by creating a payment link and share with your family and friends"
         },
 
     ]

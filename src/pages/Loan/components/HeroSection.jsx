@@ -20,14 +20,14 @@ function HeroSection() {
                         <p className='ml-6 font-normal md:text-xl text-white'>Unlock your financial potential with our</p>
                     </div>
                     <div className='font-liquefier mt-6'>
-                        <span className='text-green text-6xl md:text-7xl md:text-[100px] font-normal leading-16 md:whitespace-nowrap'>Credit Loan</span>
+                        <span className='text-green text-6xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem] md:whitespace-nowrap'>Credit Loan</span>
                         <br />
-                        <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal leading-16'>Services</span>
+                        <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>Services</span>
                     </div>
-                    <p className='font-normal md:text-xl text-white mt-6'>
+                    <p className='font-normal md:text-md text-white mt-10'>
                         {"Access financial aid for your business with Mezovest cash loans & inventory financing with flexible pay-back plan to keep you in business and in profit."}
                     </p>
-                    <div className='flex gap-4 w-full'>
+                    <div className='flex gap-4 w-full mt-10'>
                         <a
                             target="_blank"
                             rel="noopener noreferrer"

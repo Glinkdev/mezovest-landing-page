@@ -10,11 +10,11 @@ function OfflineSection() {
     const fitDetails = [
         {
             details:"One - time payments:",
-            moreDetails: " Make instant transfers from Mezopay  to Mezopay, Mezopay to other wallet, and Mezopay to local banks"
+            moreDetails: "Make instant transfers from Mezopay to Mezopay, Mezopay to other wallet, and Mezopay to local banks "
         },
         {
-            details: "Need Content here:",
-            moreDetails: "With our scheduled payment function you can pay salaries and other recurring payments."
+            details: "Bulk transfers:",
+            moreDetails: "Send bulk transfers to multiple local banks at a glance"
         },
 
     ]
@@ -34,7 +34,7 @@ function OfflineSection() {
                         <br />
                     </div>
                     <div className='mt-6'>
-                        <p>Say goodbye to long queues and complicated processes. We make money transfers a breeze, giving you peace of mind with every transaction. </p>
+                        <p>Say goodbye to long queues and complicated processes. We make money transfers a breeze, giving you peace of mind with every transaction.</p>
                     </div>
                     <div className='mt-10'>
                         <ul className='text-black list-disc list-inside text-xs xl:text-base' role="list">
@@ -47,14 +47,14 @@ function OfflineSection() {
                             })}
                         </ul>
                     </div>
-                    <div className='flex gap-4 w-full mt-4'>
+                    <div className='flex w-full mt-4'>
                        
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="mailto:sales@mezovest.com"
                             className='flex py-5 px-10 justify-center items-center text-black mt-6 cursor-pointer border-2 border-black'>
-                            <p>Coming Soon</p>
+                            <p>Talk to Sales</p>
                         </a>
                     </div>
                 </div>

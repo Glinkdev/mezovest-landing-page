@@ -13,10 +13,10 @@ function Invoicing() {
     return (
         <>
             <AcceptPayemntSection />
-            <OfflineSection />
             <OnlineSection />
-            <ProcessSteps />
-            <FaqSection />
+            <OfflineSection />
+            {/* <ProcessSteps />
+            <FaqSection /> */}
             <CtaSection />
             <CompanyInfo />
             <Footer />
