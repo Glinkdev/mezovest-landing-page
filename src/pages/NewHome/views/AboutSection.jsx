@@ -48,19 +48,19 @@ function AboutSection() {
                     ))}
 
                 </div>
-                <div className='flex gap-4 w-full justify-center mt-10'>
+                <div className='md:flex gap-4 w-full justify-center mt-10'>
                     <a
                         // target="_blank"
                         // rel="noopener noreferrer"
                         // href="mailto:sales@mezovest.com"
-                        className='hidden md:flex p-4 md:px-8 justify-center items-center  bg-green mt-6 cursor-pointer'>
+                        className=' w-full md:w-fit flex p-4 md:px-8 justify-center items-center  bg-green mt-6 cursor-pointer'>
                         <p className='whitespace-nowrap'>Read More About us</p>
                     </a>
                     <a
                         // target="_blank"
                         // rel="noopener noreferrer"
                         // href="mailto:sales@mezovest.com"
-                        className='flex p-4 md:px-8 justify-center items-center text-black mt-6 cursor-pointer border-2 border-black'>
+                        className='w-full  md:w-fit flex p-4 md:px-8 justify-center items-center text-black mt-6 cursor-pointer border-2 border-black'>
                         <p className='whitespace-nowrap '>Explore our products</p>
                     </a>
                 </div>
