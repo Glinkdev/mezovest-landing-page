@@ -3,6 +3,7 @@ import GreenStroke from "../../../assets/icons/green-stroke.svg"
 import MezoCashImage from "../../../assets/images/mez-cash-img.png";
 import MezoBagImage from "../../../assets/images/mez-shopbag-img.png";
 import MezoPhoneImage from "../../../assets/images/mez-phone-img.png";
+import BikeManImage from "../../../assets/images/bike-man-image.svg";
 
 
 function FitSection() {
@@ -37,7 +38,7 @@ function FitSection() {
     }
 
     return (
-        <div className='py-7 md:pt-36 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
+        <div className='py-7 md:pt-36 md:pb-48 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
             <div className='flex flex-col md:flex-row w-full'>
                 <div className='flex flex-col md:w-1/2'>
                     <div className='flex'>
@@ -45,12 +46,11 @@ function FitSection() {
                         <p className='ml-2 text-xl font-normal'>How do we deliver our promise?</p>
                     </div>
                     <div className='font-liquefier mt-7'>
-                        <span className='text-green text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Finance</span>
+                        <span className='text-green text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>Finance</span>
                         <br />
-                        <span className='text-green text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Infrastructure</span>
+                        <span className='text-green text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>Infrastructure</span>
                         <br />
-                        <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Technology</span>
-                        <br />
+                        <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>Technology</span>
                         <span className='text-2xl md:text-4xl'>(F.I.T)</span>
                     </div>
                     <div className='mt-10'>
@@ -72,12 +72,12 @@ function FitSection() {
                 <div className="hidden md:flex w-1/2 justify-end">
                 <div className='md:w-[700px] mt-10 md:mt-0 md:flex justify-end relative'>
                     <div className='h-[417px] w-[241px] absolute top-10 right-10 z-20'>
-                        <img src={MezoBagImage} alt="Mezo Energy Image" />
+                        <img src={BikeManImage} alt="Mezo Energy Image" />
                     </div>
                     <div className='h-[417px] w-[241px] absolute top-0 left-10 z-0'>
                         <img src={MezoCashImage} alt="Mezo Energy Image" />
                     </div>
-                    <div className='h-[417px] w-[241px] absolute bottom-10  left-1/3 z-10'>
+                    <div className='h-[417px] w-[241px] absolute -bottom-52  left-1/3 z-10'>
                         <img src={MezoPhoneImage} alt="Mezo Energy Image"  />
                     </div>
                    

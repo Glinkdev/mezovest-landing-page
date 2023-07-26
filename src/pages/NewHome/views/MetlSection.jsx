@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import BlackStroke from "../../../assets/icons/black-stroke.svg";
-import MezoEnergyImage from "../../../assets/images/mezo-energy.svg";
+import MezoEnergyImage from "../../../assets/images/metl-human-image.svg";
 import RelaiabilityIcon from "../../../assets/icons/reliability-icon.svg";
 import SafetyIcon from "../../../assets/icons/safety-icon.svg";
 import TechnologyIcon from "../../../assets/icons/technology-icon.svg";
@@ -12,7 +12,7 @@ import PearlLogo from "../../../assets/images/pearl-logo.svg";
 import ClientSlider from '../../../components/ClientSlider';
 
 function MetlSection() {
-    const navigate=useNavigate()
+    const navigate = useNavigate()
 
     const qualities = [
         {
@@ -71,7 +71,7 @@ function MetlSection() {
 
 
                 </div>
-                <div className=' md:w-2/5 mt-10 md:mt-0 flex justify-end'>
+                <div className=' md:w-2/5 mt-10 md:mt-0 flex justify-end md:ml-20'>
                     <img src={MezoEnergyImage} alt="Mezo Energy Image" className='md:w-[834px] h-full' />
                 </div>
 
@@ -100,9 +100,9 @@ function MetlSection() {
                 </div>
                 <div className='md:w-2/5 flex-col md:ml-24 mt-4 md:mt-0'>
                     <p className='text-lg font-medium'>
-                        With its scalable yet robust platform, Mezovest and its supporting partners
-                        created a custom-made solution that simplifies backend complexities, showcases our
-                        high-end product offering and enhances the customer journey as we continue to expand.
+                        For quite some time now, METL has been our trusted solution for all our cooking gas
+                        requirements. Their commitment to on-time delivery has been truly remarkable.
+                        We can always rely on them without any hesitation.
                     </p>
                     <p className='text-lg font-medium mt-10'><span className='font-bold'>-Emeka Igwe </span>{" "}CEO</p>
                     <p className='text-lg font-medium'>Terrrafoam</p>

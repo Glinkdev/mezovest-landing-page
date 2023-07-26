@@ -6,6 +6,8 @@ import CtaSection from "./views/CtaSection";
 import ThirdSection from "../../sections/ThirdSection";
 import FourthSection from "../../sections/FourthSection";
 import CompanyInfo from "./views/CompanyInfo";
+import DetailsPage from "./views/DetailsPage";
+import AboutSection from "./views/AboutSection";
 
 import Footer from "./views/Footer";
 
@@ -14,10 +16,11 @@ function NewHome() {
     return (
         <>
             <GrowSection />
+            <AboutSection />
             <FitSection />
             <ThirdSection />
             <MetlSection />
-            <FourthSection />
+            <DetailsPage />
             <CtaSection />
             <CompanyInfo />
             <Footer />

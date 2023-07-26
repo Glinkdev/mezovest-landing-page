@@ -16,10 +16,10 @@ function Navigator() {
             name: "Support",
             url: "/customers"
         },
-        // {
-        //     name: "Pricing",
-        //     url: "/payment"
-        // },
+        {
+            name: "Become a partner",
+            url: "/"
+        },
         {
             name: "About us",
             url: "/customers"
