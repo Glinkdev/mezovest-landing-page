@@ -109,7 +109,7 @@ function CustomerExperienceSlider() {
                                             <img src={item.icon} alt="product icon" className='!w-32 m-auto' />
                                         </div>
 
-                                        <p className='text-sm text-center '>{item?.detail}</p>
+                                        <p className='text-sm text-center leading-[1.5rem]'>{item?.detail}</p>
                                     </div>
 
                                     <div className='w-full justify-center flex'>

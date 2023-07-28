@@ -41,7 +41,7 @@ function GrowthSection() {
                     <span className='text-black text-6xl md:text-7xl md:text-[100px] font-normal md:leading-[5rem]'>In These Easy Steps</span>
                 </div>
 
-                <p className='text-md mt-8'>{"Buy cooking gas on credit with flexible pay-back plan that will keep you in business and in profit. At Mezovest, we understand the unique challenges faced by vendors in the dynamic LPG and CNG sectors. That's why we are proud to offer tailored inventory financing solutions, specially designed to empower and support vendors in these industries."}</p>
+                <p className='text-md mt-8 leading-[2rem]'>{"Buy cooking gas on credit with flexible pay-back plan that will keep you in business and in profit. At Mezovest, we understand the unique challenges faced by vendors in the dynamic LPG and CNG sectors. That's why we are proud to offer tailored inventory financing solutions, specially designed to empower and support vendors in these industries."}</p>
 
             </div>
             <div className='py-7 md:pt-7 pb-6 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
@@ -58,7 +58,7 @@ function GrowthSection() {
                             <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none md:!leading-[5rem] text-green'>Boost Your </h5>
                             <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none md:!leading-[5rem] '>Business <br /> Growth</h5>
                         </div>
-                        <p className='text-md mt-8'>{"With our inventory financing, you can say goodbye to cash flow constraints and unlock the true potential of your business. Whether you're a cooking gas vendor or operating in the CNG sector, our financing options are flexible and catered to your specific needs. Fuel your business growth and seize new opportunities with confidence."}</p>
+                        <p className='text-md mt-8 leading-[2rem]'>{"With our inventory financing, you can say goodbye to cash flow constraints and unlock the true potential of your business. Whether you're a cooking gas vendor or operating in the CNG sector, our financing options are flexible and catered to your specific needs. Fuel your business growth and seize new opportunities with confidence."}</p>
 
                     </div>
 
@@ -77,7 +77,7 @@ function GrowthSection() {
                             <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none md:!leading-[5rem] text-green md:whitespace-nowrap'>Stay Ahead of</h5>
                             <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none md:!leading-[5rem] '>Demand</h5>
                         </div>
-                        <p className='text-md mt-8'>{"Inventory financing allows you to keep your shelves stocked and ready to meet the growing demands of your customers. Never miss a sale or face supply shortages again. With our support, you can maintain a robust inventory, ensuring your customers' needs are always met."}</p>
+                        <p className='text-md mt-8 leading-[2rem]'>{"Inventory financing allows you to keep your shelves stocked and ready to meet the growing demands of your customers. Never miss a sale or face supply shortages again. With our support, you can maintain a robust inventory, ensuring your customers' needs are always met."}</p>
 
                     </div>
                     <div className='md:w-1/2 mt-10 md:mt-0 flex '>

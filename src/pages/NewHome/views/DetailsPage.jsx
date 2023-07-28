@@ -24,7 +24,7 @@ function DetailsPage() {
         {
             title: "Create a payment link",
             description: "for your customers to pay you with a single click",
-            link: "/secure-payment"
+            link: "/payment-link"
         },
         // {
         //     title: "Create storefront",
@@ -71,10 +71,9 @@ function DetailsPage() {
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>For <span className='text-green'>Offline</span></h5>
-                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem] whitespace-nowrap'>{"LPG & CNG"}</h5>
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>Merchants</h5>
                     </div>
-                    <p className='text-sm mt-8'>
+                    <p className='text-sm mt-8 leading-[2rem]'>
                         Experience the power of our secure and user-friendly POS terminal. Seamlessly sell to your customers, process card payments, generate invoices, and even purchase cooking gas. Unlock a world of possibilities with our versatile solution.
                     </p>
 
@@ -95,10 +94,9 @@ function DetailsPage() {
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>For <span className='text-green'>Online</span></h5>
-                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem] whitespace-nowrap'>{"LPG & CNG"}</h5>
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal  md:!leading-[5rem] '>Merchants</h5>
                     </div>
-                    <p className='text-sm mt-8'>With our robust - yet easy to use platform that lets you sell wherever your customers are — online, anywhere in the world.</p>
+                    <p className='text-sm mt-8 leading-[2rem]'>With our robust - yet easy to use platform that lets you sell wherever your customers are — online, anywhere in the world.</p>
 
                     <div className='flex flex-col mt-6'>
                         {features.map((item, index) => (

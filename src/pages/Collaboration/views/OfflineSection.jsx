@@ -19,7 +19,7 @@ function OfflineSection() {
                         <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'> Distribution <br/> Network </span>
                         <br />
                     </div>
-                    <div className='mt-6'>
+                    <div className='mt-6 leading-[2rem] text-md'>
                         <p>With strategically located micro distribution centres and optimised logistics operations, we ensure prompt and efficient delivery of goods to our customers. Our streamlined distribution network enhances supply chain efficiency, reduces lead times, and ensures a seamless delivery of goods from business to end-users.</p>
                     </div>
                 </div>

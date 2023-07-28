@@ -24,7 +24,7 @@ function HeroSection() {
                         <br />
                         <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>Services</span>
                     </div>
-                    <p className='font-normal md:text-md text-white mt-10'>
+                    <p className='font-normal md:text-md text-white mt-10 leading-[2rem]'>
                         {"Access financial aid for your business with Mezovest cash loans & inventory financing with flexible pay-back plan to keep you in business and in profit."}
                     </p>
                     <div className='flex gap-4 w-full mt-10'>

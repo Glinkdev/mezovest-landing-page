@@ -14,7 +14,7 @@ function HeroSection() {
     return (
         <div className='flex flex-col md:flex-row  w-full'>
             <div className='flex flex-col lg:flex-row mt-10 md:mt-14 justify-between relative w-full'>
-                <div className='flex-col w-full md:w-1/2'>
+                <div className='flex-col w-full '>
                     <div className='flex'>
                         <img src={GreenStroke} alt="green stroke" />
                         <p className='ml-6 font-normal md:text-xl text-white'>Eliminate your logistics hassles with our</p>
@@ -24,16 +24,16 @@ function HeroSection() {
                         <br />
                         <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal leading-16'> nationwide</span>
                     </div>
-                    <p className='font-normal md:text-xl text-white mt-6'>
+                    <p className='font-normal md:text-xl text-white mt-6 leading-[2rem]'>
                         {"Streamline your business operations with our logistics solution. Say goodbye to logistics hassles and effortlessly deliver your products to your customers. Experience seamless efficiency and focus on growing your business with ease."}
                     </p>
                     <div className='flex gap-4 w-full'>
                         <a
                             // target="_blank"
                             // rel="noopener noreferrer"
-                            // href="mailto:sales@mezovest.com"
+                            href="https://spatchng.com"
                             className='hidden md:flex p-4 md:px-8 justify-center items-center  bg-green mt-6 cursor-pointer'>
-                            <p className='whitespace-nowrap'>Coming Soon</p>
+                            <p className='whitespace-nowrap'>Download Spatch</p>
                         </a>
                         <a
                             target="_blank"
@@ -52,7 +52,7 @@ function HeroSection() {
 
                 </div>
 
-                <div className='flex mt-10 md:mt-0 justify-center md:justify-end md:w-1/2  max-h-[400px] md:max-h-full  relative'>
+                <div className='hidden mt-10 md:mt-0 justify-center md:justify-end md:w-1/2  max-h-[400px] md:max-h-full  relative'>
 
                     <img src={PaymentImage} alt="payment image" className='flex md:-right-20 md:absolute md:-right-36' />
                 </div>

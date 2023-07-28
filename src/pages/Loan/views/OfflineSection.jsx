@@ -33,7 +33,7 @@ function OfflineSection() {
                         <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading[4rem] md:whitespace-nowrap'>& Disbursement</span>
                         <br />
                     </div>
-                    <div className='mt-6'>
+                    <div className='mt-6 leading-[2rem]'>
                         <p>Experience the convenience of quick and seamless approval for your loan. Our streamlined process ensures that you can access the funds you need when you need them, without unnecessary delays or paperwork. No collateral is required</p>
                     </div>
                 </div>

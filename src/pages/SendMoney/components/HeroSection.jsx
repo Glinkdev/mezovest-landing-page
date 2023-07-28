@@ -14,7 +14,7 @@ function HeroSection() {
     return (
         <div className='flex flex-col md:flex-row  w-full'>
             <div className='flex flex-col lg:flex-row mt-10 md:mt-14 justify-between relative w-full'>
-                <div className='flex-col w-full md:w-1/2'>
+                <div className='flex-col w-full'>
                     <div className='flex'>
                         <img src={GreenStroke} alt="green stroke" />
                         <p className='ml-6 font-normal md:text-xl text-white'>Keep your business ahead</p>
@@ -24,16 +24,14 @@ function HeroSection() {
                         <br />
                         <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal leading-16'>with ease</span>
                     </div>
-                    <p className='font-normal md:text-xl text-white mt-6'>
+                    <p className='font-normal md:text-xl text-white mt-6 leading-[2rem]'>
                         {"Effortlessly transfer funds to your trusted partners, ensuring swift and secure transactions for seamless collaboration."}
                     </p>
                     <div className='flex gap-4 w-full'>
                         <a
-                            // target="_blank"
-                            // rel="noopener noreferrer"
-                            // href="mailto:sales@mezovest.com"
+                            href="https://mezopay.mezovest.com/appdownloads"
                             className='hidden md:flex p-4 md:px-8 justify-center items-center  bg-green mt-6 cursor-pointer'>
-                            <p className='whitespace-nowrap'>Coming Soon</p>
+                            <p className='whitespace-nowrap'>Download Mezopay</p>
                         </a>
                         <a
                             target="_blank"
@@ -52,7 +50,7 @@ function HeroSection() {
 
                 </div>
 
-                <div className='flex mt-20 md:mt-0 justify-end md:w-1/2 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden'>
+                <div className='hidden mt-20 md:mt-0 justify-end md:w-1/2 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden'>
                     <img src={PaymentImage} alt="payment image" className='flex h-full md:-right-20' />
                 </div>
                 

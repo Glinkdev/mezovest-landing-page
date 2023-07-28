@@ -33,7 +33,7 @@ function OfflineSection() {
                         <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Product Display</span>
                         <br />
                     </div>
-                    <div className='mt-6'>
+                    <div className='mt-6 leading-[2rem] text-md'>
                         <p>Showcase your products in captivating style with stunning displays that grab attention, engage customers, and boost sales. </p>
                     </div>
                     <div className='flex gap-4 w-full mt-4'>

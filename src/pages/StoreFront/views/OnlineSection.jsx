@@ -46,7 +46,7 @@ function OnlineSection() {
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none text-green'>Seamless <br/>Checkout </h5>
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none '>Experience</h5>
                     </div>
-                    <p className='text-sm mt-8'>Simplify the buying process with a seamless checkout experience, allowing customers to easily navigate through payment options, enter shipping details, and complete their purchase hassle-free.</p>
+                    <p className='text-md mt-8 leading-[2rem]'>Simplify the buying process with a seamless checkout experience, allowing customers to easily navigate through payment options, enter shipping details, and complete their purchase hassle-free.</p>
                     {/* <div className='w-full flex mt-10 md:mt-10'>
                         <a
                             // target="_blank"

@@ -3,62 +3,64 @@ import React, { useState } from 'react'
 function FaqSection() {
     const [showLeftMoreDetails, setShowLeftMoreDetails] = useState([])
     const [showRightMoreDetails, setShowRightMoreDetails] = useState([])
+
     const leftFaq = [
         {
             key:"pay",
-            heading: "How reliable is Mezovest's supply chain solution?",
-            moreDetails: "Mezovest prides itself on a reliable supply chain network. We have established a strong presence in Lagos and Abuja with our micro-distribution centers, ensuring efficient and hassle-free gas purchases for vendors."
+            heading: "How reliable is Mezovest's logistics solution?",
+            moreDetails: "Mezovest is committed to providing reliable logistics services. We have a track record of delivering goods safely and on time, ensuring customer satisfaction."
         },
         {
             key: "accept",
-            heading: "How can I benefit from Mezovest's supply chain solution as a gas vendor?",
-            moreDetails: "As a gas vendor, Mezovest's supply chain solution provides you with easy access to gas procurement through our extensive network of micro-distribution centers. You can conveniently buy gas without the usual hassles, ensuring a smooth and reliable supply for your customers."
+            heading: "What regions does Mezovest cover for its logistics services?",
+            moreDetails: "We have an extensive network that covers Lagos for now."
         },
         {
             key: "method",
-            heading: "Are the gas products sourced through Mezovest's supply chain of high quality?",
-            moreDetails: "Absolutely! Mezovest maintains stringent quality control measures to ensure that the gas products sourced through our supply chain are of the highest quality. We work with trusted suppliers and conduct regular quality checks to ensure customer satisfaction."
+            heading: "Can Mezovest handle both small and large-scale logistics operations?",
+            moreDetails: "Absolutely! Mezovest caters to businesses of all sizes. Whether you need to transport a single item or manage a large-scale logistics operation, we have the capacity and expertise to handle it."
         },
         {
-            key: "meth",
-            heading: "How can I become a part of Mezovest's supply chain network as a gas vendor?",
-            moreDetails: "Joining Mezovest's supply chain network as a gas vendor is straightforward. Please contact our team, and we will guide you through the onboarding process, ensuring that you can benefit from our reliable supply chain solution."
+            key: "acpt",
+            heading: "How can I track my shipments with Mezovest's logistics solution?",
+            moreDetails: "We provide a user-friendly tracking system that allows you to monitor the progress of your shipments in real-time. You can easily access tracking information through our online platform or mobile app."
         },
         {
-            key: "mth",
-            heading: "Can Mezovest assist with the logistics and transportation of gas products?",
-            moreDetails: "Mezovest can provide assistance with the logistics and transportation of gas products, ensuring timely delivery to our micro-distribution centers. Our goal is to streamline the entire supply chain process, making it more efficient and convenient for gas vendors."
+            key: "mhod",
+            heading: "Are there any insurance options available for goods transported through Mezovest's logistics services?",
+            moreDetails: "Mezovest offers insurance options to protect your goods during transportation. Our team can provide you with details and assist you in choosing the appropriate coverage for your specific needs."
         },
     ]
 
     const rightFaq = [
         {
             key:"speed",
-            heading: "What measures are in place to ensure the safety and compliance of gas products in the supply chain?",
-            moreDetails: "Safety and compliance are paramount in our supply chain operations. Mezovest adheres to strict safety guidelines and regulatory standards to guarantee the safe handling and transportation of gas products. We prioritize the well-being of our vendors and customers."
+            heading: "What safety measures does Mezovest have in place to ensure the security of transported goods?",
+            moreDetails: "We prioritize the safety and security of goods entrusted to us. Mezovest implements strict security protocols, including proper packaging, tracking systems, and trained personnel, to ensure the safe delivery of your goods."
         },
         {
             key: "fees",
-            heading: "How does Mezovest ensure a consistent and uninterrupted supply of gas products?",
-            moreDetails: "Mezovest has implemented robust supply chain management practices to ensure a consistent and uninterrupted flow of gas products. We maintain strong relationships with suppliers, regularly monitor demand, and employ efficient inventory management techniques."
+            heading: "Can Mezovest handle specialized logistics requirements, such as temperature-controlled or fragile goods?",
+            moreDetails: "Yes, Mezovest is equipped to handle specialized logistics requirements. We have experience in transporting temperature-controlled items, fragile goods, and other specialized cargo. Please let us know your specific needs, and we will tailor our services accordingly."
         },
         {
             key: "integration",
-            heading: "Can I rely on Mezovest's supply chain solution for my gas business growth?",
-            moreDetails: "Yes, Mezovest's supply chain solution is designed to support the growth of your gas business. Our reliable network, convenient purchasing process, and commitment to quality enable you to focus on expanding your customer base and increasing profitability."
+            heading: "What is Mezovest's approach to customer service in the logistics sector?",
+            moreDetails: "Customer satisfaction is at the heart of our operations. We strive to provide excellent customer service by promptly addressing inquiries, providing regular updates, and ensuring a smooth logistics experience for our clients."
         },
         {
-            key: "fee",
-            heading: "How does Mezovest handle any supply chain disruptions or unforeseen challenges?",
-            moreDetails: "Mezovest is well-prepared to handle supply chain disruptions and unforeseen challenges. We have contingency plans in place, alternative sourcing options, and proactive communication channels to address any issues promptly and minimize any impact on our vendors and customers."
+            key: "aept",
+            heading: "How can I request a logistics service from Mezovest?",
+            moreDetails: "Requesting a logistics service is simple. You can reach out to our dedicated customer support team through our website or contact our logistics department directly. We will guide you through the process and ensure a seamless experience."
         },
         {
-            key: "integrate",
-            heading: "What additional support or services does Mezovest provide to gas vendors within its supply chain network?",
-            moreDetails: "Mezovest goes beyond the supply chain by providing ongoing support and services to our gas vendors. We offer training programs, business development assistance, and access to valuable resources to help you optimize your operations and achieve long-term success."
+            key: "ethod",
+            heading: "What sets Mezovest apart from other logistics service providers?",
+            moreDetails: "Mezovest stands out due to our commitment to reliability, customer-centric approach, extensive network, and ability to handle various logistics requirements. We aim to exceed customer expectations and establish long-term partnerships based on trust and exceptional service."
         },
     ]
 
+    
     const showLeftText = (e) => {
         if (showLeftMoreDetails.includes(e)) {
             const newList = showLeftMoreDetails.map((item) => {

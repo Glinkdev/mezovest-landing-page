@@ -17,8 +17,8 @@ function Loan() {
             <OfflineSection />
             <OnlineSection />
             <GrowthSection />
-            <ProcessSteps />
-            <FaqSection />
+            {/* <ProcessSteps /> */}
+            {/* <FaqSection /> */}
             <CtaSection />
             <CompanyInfo />
             <Footer />

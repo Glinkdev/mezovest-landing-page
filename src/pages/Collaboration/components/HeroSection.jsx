@@ -24,8 +24,8 @@ function HeroSection() {
                         <br />
                         <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>Collaboration</span>
                     </div>
-                    <p className='font-normal md:text-md text-white mt-6'>
-                        {"Enhance your supply chain collaboration through our extensive network of MDCs in Lagos and Abuja, enabling us to meet your demand consistently as well as customer satisfaction."}
+                    <p className='font-normal md:text-md text-white mt-6 leading-[2rem]'>
+                        {"Enhance your supply chain collaboration through our extensive network of Micro Distribution Center (MDCs) in Lagos and Abuja, enabling us to meet your demand consistently as well as customer satisfaction."}
                     </p>
                     <div className='flex gap-4 w-full'>
                         <a

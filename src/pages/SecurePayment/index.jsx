@@ -14,8 +14,8 @@ function SecurePayment() {
         <>
             <AcceptPayemntSection />
             <OfflineSection />
-            <ProcessSteps />
-            <FaqSection />
+            {/* <ProcessSteps />
+            <FaqSection /> */}
             <CtaSection />
             <CompanyInfo />
             <Footer />

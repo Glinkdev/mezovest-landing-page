@@ -33,7 +33,7 @@ function OfflineSection() {
                         <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal md:leading-[5rem]'>and Timely <br/>Delivery</span>
                         <br />
                     </div>
-                    <div className='mt-6'>
+                    <div className='mt-6 leading-[2rem] text-md'>
                         <p>Experience the power of effective and timely delivery with our logistics solution. We take pride in our reputation for swift and reliable deliveries, ensuring that your customers receive their orders on time, every time. Trust us to handle your logistics needs and exceed your delivery expectations.</p>
                     </div>
                 </div>

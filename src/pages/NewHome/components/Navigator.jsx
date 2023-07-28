@@ -14,19 +14,17 @@ function Navigator() {
     const navigation = [
         {
             name: "Support",
-            url: "/customers"
-        },
-        {
-            name: "Become a partner",
-            url: "/"
+            target:"_blank",
+            rel: "noopener noreferrer",
+            href: "mailto:sales@mezovest.com"
         },
         {
             name: "About us",
-            url: "/customers"
+            href: "/testimonials"
         },
         {
             name: "Blog",
-            url: "https://blog.mezovest.com"
+            href: "https://blog.mezovest.com"
         },
     ]
     const subMenu = [
@@ -44,7 +42,7 @@ function Navigator() {
                 },
                 {
                     name: "Payment Links",
-                    route: "/secure-payment"
+                    route: "/payment-link"
                 },
                 {
                     name: "POS",
@@ -68,10 +66,6 @@ function Navigator() {
                     name: "Credit / Loan",
                     route: "/loan"
                 },
-                {
-                    name: "Secure Payment",
-                    route: "/secure-payment"
-                }
             ]
         },
         {
@@ -132,7 +126,7 @@ function Navigator() {
 
 
                         {navigation.map((item, index) => (
-                            <a key={index} href={item.url} className="pointer font-bold text-sm">{item.name}</a>
+                            <a key={index} {...item} className="pointer font-bold text-sm">{item.name}</a>
                         ))}
                     </div>
                     <a 

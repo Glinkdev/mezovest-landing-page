@@ -46,7 +46,7 @@ function OnlineSection() {
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none text-green'>Guaranteed </h5>
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none '>Delivery </h5>
                     </div>
-                    <p className='text-sm mt-8'>Count on us for unparalleled reliability when it comes to delivery.  With our dedicated fleet of vehicles, real-time tracking systems, and experienced logistics team, we ensure that your products are delivered on time, every time.</p>
+                    <p className='text-md mt-8 leading-[2rem]'>Count on us for unparalleled reliability when it comes to delivery.  With our dedicated fleet of vehicles, real-time tracking systems, and experienced logistics team, we ensure that your products are delivered on time, every time.</p>
 
                 </div>
 

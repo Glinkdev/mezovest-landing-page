@@ -20,7 +20,7 @@ function FourthSection() {
         {
             title: "Create a payment link",
             description: "for your customers to pay you with a single click",
-            link: "/secure-payment"
+            link: "/payment-link"
         },
         // {
         //     title: "Create storefront",

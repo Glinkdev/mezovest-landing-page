@@ -29,8 +29,8 @@ function Footer() {
     return (
         <div className='py-7 px-6 xl:px-36 !bg-black h-full min-h-fit font-poppins flex flex-col md:flex-row  text-white'>
             <div className='flex justify-between w-full'>
-                <p className='text-xs md:text-sm col-span-1'>© Copyright  2003 - {dt.getFullYear()} Mezovest Ind. Ltd.  </p>
-                <p className='text-xs md:text-sm col-span-1'>Terms & Conditions  |   Privacy Policy </p>
+                <p className='text-xs md:text-sm col-span-1'>© Copyright {dt.getFullYear()} Mezovest Ind. Ltd.  </p>
+                <p className='text-xs md:text-sm col-span-1 opacity-20'>Terms & Conditions  |   Privacy Policy </p>
                 
             </div>
             {/* <div className='mt-4 md:mt-0 grid grid-cols-4 gap-2 min-w-[300px] md: max-w-full items-center  flex justify-center'>

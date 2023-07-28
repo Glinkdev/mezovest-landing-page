@@ -36,7 +36,7 @@ function OfflineSection() {
                         <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Business</span>
                         <br />
                     </div>
-                    <div className='mt-6'>
+                    <div className='mt-6 leading-[2rem'>
                         <p>Unleash payment simplicity with our virtual cash register, no website needed. Accept hassle-free payments.</p>
                     </div>
                     <div className='flex gap-4 w-full mt-4'>
@@ -47,7 +47,7 @@ function OfflineSection() {
                             {fitDetails.map((item, index) => {
                                 return (
                                     <li className=' xl:text-base text-black !leading-7 mb-4' key={index}>
-                                        <span className=' mr-2 font-bold'>{item.details} <span className='font-normal'>{item.moreDetails}</span></span>
+                                        <span className=' mr-2 font-bold'>{item.details} <span className='font-normal leading-[2rem'>{item.moreDetails}</span></span>
                                     </li>
                                 )
                             })}

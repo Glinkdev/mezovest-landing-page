@@ -5,11 +5,11 @@ import RightArrowIcon from "../../../assets/icons/right-arrow-icon.svg"
 
 function OnlineSection() {
     const features = [
-        {
-            title: "Accept Payments",
-            description: "from your customers",
-            link: "/payment"
-        },
+        // {
+        //     title: "Accept Payments",
+        //     description: "from your customers",
+        //     link: "/payment"
+        // },
         {
             title: "Send money",
             description: "to over 1 million mezopay users and other banks",
@@ -18,7 +18,7 @@ function OnlineSection() {
         {
             title: "Create a payment link",
             description: "for your customers to pay you with a single click",
-            link: "/secure-payment"
+            link: "/payment-link"
         },
         {
             title: "Mezogateway",
@@ -43,10 +43,10 @@ function OnlineSection() {
                         <p className='ml-3'>Also accept payments</p>
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>
-                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none'>For <span className='text-green'>Online</span></h5>
+                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none'>From <span className='text-green'>Online</span></h5>
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none '>Customers</h5>
                     </div>
-                    <p className='text-sm mt-8'>Solutions that lets you sell wherever your customers are — online, anywhere nationwide, and everywhere in-between.</p>
+                    <p className='text-md mt-8 leading-[2rem]'>Solutions that lets you sell wherever your customers are — online, anywhere nationwide, and everywhere in-between.</p>
 
                     <div className='flex flex-col mt-10 gap-14'>
                         {features.map((item, index) => (

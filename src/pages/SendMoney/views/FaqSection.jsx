@@ -47,11 +47,11 @@ function FaqSection() {
             heading: "What if there is an issue or discrepancy with a money transfer?",
             moreDetails: "Our dedicated customer support team is available to assist you with any issues or discrepancies you may encounter. We are committed to resolving any concerns and ensuring a smooth money transfer experience."
         },
-        {
-            key: "fee",
-            heading: "Can Mezovest help with international money transfers?",
-            moreDetails: "Absolutely! Mezovest supports both domestic and international money transfers, allowing you to send funds to your partners across borders. We make cross-border transactions simple and reliable."
-        },
+        // {
+        //     key: "fee",
+        //     heading: "Can Mezovest help with international money transfers?",
+        //     moreDetails: "Absolutely! Mezovest supports both domestic and international money transfers, allowing you to send funds to your partners across borders. We make cross-border transactions simple and reliable."
+        // },
         {
             key: "intion",
             heading: "How can Mezovest benefit my business in the long run?",

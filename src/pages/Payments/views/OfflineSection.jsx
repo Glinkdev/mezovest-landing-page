@@ -40,9 +40,9 @@ function OfflineSection() {
                         <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Customers</span>
                         <br />
                     </div>
-                    <div className='mt-6'>
+                    <div className='mt-6 leading-[2rem]'>
                         <p>Collect payments with ease from your customers in person by getting them to pay with their debit cards, or with their Mezopay wallet balance. </p> <br />
-                        <span>Embrace the future of payments with Mezovest! Say goodbye to cash-only transactions and accept payments from offline customers effortlessly. Whether debit cards or Mezopay wallet balance, we've got you covered. No more missed sales or inconveniences - watch your revenue soar with our seamless POS solution.</span>
+                        <span>{"Embrace the future of payments with Mezovest! Say goodbye to cash-only transactions and accept payments from offline customers effortlessly. Whether debit cards or Mezopay wallet balance, we've got you covered. No more missed sales or inconveniences - watch your revenue soar with our seamless POS solution."}</span>
                     </div>
                     {/* <div className='mt-10'>
                         <ul className='text-black list-disc list-inside text-xs xl:text-base' role="list">

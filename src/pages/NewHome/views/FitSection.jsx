@@ -58,7 +58,7 @@ function FitSection() {
                             {fitDetails.map((item, index) => {
                                 let showLongDetails = showLongText.includes(item.name)
                                 return (
-                                    <li className='font-normal text-xs xl:text-base text-black !leading-7 mb-4' key={index}>
+                                    <li className='font-normal text-xs xl:text-base text-black !leading-7 mb-4 leading-[2rem]' key={index}>
                                         <span className='font-bold mr-2'>{item.name}:</span> 
                                         <span className='text-sm'>{showLongDetails ? item.shortDetails : item.longDetails}</span> 
                                         {showLongDetails && (<span className='text-xs text-green whitespace-nowrap ml-2 cursor-pointer' onClick={() => showText(item.name)}>Read more</span>)}

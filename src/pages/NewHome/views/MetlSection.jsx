@@ -33,7 +33,7 @@ function MetlSection() {
         }
     ]
     const moveToReadMore = () => {
-        navigate("/customers")
+        navigate("/testimonials")
     }
     return (
         <div className='py-7 md:pt-36 pb-20 px-6 xl:px-36 h-full min-h-fit font-poppins !bg-[#F1F1F180]'>
@@ -51,18 +51,18 @@ function MetlSection() {
                         <br />
                         <span className='text-2xl md:text-4xl'>(METL)</span>
                     </div>
-                    <p className='mt-7  '>
+                    <p className='mt-7  leading-[2rem]'>
                         Mezoenergy trading limited is an energy company that has a big reputation in
                         gas trading with supply chains across the country. The company was established
                         in 2021 and is positioned to be the fastest growing gas trading company in Nigeria.
                     </p>
-                    <p className='mt-4'>
+                    <p className='mt-4 leading-[2rem]'>
                         We have an unmatched reputation for our commitment to our excellence and dedication to
                         quality, safety and use of technology makes us the most reliable partner for most businesses.
                         With our beautiful and innovative composite gas cylinder, we have also been able to win
                         the trust of end-users who share the same core values as we do.
                     </p>
-                    <p className='mt-4 '>
+                    <p className='mt-4 leading-[2rem]'>
                         In partnership with mezovest, we provide gas financing where we deliver high
                         quality cooking gas to our vendors. Hundreds of small businesses have leveraged
                         this credit system to grow their business as well as several stakeholders in the
@@ -99,13 +99,13 @@ function MetlSection() {
 
                 </div>
                 <div className='md:w-2/5 flex-col md:ml-24 mt-4 md:mt-0'>
-                    <p className='text-lg font-medium'>
+                    <p className='text-lg font-medium leading-[2rem]'>
                         For quite some time now, METL has been our trusted solution for all our cooking gas
                         requirements. Their commitment to on-time delivery has been truly remarkable.
                         We can always rely on them without any hesitation.
                     </p>
                     <p className='text-lg font-medium mt-10'><span className='font-bold'>-Emeka Igwe </span>{" "}CEO</p>
-                    <p className='text-lg font-medium'>Terrrafoam</p>
+                    <p className='text-lg font-medium'>Pearl Restaurant</p>
                 </div>
 
             </div>

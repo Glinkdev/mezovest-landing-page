@@ -14,7 +14,7 @@ function HeroSection() {
     return (
         <div className='flex flex-col md:flex-row '>
             <div className='flex flex-col lg:flex-row mt-10 xl:mt-14 justify-between relative'>
-                <div className='flex-col w-full md:w-3/5'>
+                <div className='flex-col w-full md:w-full'>
                     <div className='flex'>
                         <img src={GreenStroke} alt="green stroke" />
                         <p className='ml-6 font-normal md:text-xl text-white'>Our commerce solution is boundless</p>
@@ -24,17 +24,17 @@ function HeroSection() {
                         <br />
                         <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal leading-16'>Nationwide </span>
                     </div>
-                    <p className='font-normal md:text-xl text-white mt-6'>
+                    <p className='font-normal md:text-xl text-white mt-6 leading-[2rem]'>
                         {"In today's fast-paced world, we understand the importance of seamless and secure payment solutions. At Mezovest, we've got you covered with our versatile payment solutions designed specifically for the Nigerian market."}
                     </p>
                     <div className='flex gap-4 w-full'>
-                        <a
+                        {/* <a
                             // target="_blank"
                             // rel="noopener noreferrer"
                             // href="mailto:sales@mezovest.com"
                             className='hidden md:flex p-4 md:px-8 justify-center items-center  bg-green mt-6 cursor-pointer'>
                             <p className='whitespace-nowrap'>Coming Soon</p>
-                        </a>
+                        </a> */}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
@@ -52,7 +52,7 @@ function HeroSection() {
 
                 </div>
 
-                <div className='flex mt-20 md:mt-0 justify-center md:justify-end md:w-2/5 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden'>
+                <div className='hidden flex mt-20 md:mt-0 justify-center md:justify-end md:w-2/5 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden'>
                     <img src={PaymentImage} alt="payment image" className='flex h-full md:-bottom-[130px] md:-right-20 md:h-[667px]' />
                 </div>
                 

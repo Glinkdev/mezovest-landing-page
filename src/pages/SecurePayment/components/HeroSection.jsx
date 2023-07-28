@@ -26,7 +26,7 @@ function HeroSection() {
                             <br />
                             <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal leading-16'>Payment links</span>
                         </div>
-                        <p className='font-normal md:text-xl text-white mt-6'>
+                        <p className='font-normal md:text-xl text-white mt-6 leading-[2rem]'>
                             {"Unlock the power of convenient and boundless payment processing  with Mezovest's secure payment links."}
                         </p>
                         <div className='flex gap-4 w-full'>

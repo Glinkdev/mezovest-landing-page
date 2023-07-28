@@ -14,17 +14,17 @@ function HeroSection() {
     return (
         <div className='flex flex-col md:flex-row w-full'>
             <div className='flex flex-col lg:flex-row mt-10 md:mt-14  justify-between relative w-full'>
-                <div className='flex-col w-full md:w-1/2'>
+                <div className='flex-col w-full '>
                     <div className='flex'>
                         <img src={GreenStroke} alt="green stroke" />
                         <p className='ml-6 font-normal md:text-xl text-white'>Never miss a payment with our</p>
                     </div>
                     <div className='font-liquefier mt-6'>
                         <span className='text-green text-6xl md:text-7xl md:text-[100px] font-normal leading-16 md:whitespace-nowrap'>Get paid </span>
-                        <br />
+                        {/* <br /> */}
                         <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal leading-16'>Faster</span>
                     </div>
-                    <p className='font-normal md:text-xl text-white mt-6'>
+                    <p className='font-normal md:text-xl text-white mt-6 leading-[2rem]'>
                         {"Use Mezovest e-invoice to track due payments and receive payments for more accurate inventory control, accounting, and more."}
                     </p>
                     <div className='flex gap-4 w-full'>
@@ -52,7 +52,7 @@ function HeroSection() {
 
                 </div>
 
-                <div className='flex mt-20 md:mt-0 justify-center md:justify-end items-start md:w-1/2 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden'>
+                <div className='hidden mt-20 md:mt-0 justify-center md:justify-end items-start md:w-1/2 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden'>
 
                     <img src={HeroImage} alt="payment image" className='flex md:-right-20' />
                 </div>

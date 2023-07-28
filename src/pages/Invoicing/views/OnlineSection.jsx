@@ -46,7 +46,7 @@ function OnlineSection() {
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal  text-green !leading-[5rem]'>Streamlined </h5>
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal !leading-[5rem]'>Billing Process</h5>
                     </div>
-                    <p className='text-sm mt-8'>Simplify your billing process and save time with our streamlined invoicing system. Generate and send professional invoices in just a few clicks, eliminating manual paperwork and reducing errors.</p>
+                    <p className='text-md leading-[2rem] mt-8'>Simplify your billing process and save time with our streamlined invoicing system. Generate and send professional invoices in just a few clicks, eliminating manual paperwork and reducing errors.</p>
                     {/* <div className='w-full flex mt-10 md:mt-10'>
                         <a
                             // target="_blank"

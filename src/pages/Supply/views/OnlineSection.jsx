@@ -46,7 +46,7 @@ function OnlineSection() {
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal md:leading-[5rem] text-green'>Last-Mile </h5>
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal md:leading-[5rem] '>Delivery Excellence</h5>
                     </div>
-                    <p className='text-sm mt-8'>{"Enhance your customer experience with our last-mile delivery solution. We specialize in providing reliable and efficient delivery services directly to your customers' doorsteps. Our experienced delivery personnel ensure smooth and timely deliveries, leaving a positive impression on your customers and fostering long-term loyalty."}</p>
+                    <p className='text-md leading-[2rem] mt-8'>{"Enhance your customer experience with our last-mile delivery solution. We specialize in providing reliable and efficient delivery services directly to your customers' doorsteps. Our experienced delivery personnel ensure smooth and timely deliveries, leaving a positive impression on your customers and fostering long-term loyalty."}</p>
                 </div>
 
 

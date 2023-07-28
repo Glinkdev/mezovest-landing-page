@@ -33,7 +33,7 @@ function OfflineSection() {
                         <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal !leading-[5rem]'>Templates</span>
                         <br />
                     </div>
-                    <div className='mt-6'>
+                    <div className='mt-6 leading-[2rem] text-md'>
                         <p>Elevate your brand with fully customizable invoice templates tailored to your business. Stand out from the crowd with personalized designs that reflect your unique style and professionalism. Easily add your logo, colors, and fonts to create visually stunning invoices that leave a lasting impression on your clients.</p>
                     </div>
                     <div className='flex gap-4 w-full mt-4'>

@@ -31,7 +31,7 @@ function OfflineSection() {
                         <span className='text-green text-3xl md:text-[40px] font-semibold leading-16 md:whitespace-nowrap'>Battery or plug-in <span className='text-black'>operation</span></span>
                         <br />
                     </div>
-                    <div className='mt-2'>
+                    <div className='mt-2 text-md leading-[2rem]'>
                         <p>Mezovest Point of sale (POS) packs a powerful battery to ensure reliability and more profit in sales.</p>
                     </div>
 
@@ -39,7 +39,7 @@ function OfflineSection() {
                         <span className='text-green text-3xl md:text-[40px] font-semibold leading-16'>Fast & Secure <span className='text-black'>Payment</span></span>
                         <br />
                     </div>
-                    <div className='mt-2 text-md'>
+                    <div className='mt-2 text-md leading-[2rem]'>
                         <p>Mezovest Point of sale (POS) offers safe and secure payments through debit cards, and payment with mezopay while ensuring data security through end-to-end encryption.</p>
                     </div>
                     

@@ -22,14 +22,14 @@ function App() {
         <Route exact path="/" element={<NewHome />} />
         <Route path="/new" element={<Home />} />
         <Route path="/payment" element={<Payments />} />
-        <Route path="/customers" element={<Customers />} />
+        <Route path="/testimonials" element={<Customers />} />
         <Route path="/send" element={<SendMoney />} />
         <Route path="/storefront" element={<StoreFront />} />
-        <Route path="/secure-payment" element={<SecurePayment />} />
+        <Route path="/payment-link" element={<SecurePayment />} />
         <Route path="/invoicing" element={<Invoicing />} />
         <Route path="/loan" element={<Loan />} />
-        <Route path="/supply-chain" element={<Supply />} />
-        <Route path="/logistics" element={<Collaboration />} />
+        <Route path="/logistics" element={<Supply />} />
+        <Route path="/supply-chain" element={<Collaboration />} />
         <Route path="/pos" element={<POS />} />
         <Route path="/*" element={<NewHome />} />
       </Routes>

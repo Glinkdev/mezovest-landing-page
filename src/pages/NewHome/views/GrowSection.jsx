@@ -20,7 +20,7 @@ function GrowSection() {
     modal.open();
   };
   return (
-    <div className='py-7 md:pt-11 md:pb-24 px-6 xl:px-36 !bg-darkGreen h-full min-h-screen font-poppins '>
+    <div className='py-7 md:pt-11 md:pb-24 px-6 xl:px-36 !bg-darkGreen h-full h-fit md:min-h-screen font-poppins '>
       <div className='flex justify-between' >
         <a href="/" className='flex '>
           <img src={MezovestLogo} alt="Mezovest Logo" className='h-[40px]' />
