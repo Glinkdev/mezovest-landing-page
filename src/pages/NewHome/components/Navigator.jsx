@@ -20,7 +20,7 @@ function Navigator() {
         },
         {
             name: "About us",
-            href: "/testimonials"
+            href: "/about-us"
         },
         {
             name: "Blog",
@@ -85,11 +85,12 @@ function Navigator() {
     ]
 
     const routeTo = (route) => {
+        setOpenSubMenu(false)
         navigate(route)
     }
     return (
         <Styled>
-            <div className='flex justify-between  bg-green px-3 py-5 md:py-7 md:px-14 font-poppins w-full  mt-8 '>
+            <div className='flex justify-between  bg-green px-3 py-5 md:py-7 md:px-14 font-poppins w-full  mt-8  ' onClick={() => openSubmenu ? setOpenSubMenu(false) : null}>
                 <div className='flex justify-center md:justify-between w-full'>
 
                     <div className='hidden md:flex justify-between align-center w-3/6'>

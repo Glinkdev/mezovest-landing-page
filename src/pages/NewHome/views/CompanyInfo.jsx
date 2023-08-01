@@ -101,7 +101,7 @@ function CompanyInfo() {
                 <div className='w-1/3 flex flex-col'>
                     <p className='font-bold text-md whitespace-nowrap'>Why Mezovest</p>
                     <a
-                        // href="/why-choose"
+                        href="/why-choose-us"
                         className='mt-6 text-sm whitespace-nowrap'
                     >Why choose Mezovest</a>
                     <a
@@ -118,7 +118,7 @@ function CompanyInfo() {
                 <div className='w-1/3 flex flex-col'>
                     <p className='font-bold text-md'>Company</p>
                     <a
-                        // href="/testimonials" 
+                        href="/about-us" 
                         className='mt-6 text-sm'>About Us</a>
                     <a
                         href="https://blog.mezovest.com" 

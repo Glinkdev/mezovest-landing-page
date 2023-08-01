@@ -12,6 +12,8 @@ import Loan from "./pages/Loan";
 import Supply from "./pages/Supply";
 import Collaboration from "./pages/Collaboration";
 import POS from "./pages/POS";
+import AboutUs from "./pages/AboutUs";
+import WhyChooseUs from "./pages/WhyChooseUs";
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
         <Route path="/logistics" element={<Supply />} />
         <Route path="/supply-chain" element={<Collaboration />} />
         <Route path="/pos" element={<POS />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/why-choose-us" element={<WhyChooseUs />} />
         <Route path="/*" element={<NewHome />} />
       </Routes>
     </Router>

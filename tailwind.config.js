@@ -15,7 +15,8 @@ export default {
         "2xl": '2220px',
       },
       backgroundImage:{
-        'heroImage': 'url(./src/assets/icons/mez-hero-img.svg)'
+        'heroImage': 'url(./src/assets/icons/mez-hero-img.svg)',
+        'joinImage': 'url(./src/assets/images/join-background-image.svg)',
       }
     },
     letterSpacing: {
