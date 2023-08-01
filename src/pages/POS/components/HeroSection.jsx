@@ -25,7 +25,7 @@ function HeroSection() {
                         <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>Point of Sale <br/> (P.O.S)</span>
                     </div>
                     
-                    <div className='flex gap-4 w-full md:mt-20'>
+                    <div className='flex gap-4 w-full md:mt-10'>
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
