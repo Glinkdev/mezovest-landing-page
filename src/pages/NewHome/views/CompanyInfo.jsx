@@ -83,7 +83,7 @@ function CompanyInfo() {
                     >POS Terminals</a>
                 </div>
 
-                <div className='w-1/3'>
+                <div className='w-1/3 flex-col flex'>
                     <p className='font-bold text-md'>Mezovest</p>
                     <a 
                         href='https://mezoenergy.com'
