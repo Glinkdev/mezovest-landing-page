@@ -111,7 +111,7 @@ function CompanyInfo() {
                         // href="/testimonials"
                         className='mt-4 text-sm'>For Restaurants</a>
                     <a
-                        // href="/testimonials" 
+                        href="/why-choose-us/#cooking-gas" 
                         className='mt-4 text-sm'>For Cooking Gas Vendors</a>
                 </div>
 
@@ -124,8 +124,8 @@ function CompanyInfo() {
                         href="https://blog.mezovest.com" 
                         className='mt-4 text-sm'>Blog</a>
                     <a
-                        // href="/testimonials" 
-                        className='mt-4 text-sm opacity-10 whitespace-nowrap'>Become a partner</a>
+                        href="/become-a-partner" 
+                        className='mt-4 text-sm whitespace-nowrap'>Become a partner</a>
                     <a
                         // href="/testimonials" 
                         className='mt-4 text-sm opacity-10'>Careers</a>

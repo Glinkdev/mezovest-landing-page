@@ -7,16 +7,20 @@ import ProcessSteps from "./views/ProcessSteps";
 import CtaSection from "./views/CtaSection";
 import CompanyInfo from "../NewHome/views/CompanyInfo";
 import Footer from "../../sections/Footer";
+import JoinMezovestSection from "./views/JoinMezovestSection";
+import CustomerFeedback from "../Customers/views/CustomerFeedback";
 
-function POS() {
+function BecomeAPartner() {
 
     return (
         <>
             <AcceptPayemntSection />
             <OfflineSection />
+            {/* <CustomerFeedback/>
             <OnlineSection />
-            {/* <ProcessSteps /> */}
-            <FaqSection />
+            <CustomerFeedback/>
+            <JoinMezovestSection /> */}
+             {/*<FaqSection /> */}
             <CtaSection />
             <CompanyInfo />
             <Footer />
@@ -24,4 +28,4 @@ function POS() {
     )
 }
 
-export default POS
+export default BecomeAPartner

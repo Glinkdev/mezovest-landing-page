@@ -22,7 +22,7 @@ function MobileMenu({ show, close, }) {
         // },
         {
             name: "About us",
-            url: "/testimonials"
+            url: "/about-us"
         },
         {
             name: "Blog",

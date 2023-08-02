@@ -1,10 +1,8 @@
 import React from 'react';
-import { styled } from 'styled-components';
 import SmallWhiteStroke from "../../../assets/images/short-white-stroke.svg";
 import GreenCallIcon from "../../../assets/icons/green-call-icon.svg";
 import GreenEmailIcon from "../../../assets/icons/green-email-icon.svg";
 import GreenLocationIcon from "../../../assets/icons/green-location-icon.svg";
-import JoinImage from "../../../assets/images/join-background-image.svg"
 
 function JoinMezovestSection() {
     const info = [

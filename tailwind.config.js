@@ -16,7 +16,7 @@ export default {
       },
       backgroundImage:{
         'heroImage': 'url(./src/assets/icons/mez-hero-img.svg)',
-        'joinImage': 'url(./src/assets/images/join-background-image.svg)',
+        'joinImage': 'url(../src/assets/images/join-background-image.svg)',
       }
     },
     letterSpacing: {

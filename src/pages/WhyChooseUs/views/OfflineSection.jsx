@@ -46,7 +46,7 @@ function OfflineSection() {
                 </div>
 
             </div>
-            <div className='flex flex-col lg:flex-row w-full gap-20 grid grid-cols-1 md:grid-cols-3 mt-28'>
+            <div className='flex flex-col lg:flex-row w-full gap-20 grid grid-cols-1 md:grid-cols-3 mt-28 xl:mt-60'>
                 <div className='flex flex-col col-span-1'>
                     <span className='text-green text-3xl md:text-[40px] font-semibold leading-[3rem] md:whitespace-nowrap'>Tailored  <span className='text-black '> Financing<br /> Solutions</span> </span>
                     <br />
@@ -110,7 +110,7 @@ function OfflineSection() {
                 </div>
 
             </div>
-            <div className='flex flex-col w-full mt-20'>
+            <div className='flex flex-col w-full mt-20' id="cooking-gas">
                 <div className='w-full'>
                     <div className='flex'>
                         <img src={SmallGreenStroke} />
