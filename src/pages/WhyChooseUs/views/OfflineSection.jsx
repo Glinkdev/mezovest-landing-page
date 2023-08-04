@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import GreenStroke from "../../../assets/icons/green-stroke.svg"
 import OfflineImage from "../../../assets/images/fast-reliable-image.svg";
 import MezoBagImage from "../../../assets/images/mez-shopbag-img.png";
@@ -18,8 +19,9 @@ import CustomerFeedback from '../../../pages/Customers/views/CustomerFeedback';
 
 
 function OfflineSection() {
-
-
+    const location = useLocation()
+    const cookinGasSection = useRef()
+    const restaurantsSection = useRef()
     const fitDetails = [
         {
             details: "One - time payments:",
@@ -32,9 +34,17 @@ function OfflineSection() {
 
     ]
 
-    useEffect(() => {
-
-    },[])
+    useEffect(() => {          
+        console.log('log this message when this React component is mounted!', location.hash);
+        if(location.hash) { 
+            if(location.hash === "#cooking-gas"){
+                window.scrollTo(0, cookinGasSection.current.offsetTop); 
+            }
+            if(location.hash === "#restaurants"){
+                window.scrollTo(0, restaurantsSection.current.offsetTop); 
+            }
+        }
+    }, [location.hash]);
 
     return (
         <div className='py-7 md:pt-16 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
@@ -79,7 +89,7 @@ function OfflineSection() {
                 </div>
 
             </div>
-            <div className='flex flex-col w-full mt-20'>
+            <div className='flex flex-col w-full mt-20' id="restaurants" ref={restaurantsSection}>
                 <div className='w-full'>
                     <div className='flex'>
                         <img src={SmallGreenStroke} />
@@ -116,7 +126,7 @@ function OfflineSection() {
                 </div>
 
             </div>
-            <div className='flex flex-col w-full mt-20' id="cooking-gas">
+            <div className='flex flex-col w-full mt-20' id="cooking-gas" ref={cookinGasSection}>
                 <div className='w-full'>
                     <div className='flex'>
                         <img src={SmallGreenStroke} />

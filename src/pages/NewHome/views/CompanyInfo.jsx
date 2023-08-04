@@ -29,9 +29,6 @@ function CompanyInfo() {
         },
     ]
 
-    const routeTo = () => {
-        window.location="/why-choose-us/#cooking-gas" 
-    }
     return (
         <div className='py-7 md:pt-14 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins flex md:flex-row flex-col justify-between md:gap-28 max-w-[1400px] m-auto'>
             <div className='flex flex-col md:w-1/5'>
@@ -89,10 +86,10 @@ function CompanyInfo() {
 
                 <div className='w-1/3 flex-col flex'>
                     <p className='font-bold text-md'>Mezovest</p>
-                    <a 
+                    <a
                         href='https://mezoenergy.com'
                         className='mt-6 text-sm'>Mezo Energy</a>
-                    <a 
+                    <a
                         href='https://spatchng.com'
                         className='mt-4 text-sm'>Spatch</a>
                     <p className='font-bold text-sm mt-6 opacity-10'>Developers</p>
@@ -112,23 +109,23 @@ function CompanyInfo() {
                         href="/testimonials"
                         className='mt-4 text-sm'>Testimonials</a>
                     <a
-                        // href="/testimonials"
+                        href="/why-choose-us/#restaurants"
                         className='mt-4 text-sm'>For Restaurants</a>
-                    <div
-                        onClick={()=> routeTo()}
-                        className='mt-4 text-sm cursor-pointer'>For Cooking Gas Vendors</div>
+                    <a
+                        href="/why-choose-us/#cooking-gas"
+                        className='mt-4 text-sm cursor-pointer'>For Cooking Gas Vendors</a>
                 </div>
 
                 <div className='w-1/3 flex flex-col'>
                     <p className='font-bold text-md'>Company</p>
                     <a
-                        href="/about-us" 
+                        href="/about-us"
                         className='mt-6 text-sm'>About Us</a>
                     <a
-                        href="https://blog.mezovest.com" 
+                        href="https://blog.mezovest.com"
                         className='mt-4 text-sm'>Blog</a>
                     <a
-                        href="/become-a-partner" 
+                        href="/become-a-partner"
                         className='mt-4 text-sm whitespace-nowrap'>Become a partner</a>
                     <a
                         // href="/testimonials" 
