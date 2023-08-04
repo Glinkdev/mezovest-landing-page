@@ -88,7 +88,7 @@ function CompanyInfo() {
                     <p className='font-bold text-md'>Mezovest</p>
                     <a
                         href='https://mezoenergy.com'
-                        className='mt-6 text-sm'>Mezo Energy</a>
+                        className='mt-6 text-sm'>Mezoenergy</a>
                     <a
                         href='https://spatchng.com'
                         className='mt-4 text-sm'>Spatch</a>
