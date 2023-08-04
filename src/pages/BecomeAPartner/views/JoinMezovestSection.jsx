@@ -63,5 +63,5 @@ function JoinMezovestSection() {
 export default JoinMezovestSection
 
 const Styled = styled.div`
-    background-image: url("../src/assets/images/join-background-imagee.png");
+    background-image: url("../../assets/images/join-background-imagee.png");
 `
