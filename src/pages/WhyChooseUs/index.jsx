@@ -1,4 +1,5 @@
 import React from "react";
+import { styled } from "styled-components";
 import AcceptPayemntSection from "./views/AcceptPaymentSection";
 import OfflineSection from "./views/OfflineSection";
 import OnlineSection from "./views/OnlineSection";
@@ -13,7 +14,7 @@ import CustomerFeedback from "../../pages/Customers/views/CustomerFeedback";
 function WhyChooseUs() {
 
     return (
-        <>
+        <Styled>
             <AcceptPayemntSection />
             <OfflineSection />
             <CustomerFeedback/>
@@ -24,8 +25,11 @@ function WhyChooseUs() {
             <CtaSection />
             <CompanyInfo />
             <Footer />
-        </>
+        </Styled>
     )
 }
 
 export default WhyChooseUs
+const Styled =  styled.div`
+    scroll-behavior: smooth;
+`

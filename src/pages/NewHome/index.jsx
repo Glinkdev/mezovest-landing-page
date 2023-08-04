@@ -1,4 +1,5 @@
 import React from "react";
+import { styled } from "styled-components";
 import GrowSection from "./views/GrowSection";
 import FitSection from "./views/FitSection";
 import MetlSection from "./views/MetlSection";
@@ -14,7 +15,7 @@ import Footer from "./views/Footer";
 function NewHome() {
 
     return (
-        <>
+        <Styled>
             <GrowSection />
             <AboutSection />
             <FitSection />
@@ -24,8 +25,12 @@ function NewHome() {
             <CtaSection />
             <CompanyInfo />
             <Footer />
-        </>
+        </Styled>
     )
 }
 
 export default NewHome
+
+const Styled =  styled.div`
+    scroll-behavior: smooth;
+`

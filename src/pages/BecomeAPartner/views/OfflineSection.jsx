@@ -49,7 +49,17 @@ function OfflineSection() {
                         <p>{"Join forces with Mezovest as a valued partner and unlock new business opportunities. If you have a digital platform, app, or website and seek to expand your offerings, our partnership venture is the perfect match. Become a reseller of our top-quality cooking gas through your platform, providing added convenience to your customers while generating additional revenue streams. With our seamless supply chain and logistics, you can confidently offer a steady and reliable gas supply to your audience. Step into the future of commerce and embark on a rewarding journey with Mezovest as your trusted partner. Together, we'll elevate customer experiences and drive growth for both of our businesses. Let's shape the industry, one partnership at a time"}.</p>
 
                         <p className='mt-10'>{"Don't miss out on the chance to grow and thrive in the energy sector with Mezovest's support. Become a partner and seize the future of commerce together!"}
+
                         </p>
+                        <div className='w-full flex mt-6 justify-start'>
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="mailto:sales@mezovest.com"
+                            className='bg-green px-10 py-4 max-w-fit self-end cursor-pointer'>
+                            <p className='text-base font-normal whitespace-nowrap text-black'>TALK TO SALES</p>
+                        </a>
+                    </div>
                     </div>
                 </div>
                 <div className='flex flex-col md:w-1/2 md:relative'>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { styled } from 'styled-components';
 import SmallWhiteStroke from "../../../assets/images/short-white-stroke.svg";
 import GreenCallIcon from "../../../assets/icons/green-call-icon.svg";
 import GreenEmailIcon from "../../../assets/icons/green-email-icon.svg";
@@ -34,7 +35,7 @@ function JoinMezovestSection() {
     ]
     return (
         
-        <div className='pt-20 md:py-20 px-6 xl:px-36 h-full min-h-fit font-poppins text-white bg-joinImage pb-20'>
+        <Styled className='pt-20 md:py-20 px-6 xl:px-36 h-full min-h-fit font-poppins text-white bg-joinImage pb-20'>
             <div className='hidden md:flex justify-center'><img src={SmallWhiteStroke} className="mr-2"/> <p>{"Your journey to a brighter, more prosperous future starts with Mezovest. Choose us and soar high in the energy sector! "}</p></div>
             <div className='font-liquefier mt-8 flex flex-col justify-start md:justify-center'>
                 <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal leading-16 lg:whitespace-nowrap text-left md:text-center'>Join the Winning Team</span>
@@ -53,10 +54,14 @@ function JoinMezovestSection() {
 
             </div>
 
-        </div>
+        </Styled>
             
        
     )
 }
 
 export default JoinMezovestSection
+
+const Styled = styled.div`
+    background-image: url("../src/assets/images/join-background-imagee.png");
+`

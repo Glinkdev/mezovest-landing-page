@@ -25,6 +25,10 @@ function MobileMenu({ show, close, }) {
             url: "/about-us"
         },
         {
+            name: "Become a partner",
+            href: "/become-a-partner"
+        },
+        {
             name: "Blog",
             url: "https://blog.mezovest.com"
         },

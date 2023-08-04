@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import GreenStroke from "../../../assets/icons/green-stroke.svg"
 import OfflineImage from "../../../assets/images/fast-reliable-image.svg";
 import MezoBagImage from "../../../assets/images/mez-shopbag-img.png";
@@ -16,7 +16,9 @@ import ClientSlider from '../../../components/ClientSlider';
 import CustomerFeedback from '../../../pages/Customers/views/CustomerFeedback';
 
 
+
 function OfflineSection() {
+
 
     const fitDetails = [
         {
@@ -29,6 +31,10 @@ function OfflineSection() {
         },
 
     ]
+
+    useEffect(() => {
+
+    },[])
 
     return (
         <div className='py-7 md:pt-16 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>

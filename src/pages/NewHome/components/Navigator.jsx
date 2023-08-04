@@ -23,6 +23,10 @@ function Navigator() {
             href: "/about-us"
         },
         {
+            name: "Become a partner",
+            href: "/become-a-partner"
+        },
+        {
             name: "Blog",
             href: "https://blog.mezovest.com"
         },

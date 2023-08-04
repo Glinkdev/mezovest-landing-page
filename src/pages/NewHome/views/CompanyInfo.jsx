@@ -28,6 +28,10 @@ function CompanyInfo() {
             link: "https://www.linkedin.com/company/mezovestinc/",
         },
     ]
+
+    const routeTo = () => {
+        window.location="/why-choose-us/#cooking-gas" 
+    }
     return (
         <div className='py-7 md:pt-14 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins flex md:flex-row flex-col justify-between md:gap-28 max-w-[1400px] m-auto'>
             <div className='flex flex-col md:w-1/5'>
@@ -110,9 +114,9 @@ function CompanyInfo() {
                     <a
                         // href="/testimonials"
                         className='mt-4 text-sm'>For Restaurants</a>
-                    <a
-                        href="/why-choose-us/#cooking-gas" 
-                        className='mt-4 text-sm'>For Cooking Gas Vendors</a>
+                    <div
+                        onClick={()=> routeTo()}
+                        className='mt-4 text-sm cursor-pointer'>For Cooking Gas Vendors</div>
                 </div>
 
                 <div className='w-1/3 flex flex-col'>
