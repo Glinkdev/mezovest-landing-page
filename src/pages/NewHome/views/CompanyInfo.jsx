@@ -16,7 +16,7 @@ function CompanyInfo() {
         },
         {
             icon: InstagramIcon,
-            link: "https://instagram.com/mezovest",
+            link: "https://instagram.com/mezovest?igshid=MzRlODBiNWFlZA==",
         },
 
         {

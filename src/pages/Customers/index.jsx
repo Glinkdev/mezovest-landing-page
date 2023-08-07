@@ -14,7 +14,7 @@ function Customers() {
             <CustomerHeaderSection />
             <ClientTestimonial />
             <CustomerFeedback />
-            <CommentSection />
+            {/* <CommentSection /> */}
             <CtaSection />
             <CompanyInfo />
             <Footer />

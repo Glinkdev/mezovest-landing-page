@@ -17,7 +17,7 @@ function ProcessSteps() {
                     <div className='w-[359px] h-[343px] rounded-xl py-9 px-5 border border-black'>
                         <div className='w-full flex pb-5 border-b border-black'>
                             <h1 className='text-green text-xl font-bold whitespace-nowrap '>Step 1:</h1>
-                            <h1 className='text-black text-xl font-bold ml-2 '>Create a Mezovest Account</h1>
+                            <h1 className='text-black text-xl font-bold ml-2 '>Download Spatch app</h1>
                         </div>
                         <div className='pt-5'>
                             <p className=' text-base font-normal'>You can download the Spatch app for your device by visiting the Spatch website or simply searching on appstore or playstore</p>

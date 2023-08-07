@@ -14,9 +14,7 @@ function Navigator() {
     const navigation = [
         {
             name: "Support",
-            target:"_blank",
-            rel: "noopener noreferrer",
-            href: "mailto:sales@mezovest.com"
+            href: "/contact-page"
         },
         {
             name: "About us",
@@ -67,7 +65,7 @@ function Navigator() {
                     route: "/invoicing"
                 },
                 {
-                    name: "Credit / Loan",
+                    name: "Loan",
                     route: "/loan"
                 },
             ]

@@ -43,8 +43,8 @@ function OnlineSection() {
                         <p className='ml-3'>Keep your customers satisfied</p>
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>
-                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none text-green'>Guaranteed </h5>
-                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none '>Delivery </h5>
+                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none text-green'>Delivery </h5>
+                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-none '>Of gas </h5>
                     </div>
                     <p className='text-md mt-8 leading-[2rem]'>Count on us for unparalleled reliability when it comes to delivery.  With our dedicated fleet of vehicles, real-time tracking systems, and experienced logistics team, we ensure that your products are delivered on time, every time.</p>
 

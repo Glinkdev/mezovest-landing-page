@@ -14,7 +14,7 @@ function MobileMenu({ show, close, }) {
     const navigation = [
         {
             name: "Support",
-            url: "/testimonials"
+            url: "/contact-page"
         },
         // {
         //     name: "Pricing",
@@ -69,7 +69,7 @@ function MobileMenu({ show, close, }) {
                     route: "/invoicing"
                 },
                 {
-                    name: "Credit / Loan",
+                    name: "Loan",
                     route: "/loan"
                 },
             ]
