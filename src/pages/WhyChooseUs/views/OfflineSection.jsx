@@ -114,7 +114,7 @@ function OfflineSection() {
                                 requirements. Their commitment to on-time delivery has been truly remarkable.
                                 We can always rely on them without any hesitation.
                             </p>
-                            <p className='text-lg font-medium mt-10'><span className='font-bold'>-Emeka Igwe </span>{" "}CEO</p>
+                            <p className='text-lg font-medium mt-10'><span className='font-bold'>-Nijad </span>{" "}CEO</p>
                             <p className='text-lg font-medium'>Pearl Restaurant</p>
                         </div>
 
