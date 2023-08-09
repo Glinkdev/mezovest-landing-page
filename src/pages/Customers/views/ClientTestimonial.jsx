@@ -20,8 +20,8 @@ function ClientTestimonial() {
                         created a custom-made solution that simplifies backend complexities, showcases our
                         high-end product offering and enhances the customer journey as we continue to expand.
                     </p>
-                    <p className='text-lg font-medium mt-10'><span className='font-bold'>-Emeka Igwe </span>{" "}CEO</p>
-                    <p className='text-lg font-medium'>Terrrafoam</p>
+                    <p className='text-lg font-medium mt-10'><span className='font-bold'>-Nijad </span>{" "}CEO</p>
+                    <p className='text-lg font-medium'>Pearl</p>
                 </div>
 
             </div>
