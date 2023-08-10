@@ -2,7 +2,7 @@ import React from 'react';
 import HumanFace from "../../../assets/images/placeholder-profle.svg";
 import StarIcon from "../../../assets/icons/star-icon.svg"
 
-function CustomerFeedback() {
+function FeedbackCustomer() {
     return (
         <div className='py-7 md:pt-36 pb-20 px-6 xl:px-36 h-full min-h-fit font-poppins !bg-[#F1F1F180] flex gap-10 overflow-y-scroll w-full justify-center flex-col md:flex-row'>
             <div className='w-full md:w-[345px] h-[637px] shadow-lg bg-white'>
@@ -25,7 +25,7 @@ function CustomerFeedback() {
                     </div>
 
                     <div className='flex flex-col justify-end'>
-                        <p className='text-xs font-bold mt-14 text-center'>Samuel Judah</p>
+                        <p className='text-xs font-bold mt-14 text-center'>Ejike Abia</p>
                         <p className='text-xs mt-4 text-center'>Gas vendor</p>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ function CustomerFeedback() {
                     </div>
 
                     <div className='flex flex-col justify-end'>
-                        <p className='text-xs font-bold mt-14 text-center'>Ogbo Moses</p>
+                        <p className='text-xs font-bold mt-14 text-center'>Fidelix Okunwa</p>
                         <p className='text-xs mt-4 text-center'>Gas vendor</p>
                     </div>
                 </div>
@@ -86,4 +86,4 @@ function CustomerFeedback() {
     )
 }
 
-export default CustomerFeedback
+export default FeedbackCustomer

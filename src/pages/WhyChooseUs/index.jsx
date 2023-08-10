@@ -10,6 +10,7 @@ import CompanyInfo from "../NewHome/views/CompanyInfo";
 import Footer from "../../sections/Footer";
 import JoinMezovestSection from "./views/JoinMezovestSection";
 import CustomerFeedback from "../../pages/Customers/views/CustomerFeedback";
+import FeedbackCustomer from "../../pages/Customers/views/FeedBackCustomer";
 
 function WhyChooseUs() {
 
@@ -19,7 +20,7 @@ function WhyChooseUs() {
             <OfflineSection />
             <CustomerFeedback/>
             <OnlineSection />
-            <CustomerFeedback/>
+            <FeedbackCustomer/>
             <JoinMezovestSection />
              {/*<FaqSection /> */}
             <CtaSection />
