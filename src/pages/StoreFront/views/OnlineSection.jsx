@@ -32,7 +32,7 @@ function OnlineSection() {
         }
     ]
     return (
-        <div className='py-7 md:pt-20 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
+        <div className='py-7 md:pt-10 pb-10 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
             <div className='flex flex-col-reverse flex-col lg:flex-row w-full mt-5 gap-20'>
                 <div className='md:w-1/2 mt-5 md:mt-0 flex '>
                     <img src={MerchantImage} alt="mezo pay terminal" />

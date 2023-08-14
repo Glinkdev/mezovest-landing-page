@@ -20,7 +20,7 @@ function OfflineSection() {
     ]
 
     return (
-        <div className='py-7 md:pt-36 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
+        <div className='py-7 md:pt-20 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
             <div className='flex  flex-col lg:flex-row w-full gap-10'>
                 <div className='flex flex-col md:w-3/5'>
                     <div className='flex'>
@@ -30,7 +30,7 @@ function OfflineSection() {
                     <div className='font-liquefier mt-7'>
                         <span className='text-green text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Stunning</span>
                         <br />
-                        <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Product Display</span>
+                        <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-16 md:whitespace-nowrap'>Product Display</span>
                         <br />
                     </div>
                     <div className='mt-6 leading-[2rem] text-md'>
@@ -47,8 +47,8 @@ function OfflineSection() {
                         </a>
                     </div>
                 </div>
-                <div className='md:w-2/5 flex justify-end relative'>
-                   <img src={OfflineImage} alt="Mezo Energy Image" />
+                <div className='md:w-2/5 flex justify-end relative md:-right-14'>
+                   <img src={OfflineImage} alt="Mezo Energy Image"  className='max-w-[600px] h-full'/>
                 </div>
 
             </div>

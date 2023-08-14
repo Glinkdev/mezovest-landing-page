@@ -1,6 +1,6 @@
 import React from 'react'
 import GreenStroke from "../../../assets/icons/green-stroke.svg"
-import OfflineImage from "../../../assets/images/offline-image.png";
+import OfflineImage from "../../../assets/images/pos-simulation-image.svg";
 import MezoBagImage from "../../../assets/images/mez-shopbag-img.png";
 import MezoPhoneImage from "../../../assets/images/mez-phone-img.png";
 
@@ -29,7 +29,7 @@ function OfflineSection() {
     return (
         <div className='py-7 md:pt-36 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
             <div className='flex flex-col lg:flex-row w-full gap-10'>
-                <div className='flex flex-col md:w-1/2'>
+                <div className='flex flex-col md:w-3/5'>
                     <div className='flex'>
                         <img src={GreenStroke} alt="black stroke" />
                         <p className='ml-2 text-xl font-normal'>Collect payments anywhere</p>
@@ -72,8 +72,8 @@ function OfflineSection() {
                         </a>
                     </div>
                 </div>
-                <div className='hidden md:w-1/2  md:flex justify-end relative'>
-                   <img src={OfflineImage} alt="Mezo Energy Image" />
+                <div className='md:w-2/5 md:-right-40 md:flex justify-end relative'>
+                   <img src={OfflineImage} alt="Mezo Energy Image"  className='max-w-[650px] h-full'/>
                 </div>
 
             </div>

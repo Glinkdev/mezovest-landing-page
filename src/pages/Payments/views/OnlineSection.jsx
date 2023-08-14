@@ -1,6 +1,6 @@
 import React from 'react';
 import SmallGreenStroke from "../../../assets/icons/short-green-stroke.svg";
-import MerchantImage from "../../../assets/images/online-image.png";
+import MerchantImage from "../../../assets/images/accept-payment-online-image.svg";
 import RightArrowIcon from "../../../assets/icons/right-arrow-icon.svg"
 
 function OnlineSection() {

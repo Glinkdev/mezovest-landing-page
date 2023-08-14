@@ -1,6 +1,6 @@
 import React from 'react'
 import GreenStroke from "../../../assets/icons/green-stroke.svg";
-import OfflineImage from "../../../assets/images/efficient-network-image.svg";
+import OfflineImage from "../../../assets/images/distribution-network-image.svg";
 
 
 function OfflineSection() {

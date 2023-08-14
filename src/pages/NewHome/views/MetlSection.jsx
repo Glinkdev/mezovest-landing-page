@@ -72,7 +72,7 @@ function MetlSection() {
 
                 </div>
                 <div className=' md:w-2/5 mt-10 md:mt-0 flex justify-end md:ml-20'>
-                    <img src={MezoEnergyImage} alt="Mezo Energy Image" className='md:w-[834px] h-full' />
+                    <img src={MezoEnergyImage} alt="Mezo Energy Image" className='w-full h-full max-w-[1000px]' />
                 </div>
 
             </div>

@@ -45,14 +45,14 @@ function DetailsPage() {
             id: 3,
             icon: ThisDay
         },
-        {
-            id: 4,
-            icon: Vanguard
-        },
-        {
-            id: 5,
-            icon: BusinessDay
-        }
+        // {
+        //     id: 4,
+        //     icon: Vanguard
+        // },
+        // {
+        //     id: 5,
+        //     icon: BusinessDay
+        // }
     ]
     return (
         <div className='py-7 md:pt-14 pb-4 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
@@ -133,7 +133,7 @@ function DetailsPage() {
                     <h5 className='font-liquefier text-grey text-5xl md:text-7xl font-normal md:!leading-[5rem] text-center'>As seen in the media</h5>
                     <img src={GreenUnderline} className="m-auto" />
                 </div>
-                <div className='mt-10 grid grid-cols-3 gap-2 md:flex justify-between items-center'>
+                <div className='mt-10 grid grid-cols-3 gap-2 md:flex justify-between items-center max-w-[700px] w-full m-auto'>
                     {media.map((item) => (
                         <img key={item.id}src={item.icon} alt={"media"} className={"h-[69px] md:h-full"}/>
                     ))}

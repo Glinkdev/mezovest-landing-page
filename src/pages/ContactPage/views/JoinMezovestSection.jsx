@@ -13,12 +13,12 @@ function JoinMezovestSection() {
             heading: "Ikoyi",
             subheading: "36 Turnbull road, ikoyi Lagos.",
         },
-        {
-            id: 2,
-            image: GreenLocationIcon,
-            heading: "Festac",
-            subheading: "24 Ago Palace way, Festac Lagos.",
-        },
+        // {
+        //     id: 2,
+        //     image: GreenLocationIcon,
+        //     heading: "Festac",
+        //     subheading: "24 Ago Palace way, Festac Lagos.",
+        // },
         {
             id: 3,
             image: GreenEmailIcon,

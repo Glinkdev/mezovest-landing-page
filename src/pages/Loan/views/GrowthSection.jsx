@@ -1,7 +1,8 @@
 import React from 'react';
 import SmallGreenStroke from "../../../assets/icons/short-green-stroke.svg";
 import MerchantImage from "../../../assets/images/repayment-image.svg";
-import GasPlantImage from "../../../assets/images/gas-plant-image.svg";
+import GasPlantImage from "../../../assets/images/boost-your-growth-image.svg";
+import StayAheadImage from "../../../assets/images/stay-ahead-image.svg";
 import RightArrowIcon from "../../../assets/icons/right-arrow-icon.svg"
 
 function GrowthSection() {
@@ -81,7 +82,7 @@ function GrowthSection() {
 
                     </div>
                     <div className='md:w-1/2 mt-10 md:mt-0 flex '>
-                        <img src={GasPlantImage} alt="mezo pay terminal" />
+                        <img src={StayAheadImage} alt="mezo pay terminal" />
                     </div>
 
 
