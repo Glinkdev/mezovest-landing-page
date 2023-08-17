@@ -38,7 +38,7 @@ function Navigator() {
                 <p className='text-[0.6rem]'>hello@mezovest.com</p>
               </div>
           </a>
-          <a href="tel:+234 812 345 6789" className='flex cursor-pointer align-center'>
+          <a href="tel:+2349133577245" className='flex cursor-pointer align-center'>
               <img src={CallIcon} alt="mezovest email icon" className='w-[29px] h-[29px]'/>
               <div className='text-black ml-2 flex align-center flex-col'>
                 <p className='text-xs font-semibold'>Call Us</p>

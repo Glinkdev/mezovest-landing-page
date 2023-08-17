@@ -29,7 +29,7 @@ function AcceptPayemntSection() {
               <p className='text-xs'>hello@mezovest.com</p>
             </div>
           </a>
-          <a href="tel:+234 812 345 6789" className='flex cursor-pointer ml-6'>
+          <a href="tel:+2349133577245" className='flex cursor-pointer ml-6'>
             <img src={CallIcon} alt="mezovest email icon" />
             <div className='text-white ml-2'>
               <p className='font-semibold'>Call Us</p>

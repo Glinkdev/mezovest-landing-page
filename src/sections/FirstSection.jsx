@@ -87,7 +87,7 @@ function FirstSection() {
     {
       icon: "",
       title: "Phone Us",
-      description: "+234 812 345 6789",
+      description: "+2349133577245",
       type: "call"
     }
   ]
@@ -103,7 +103,7 @@ function FirstSection() {
                 <p className='text-xs'>hello@mezovest.com</p>
               </div>
           </a>
-          <a href="tel:+234 812 345 6789" className='flex cursor-pointer ml-6'>
+          <a href="tel:+23491335772459" className='flex cursor-pointer ml-6'>
               <img src={CallIcon} alt="mezovest email icon"/>
               <div className='text-white ml-2'>
                 <p className='font-semibold'>Call Us</p>
