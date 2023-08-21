@@ -38,7 +38,7 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/why-choose-us" element={<WhyChooseUs />} />
         <Route path="/become-a-partner" element={<BecomeAPartner />} />
-        <Route path="/contact-page" element={<ContactPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/*" element={<NewHome />} />
       </Routes>
     </Router>

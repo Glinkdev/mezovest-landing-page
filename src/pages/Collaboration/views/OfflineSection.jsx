@@ -1,12 +1,13 @@
 import React from 'react'
 import GreenStroke from "../../../assets/icons/green-stroke.svg";
 import OfflineImage from "../../../assets/images/distribution-network-image.svg";
+import LocationTable from "../../../assets/images/location-table.svg";
 
 
 function OfflineSection() {
 
     return (
-        <div className='py-7 md:pt-14 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
+        <div className='py-7 md:pt-14 pb-10 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
             <div className='flex flex-col lg:flex-row w-full gap-10'>
                 <div className='flex flex-col md:w-1/2'>
                     <div className='flex'>
@@ -27,6 +28,18 @@ function OfflineSection() {
                    <img src={OfflineImage} alt="Mezo Energy Image" />
                 </div>
 
+            </div>
+            <div className='flex flex-col justify-center mt-36'>
+                <div className='font-liquefier mt-7 md:text-center'>
+                    <span className='text-green text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>Locations of </span>
+                    <br />
+                    <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem] '> Micro Distribution Centres   <br/><span className='whitespace-nowrap'>MDC’s Nationwide</span>  </span>
+                    <br />
+                </div>
+
+                <div className='mt-14 overflow-x-scroll'>
+                    <img src={LocationTable} alt="location table" className='min-w-[600px]'/> 
+                </div>
             </div>
 
         </div>

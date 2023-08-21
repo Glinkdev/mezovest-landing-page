@@ -1,5 +1,5 @@
 import React from 'react';
-import PaymentImage from "../../../assets/animation/metl-cylinder.gif"
+import PaymentImage from "../../../assets/images/grow-hero-image.svg"
 import GreenStroke from "../../../assets/icons/green-stroke.svg"
 
 function HeroSection() {
@@ -28,7 +28,6 @@ function HeroSection() {
                             <p className='whitespace-nowrap'>Talk to Sales</p>
                         </a>
                         <a
-                            
                             href="#products"
                             className='flex p-4 md:px-8 justify-center items-center text-white mt-6 cursor-pointer border-2 border-white'>
                             <p className='whitespace-nowrap'>Explore Solutions</p>

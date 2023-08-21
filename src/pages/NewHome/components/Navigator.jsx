@@ -14,7 +14,7 @@ function Navigator() {
     const navigation = [
         {
             name: "Support",
-            href: "/contact-page"
+            href: "/contact"
         },
         {
             name: "About us",

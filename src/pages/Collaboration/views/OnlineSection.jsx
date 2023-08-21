@@ -1,6 +1,6 @@
 import React from 'react';
 import SmallGreenStroke from "../../../assets/icons/short-green-stroke.svg";
-import MerchantImage from "../../../assets/images/guaranteed-delivery-image.svg";
+import MerchantImage from "../../../assets/images/delivery-of-gas-image.svg";
 import RightArrowIcon from "../../../assets/icons/right-arrow-icon.svg"
 
 function OnlineSection() {
@@ -32,8 +32,8 @@ function OnlineSection() {
         }
     ]
     return (
-        <div className='py-7 md:pt-20 pb-10 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
-            <div className='flex flex-col-reverse flex-col lg:flex-row w-full mt-20 gap-20'>
+        <div className='py-7 md:pt-10 pb-10 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
+            <div className='flex flex-col-reverse flex-col lg:flex-row w-full mt-10 gap-20'>
                 <div className='md:w-1/2 mt-10 md:mt-0 flex '>
                     <img src={MerchantImage} alt="mezo pay terminal" />
                 </div>

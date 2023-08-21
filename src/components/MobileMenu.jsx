@@ -14,7 +14,7 @@ function MobileMenu({ show, close, }) {
     const navigation = [
         {
             name: "Support",
-            url: "/contact-page"
+            url: "/contact"
         },
         // {
         //     name: "Pricing",

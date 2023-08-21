@@ -27,7 +27,9 @@ function OfflineSection() {
         message: "",
     })
     const [isEmailValid, setEmailIsValid] = useState(false)
+    const buttonEnabled = inputField.name && inputField.email &&  inputField.message
 
+    console.log(inputField)
     const validateEmailAddress = (email) => setEmailIsValid(validateEmail(email));
 
     const info = [
@@ -63,6 +65,12 @@ function OfflineSection() {
         }))
     }
 
+    const sendEmail = () => {
+        const {email, name, message} = inputField
+        const subject = `Email from ${name}`
+        document.location = "mailto:"+email+"?subject="+subject+"&body="+message;
+    }
+
     return (
         <div className='py-7 md:pt-16 pb-68 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins relative'>
             <ContactForm className='flex flex-col max-w-[916px] p-9 md:p-10  gap-20 bg-white rounded-2xl m-auto absolute -top-52 w-full m-auto right-0 left-0'>
@@ -90,7 +98,8 @@ function OfflineSection() {
                         onChange={handleUserInput}
                     />
                     <Button
-                        onClick={null}
+                        onClick={sendEmail}
+                        className={buttonEnabled ? "" : "disabled"}
                     >
                         Submit
                     </Button>
@@ -154,5 +163,10 @@ const Button = styled.button`
     padding: 10px 52px;
     border-radius: 43px;
     background: #02CB63;
-    color: white
+    color: white;
+    
+    .disabled {
+        opacity: 0.7;
+        pointer-events: none;
+    }
 `
