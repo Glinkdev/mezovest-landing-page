@@ -2,12 +2,12 @@ import React from 'react'
 import GreenStroke from "../../../assets/icons/green-stroke.svg"
 import OfflineImage from "../../../assets/images/fast-reliable-image.svg";
 import MezoBagImage from "../../../assets/images/mez-shopbag-img.png";
-import PhoneImage from "../../../assets/images/aboutus-phone-image.svg";
-import OfficeImage from "../../../assets/images/office-image.svg";
-import LightImage from "../../../assets/images/aboutus-light-image.svg";
+import PhoneImage from "../../../assets/images/metl-station-image.svg";
+import OfficeImage from "../../../assets/images/energy-power-image.svg";
+import LightImage from "../../../assets/images/energy-sector-image.svg";
 import ManPhoneImage from "../../../assets/images/aboutus-man-with-phone-image.svg";
-import PipeImage from "../../../assets/images/aboutus-pipe-image.svg";
-import PassionImage from "../../../assets/images/aboutus-passion-led-us-image.svg";
+import PipeImage from "../../../assets/images/cash-image.svg";
+import PassionImage from "../../../assets/images/aboutus-gas-station-image.svg";
 
 
 function OfflineSection() {
