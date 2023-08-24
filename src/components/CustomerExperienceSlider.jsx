@@ -10,6 +10,7 @@ import MetlLogoIcon from "../assets/icons/metl-logo-simple.svg";
 import MezoPayIcon from "../assets/icons/mezo-pay-white.svg";
 import MezoPayLimitedIcon from "../assets/icons/mezo-pay-limited-icon.svg";
 import MezoCoinIcon from "../assets/icons/mezocoin-logo-white.svg";
+import GasSenseIcon from "../assets/icons/gassense.svg";
 
 const DotButton = (props) => {
     const { selected, onClick } = props
@@ -93,6 +94,12 @@ function CustomerExperienceSlider() {
             action: "Coming Soon",
             actionUrl: "",
             detail: "Introducing our commodity exchange to enable buyers and sellers trade various commodities starting with cooking gas (aka LPG)"
+        },
+        {
+            icon: GasSenseIcon,
+            action: "Coming Soon",
+            actionUrl: "",
+            detail: "Track your gas level and consumption rate to know  how much gas you have left in your cylinder. Get notified when you’re low."
         }
     ]
     return (
@@ -148,7 +155,7 @@ function CustomerExperienceSlider() {
             </div>
             <div className="hidden sm:flex embla__dots flex justify-center flex-row mt-10 space-x-1">
                 {productDetail.map((_, index) => {
-                    if (index === 0 || index === 1) {
+                    if (index === 0 || index === 2) {
                         return (
                             <DotButton
                                 key={index}
