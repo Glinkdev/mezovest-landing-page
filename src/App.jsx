@@ -16,6 +16,7 @@ import AboutUs from "./pages/AboutUs";
 import WhyChooseUs from "./pages/WhyChooseUs";
 import BecomeAPartner from "./pages/BecomeAPartner";
 import ContactPage from "./pages/ContactPage";
+import Terms from "./pages/Terms";
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
         <Route path="/why-choose-us" element={<WhyChooseUs />} />
         <Route path="/become-a-partner" element={<BecomeAPartner />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/terms" element={<Terms />} />
         <Route path="/*" element={<NewHome />} />
       </Routes>
     </Router>
