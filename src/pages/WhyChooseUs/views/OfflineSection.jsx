@@ -34,14 +34,14 @@ function OfflineSection() {
 
     ]
 
-    useEffect(() => {          
+    useEffect(() => {
         console.log('log this message when this React component is mounted!', location.hash);
-        if(location.hash) { 
-            if(location.hash === "#cooking-gas"){
-                window.scrollTo(0, cookinGasSection.current.offsetTop); 
+        if (location.hash) {
+            if (location.hash === "#cooking-gas") {
+                window.scrollTo(0, cookinGasSection.current.offsetTop);
             }
-            if(location.hash === "#restaurants"){
-                window.scrollTo(0, restaurantsSection.current.offsetTop); 
+            if (location.hash === "#restaurants") {
+                window.scrollTo(0, restaurantsSection.current.offsetTop);
             }
         }
     }, [location.hash]);
@@ -101,12 +101,16 @@ function OfflineSection() {
                     <p className=' mt-8 leading-[2rem]'>Count on us to consistently meet your cooking gas needs, no matter the challenge. We deliver even during impossible and tough situations, ensuring your kitchen runs smoothly and your business thrives. Trust in our reliable solutions for a seamless cooking gas experience.</p>
                 </div>
                 <div className='flex flex-col w-full mt-10'>
-                    <div className='w-full flex flex-col md:flex-row mt-12'>
-                        <div className='md:w-3/5 flex flex-col md:flex-row justify-start relative align-center'>
-                            <img className='w-full md:w-[435px]' src={PearlRestaurantImage} />
-                            <img className='md:w-[285px] z-10 absolute-centering absolute ' src={PearlLogo} />
-
-
+                    <div className='w-full flex flex-col md:flex-row mt-12 justify-between'>
+                        <div className='md:w-2/5 flex flex-col md:flex-row justify-center relative align-center '>
+                            <iframe
+                                className='w-full h-[300px]'
+                                src="https://www.youtube.com/embed/FoUtEIRNfdQ?si=Mr-dgz4yxfprh_FZ"
+                                title="Mezovest Testimonial"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+                            >
+                            </iframe>
                         </div>
                         <div className='md:w-2/5 flex-col md:ml-24 mt-4 md:mt-0'>
                             <p className='text-lg font-medium leading-[2rem]'>

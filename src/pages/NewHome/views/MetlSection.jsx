@@ -91,11 +91,16 @@ function MetlSection() {
                 <span className='flex flex-col md:flex-row'>Discover how Mezoenergy helped businesses in the food industry. <span onClick={moveToReadMore} className='md:ml-2 text-green whitespace-nowrap flex cursor-pointer '>Read more <img src={GreenArrowIcon} alt="right-icon" className='ml-2' /></span></span>
             </div>
 
-            <div className='w-full flex flex-col md:flex-row mt-12'>
-                <div className='md:w-3/5 flex flex-col md:flex-row justify-center relative align-center'>
-                    <img className='w-full md:w-[435px]' src={PearlRestaurantImage} />
-                    <img className='md:w-[285px] z-10 absolute-centering absolute ' src={PearlLogo} />
-
+            <div className='w-full flex flex-col md:flex-row mt-12 justify-between'>
+                <div className='md:w-2/5 flex flex-col md:flex-row justify-center relative align-center '>
+                    <iframe 
+                        className='w-full h-[300px]'
+                        src="https://www.youtube.com/embed/FoUtEIRNfdQ?si=Mr-dgz4yxfprh_FZ" 
+                        title="Mezovest Testimonial" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+                    >
+                    </iframe>
 
                 </div>
                 <div className='md:w-2/5 flex-col md:ml-24 mt-4 md:mt-0'>
