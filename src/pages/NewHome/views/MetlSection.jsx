@@ -91,8 +91,8 @@ function MetlSection() {
                 <span className='flex flex-col md:flex-row'>Discover how Mezoenergy helped businesses in the food industry. <span onClick={moveToReadMore} className='md:ml-2 text-green whitespace-nowrap flex cursor-pointer '>Read more <img src={GreenArrowIcon} alt="right-icon" className='ml-2' /></span></span>
             </div>
 
-            <div className='w-full flex flex-col md:flex-row mt-12 justify-between'>
-                <div className='md:w-2/5 flex flex-col md:flex-row justify-center relative align-center '>
+            <div className='w-full flex flex-col md:flex-row mt-12 justify-between gap-10'>
+                <div className='md:w-3/5 flex flex-col md:flex-row justify-center relative align-center '>
                     <iframe 
                         className='w-full h-[300px]'
                         src="https://www.youtube.com/embed/FoUtEIRNfdQ?si=Mr-dgz4yxfprh_FZ" 
