@@ -104,12 +104,13 @@ function OfflineSection() {
                     <div className='w-full flex flex-col md:flex-row mt-12 justify-between gap-10'>
                         <div className='md:w-3/5 flex flex-col md:flex-row justify-center relative align-center '>
                             <iframe
-                                className='w-full h-[300px]'
-                                src="https://www.youtube.com/embed/FoUtEIRNfdQ?si=Mr-dgz4yxfprh_FZ"
+                                width="560"
+                                height="315"
+                                src="https://www.youtube-nocookie.com/embed/FoUtEIRNfdQ?si=RGVouQcJsL_x8VYP&rel=0"
                                 title="Mezovest Testimonial"
                                 frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
-                            >
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
                             </iframe>
                         </div>
                         <div className='md:w-2/5 flex-col md:ml-24 mt-4 md:mt-0'>
