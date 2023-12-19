@@ -66,7 +66,7 @@ function CompanyInfo() {
                         // target="_blank"
                         // rel="noopener noreferrer"
                         // href="https://mezopay.mezovest.com/appdownloads"
-                        className='mt-4 text-sm whitespace-nowrap opacity-10'
+                        className='mt-4 text-sm  opacity-10'
                     >Mezopay Business</a>
                     <a
                         // target="_blank"
@@ -93,17 +93,17 @@ function CompanyInfo() {
                         href='https://spatchng.com'
                         className='mt-4 text-sm'>Spatch</a>
                     <p className='font-bold text-sm mt-6 opacity-10'>Developers</p>
-                    <p className='mt-6 text-sm whitespace-nowrap opacity-10'>API Documentation</p>
+                    <p className='mt-6 text-sm  opacity-10'>API Documentation</p>
                     <p className='mt-4 text-sm opacity-10'>API Integrations</p>
                 </div>
             </div>
             <div className='flex mt-8 md:mt-0 w-full justify-between md:w-2/5'>
 
                 <div className='w-1/3 flex flex-col'>
-                    <p className='font-bold text-md whitespace-nowrap'>Why Mezovest</p>
+                    <p className='font-bold text-md'>Why Mezovest</p>
                     <a
                         href="/why-choose-us"
-                        className='mt-6 text-sm whitespace-nowrap'
+                        className='mt-6 text-sm '
                     >Why choose Mezovest</a>
                     <a
                         href="/testimonials"
@@ -126,7 +126,7 @@ function CompanyInfo() {
                         className='mt-4 text-sm'>Blog</a>
                     <a
                         href="/become-a-partner"
-                        className='mt-4 text-sm whitespace-nowrap'>Become a partner</a>
+                        className='mt-4 text-sm'>Become a partner</a>
                     <a
                         // href="/testimonials" 
                         className='mt-4 text-sm opacity-10'>Careers</a>

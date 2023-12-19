@@ -43,7 +43,7 @@ function JoinMezovestSection() {
             <p className='mt-4'>
                 As we continue to shape the future of the energy industry, we invite you to join us on this transformative journey. Whether you are a vendor, distributor, or industry stakeholder, Mezovest is your trusted partner in driving growth, efficiency, and success.
             </p>
-            <div className='mt-20 grid grid-cols-2 md:grid-cols-3 gap-20'>
+            <div className='mt-20 grid grid-cols-1 md:grid-cols-3 gap-20'>
                 {info.map((item) => (
                     <div className='mt flex ' key={item.id}>
                         <img src={item.image} className="w-[40px] md:w-fit" />

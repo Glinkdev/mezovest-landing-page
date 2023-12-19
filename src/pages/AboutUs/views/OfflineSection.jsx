@@ -9,17 +9,75 @@ import ManPhoneImage from "../../../assets/images/aboutus-man-with-phone-image.s
 import PipeImage from "../../../assets/images/cash-image.svg";
 import PassionImage from "../../../assets/images/aboutus-gas-station-image.svg";
 
+import TosinThompson from "../../../assets/images/tosin-thompson-image.svg";
+import TosinAshafa from "../../../assets/images/tosin-ashafa-image.svg";
+import MariamAdebayo from "../../../assets/images/mariam-adebayo-image.svg";
+
+import Remi from "../../../assets/images/remi-image.svg";
+import Favour from "../../../assets/images/favour-image.svg";
+import Anthony from "../../../assets/images/anthony-image.svg";
+import Ayokunmi from "../../../assets/images/ayokunmi-image.svg";
+import Sharon from "../../../assets/images/sharon-image.svg";
+import Tomiwa from "../../../assets/images/tomiwa-image.svg";
+
 
 function OfflineSection() {
 
-    const fitDetails = [
+    const managers = [
         {
-            details: "One - time payments:",
-            moreDetails: "Make instant transfers from Mezopay to Mezopay, Mezopay to other wallet, and Mezopay to local banks "
+            name: "Tosin Thompson",
+            image: TosinThompson,
+            role: "Chief Executive Officer"
         },
         {
-            details: "Bulk transfers:",
-            moreDetails: "Send bulk transfers to multiple local banks at a glance"
+            name: "Tosin Ashafa",
+            image: TosinAshafa,
+            role: "Co-Founder & Head of Business Development"
+        },
+        {
+            name: "Mariam Adebayo",
+            image: MariamAdebayo,
+            role: "Chief Operations Officer"
+        },
+
+    ]
+
+    const leaders = [
+        {
+            name: "Aderemi Adekanmbi",
+            image: Remi,
+            role: "Bus. Dev. Manager",
+            style: "md:col-span-1",
+        },
+        {
+            name: "Favour Nwaolisa",
+            image: Favour,
+            role: "Head of Technology",
+            style: "md:col-span-1",
+        },
+        {
+            name: "Anthony Nwike",
+            image: Anthony,
+            role: "Head of Marketing",
+            style: "md:col-span-1",
+        },
+        {
+            name: "Ayokunmi Aderinoye",
+            image: Ayokunmi,
+            role: "Head HR | Legal",
+            style: "md:col-span-1",
+        },
+        {
+            name: "Eshonikisomo Sharon",
+            image: Sharon,
+            role: "Administrator",
+            style: "md:col-span-1 md:col-start-2"
+        },
+        {
+            name: "Omotomiwa Osikomiaya",
+            image: Tomiwa,
+            role: "BDM | HOD Recovery",
+            style: "md:col-span-1 md:col-start-3"
         },
 
     ]
@@ -112,6 +170,54 @@ function OfflineSection() {
                     </div>
                 </div>
 
+            </div>
+
+            <div className='flex flex-col w-full gap-10 mt-20 gap-20'>
+                <div className='flex flex-col justify-center w-full'>
+                    <div className='flex justify-center'>
+                        <img src={GreenStroke} alt="black stroke" />
+                        <p className='ml-2 text-xl font-normal'>Dedicated to the mission</p>
+                    </div>
+                    <div className='font-liquefier mt-7 text-center'>
+                        <span className='text-green text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Meet The Team </span>
+                        <br />
+                        <span className='text-black text-5xl md:text-7xl md:text-[100px] font-normal leading-16'>Behind Mezovest</span>
+                        <br />
+                    </div>
+                </div>
+                <div className='sm:grid-cols-3 grid grid-cols-1 gap-20 md:gap-0 '>
+                    {managers.map((item, index) => (
+                    <div className='items-center sm:items-start flex flex-col gap-10' key={index}>
+                        <div className=' w-[220px] h-[220px] md:w-[360px] md:h-[360px]'>
+                            <img className='h-full w-full' src={item?.image}/>
+                        </div>
+                        <div className='flex flex-col gap-2 '>
+                            <div className='flex flex-col justify-center sm:justify-left'>
+                                <h4 className='text-2xl leading-none text-left'>{item?.name}</h4>
+                                <img src={GreenStroke} alt="black stroke" className='w-[80px] h-[20px]' />
+                            </div>
+                            <p className='text-sm'>{item?.role}</p>
+                        </div>
+
+                    </div>))}
+
+                </div>
+            </div>
+            <div className='flex flex-col max-w-[] w-full gap-10 mt-20 gap-26 justify-center'>
+            <hr/>
+            <div className='grid grid-cols-1 md:grid-cols-4 gap-10 flex justify-center items-center'>
+                {leaders.map((item, index) => (
+                    <div key={index} className={`flex flex-col gap-2 items-center ${item?.style} `}>
+                        <div className='w-[120px] h-[120px] rounded-full '>
+                            <img className='h-full w-full rounded-full' src={item?.image}/>
+                        </div>
+                        <h4 className='text-base font-bold'>{item?.name}</h4>
+                        <p className='text-sm'>{item?.role}</p>
+
+                    </div>
+                ))}
+
+            </div>
             </div>
 
         </div>
