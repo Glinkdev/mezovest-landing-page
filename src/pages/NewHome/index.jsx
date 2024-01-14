@@ -11,12 +11,14 @@ import DetailsPage from "./views/DetailsPage";
 import AboutSection from "./views/AboutSection";
 
 import Footer from "./views/Footer";
+import PriceSection from "./views/PriceSection";
 
 function NewHome() {
 
     return (
         <Styled>
             <GrowSection />
+            <PriceSection />
             <AboutSection />
             <FitSection />
             <ThirdSection />
@@ -25,6 +27,7 @@ function NewHome() {
             <CtaSection />
             <CompanyInfo />
             <Footer />
+            
         </Styled>
     )
 }
@@ -33,4 +36,5 @@ export default NewHome
 
 const Styled =  styled.div`
     scroll-behavior: smooth;
+    position: relative;
 `

@@ -94,7 +94,7 @@ function MetlSection() {
             <div className='w-full flex flex-col md:flex-row mt-12 justify-between gap-10'>
                 <div className='md:w-3/5 flex flex-col md:flex-row justify-center relative align-center '>
                     <iframe
-                        width="560"
+                        width="100%"
                         height="315"
                         src="https://www.youtube-nocookie.com/embed/FoUtEIRNfdQ?si=RGVouQcJsL_x8VYP&rel=0"
                         title="Mezovest Testimonial"
