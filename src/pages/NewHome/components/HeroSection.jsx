@@ -5,7 +5,10 @@ import GreenStroke from "../../../assets/icons/green-stroke.svg"
 function HeroSection() {
     return (
         <div className='flex flex-col md:flex-row  w-full pb-10'>
-            <div className='flex flex-col lg:flex-row mt-10 md:mt-14 justify-between relative w-full'>
+            <div className='flex flex-col lg:flex-row mt-10 md:mt-14 justify-between relative w-full gap-10'>
+                <div className='hidden md:flex mt-20 md:mt-0 justify-end md:w-1/2 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden '>
+                    <img src={PaymentImage} alt="payment image" className='flex h-full' />
+                </div>
                 <div className='flex-col w-full md:w-1/2'>
                     <div className='flex'>
                         <img src={GreenStroke} alt="green stroke" />
@@ -38,9 +41,7 @@ function HeroSection() {
 
                 </div>
 
-                <div className='hidden md:flex mt-20 md:mt-0 justify-end md:w-1/2 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden'>
-                    <img src={PaymentImage} alt="payment image" className='flex h-full' />
-                </div>
+
 
 
             </div>
