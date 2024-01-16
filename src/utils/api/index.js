@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "https://control.dev.mezovest.com/pricing/current";
+const baseURL = "https://control.dev.mezovest.com/api/pricing/current";
 
 const axiosInstance = axios.create({
 	baseURL: baseURL,

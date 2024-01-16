@@ -10,15 +10,7 @@ import { getCall } from '../../../utils/api/apiCalls';
 import { formatMoney } from '../../../utils/hooks';
 
 function PriceSection() {
-    const [priceData, setPriceData] = useState({
-        "id": 3,
-        "price": "15762500",
-        "progression": "increment",
-        "admin_id": 28,
-        "created_at": "2024-01-16T12:23:36.000000Z",
-        "updated_at": "2024-01-16T12:23:36.000000Z",
-        "comment": "The average price at the depot is  N15,762,500/ 20MT, However I project it to rise this week to about N16,156,716.36 plus/minus 100,000"
-    })
+    const [priceData, setPriceData] = useState({})
     const getDetails = async () => {
         const { data } = await getCall("")
 
@@ -33,7 +25,7 @@ function PriceSection() {
         getDetails()
     }, [])
 
-    if (priceData) {
+    if (priceData?.progression) {
         return (
             <Styled>
                 <div className='py-3 px-2 md:py-6 xl:px-36 !bg-black font-poppins'>
