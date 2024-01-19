@@ -38,7 +38,7 @@ function PriceSection() {
             <Styled>
                 <div className='py-3 px-2 md:py-6 xl:px-36 !bg-black font-poppins'>
                     <div className='flex m-auto w-full'>
-                        <div className='w-2/5 flex-col justify-center text-left flex border-r md:ml-4'>
+                        <div className='w-2/5 flex-col justify-center text-left flex border-r pr-2 md:ml-4'>
                             <p className='text-white text-[12px] md:text-sm text-left md:ml-3'>GAS PRICE UPDATE:</p>
                             <h2 className={`${priceData?.progression === "increment" ? "text-green" : "text-[#FF8E8E]"}  text-[12px] md:text-2xl font-semibold flex items-center justify-start mt-2 whitespace-nowrap`}><span className='mr-2'><img className="h-[15px]" src={ priceData?.progression === "increment" ? PositiveIcon : NegativeIcon} /></span>{`N ${formatMoney(parseFloat(priceData?.price))} / 20MT`}</h2>
                         </div>
