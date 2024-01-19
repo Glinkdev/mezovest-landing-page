@@ -17,7 +17,7 @@ function PriceSection() {
         "admin_id": 28,
         "created_at": "2024-01-16T12:23:36.000000Z",
         "updated_at": "2024-01-16T12:23:36.000000Z",
-        "comment": "The average price at the depot is  N15,762,500/ 20MT, However I project it to rise this week to about N16,156,716.36 plus/minus 100,000"
+        "comment": "However, price is projected to rise this week to about N16,156,716.36 plus/minus 100,000"
     })
     const getDetails = async () => {
         const { data } = await getCall("")
@@ -44,7 +44,7 @@ function PriceSection() {
                         </div>
 
                         <div className='flex justify-center items-center px-2 py-2 md:py-4 scrolling-container w-3/5 mt-2 md:mt-0'>
-                            <p className='text-center text-white scrolling-text text-[12px] md:text-sm' data-text={priceData?.comment}>{priceData?.comment}</p>
+                            <p className='text-center text-white scrolling-text text-[12px] md:text-sm'>{priceData?.comment}</p>
                         </div>
 
 
