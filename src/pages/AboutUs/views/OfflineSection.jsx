@@ -27,7 +27,7 @@ function OfflineSection() {
         {
             name: "Tosin Thompson",
             image: TosinThompson,
-            role: "Chief Executive Officer"
+            role: "Founder | CEO"
         },
         {
             name: "Tosin Ashafa",

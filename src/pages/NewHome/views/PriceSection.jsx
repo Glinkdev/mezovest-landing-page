@@ -20,8 +20,7 @@ function PriceSection() {
         "comment": "However, price is projected to rise this week to about N16,156,716.36 plus/minus 100,000"
     })
     const getDetails = async () => {
-        const { data } = await getCall("")
-
+        const { data } = await getCall("https://control.mezovest.com/api/pricing/current")
         if(data){
         console.log(data)
         setPriceData(data)
