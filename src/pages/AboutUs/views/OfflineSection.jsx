@@ -27,12 +27,12 @@ function OfflineSection() {
         {
             name: "Tosin Thompson",
             image: TosinThompson,
-            role: "Founder | CEO"
+            role: "Founder"
         },
         {
             name: "Tosin Ashafa",
             image: TosinAshafa,
-            role: "Co Founder & Co CEO"
+            role: "Co Founder"
         },
         {
             name: "Mariam Adebayo",
