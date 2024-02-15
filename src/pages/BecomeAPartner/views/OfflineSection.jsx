@@ -36,8 +36,8 @@ function OfflineSection() {
         {
             id: 3,
             image: GreenLocationIcon,
-            heading: "Ikoyi",
-            subheading: "36 Turnbull road, ikoyi Lagos.",
+            heading: "Ajah",
+            subheading: "Ajah Lagos",
         },
     ]
 

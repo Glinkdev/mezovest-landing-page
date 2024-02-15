@@ -10,8 +10,8 @@ function JoinMezovestSection() {
         {
             id: 1,
             image: GreenLocationIcon,
-            heading: "Ikoyi",
-            subheading: "36 Turnbull road, ikoyi Lagos.",
+            heading: "Ajah",
+            subheading: "Ajah Lagos",
         },
         // {
         //     id: 2,
