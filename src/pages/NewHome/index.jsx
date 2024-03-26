@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import { styled } from "styled-components";
 import GrowSection from "./views/GrowSection";
 import FitSection from "./views/FitSection";
@@ -17,6 +18,10 @@ function NewHome() {
 
     return (
         <Styled>
+            <Helmet>
+                <title>Biggest LPG Distribution</title>
+                <meta name="description" content="Welcome to the biggest LPG distribution network. We provide reliable LPG distribution services to meet your needs." />
+            </Helmet>
             <GrowSection />
             <PriceSection />
             <AboutSection />
@@ -27,14 +32,14 @@ function NewHome() {
             <CtaSection />
             <CompanyInfo />
             <Footer />
-            
+
         </Styled>
     )
 }
 
 export default NewHome
 
-const Styled =  styled.div`
+const Styled = styled.div`
     scroll-behavior: smooth;
     position: relative;
 `
