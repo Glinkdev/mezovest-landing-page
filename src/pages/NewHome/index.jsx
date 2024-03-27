@@ -18,10 +18,10 @@ function NewHome() {
 
     return (
         <Styled>
-            <Helmet>
+            {/* <Helmet>
                 <title>Biggest LPG Distribution</title>
                 <meta name="description" content="Welcome to the biggest LPG distribution network. We provide reliable LPG distribution services to meet your needs." />
-            </Helmet>
+            </Helmet> */}
             <GrowSection />
             <PriceSection />
             <AboutSection />
