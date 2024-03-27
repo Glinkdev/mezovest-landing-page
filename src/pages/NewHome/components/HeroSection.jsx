@@ -1,17 +1,22 @@
 import React from 'react';
-import PaymentImage from "../../../assets/images/grow-hero-image.svg"
-import GreenStroke from "../../../assets/icons/green-stroke.svg"
+import { Helmet } from 'react-helmet';
+import PaymentImage from "../../../assets/images/grow-hero-image.svg";
+import GreenStroke from "../../../assets/icons/green-stroke.svg";
 
 function HeroSection() {
     return (
         <div className='flex flex-col md:flex-row  w-full pb-10'>
+            <Helmet>
+                <title>Largest LPG Distribution - Grow Your Energy Business</title>
+                <meta name="description" content="Ignite the growth of your energy business with tailored solutions. Expand your reach, maximize profits, and become a key player in the LPG and CNG industry." />
+            </Helmet>
             <div className='flex flex-col lg:flex-row mt-10 md:mt-14 justify-between relative w-full gap-10'>
                 <div className='hidden md:flex mt-20 md:mt-0 justify-end md:w-1/2 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden '>
-                    <img src={PaymentImage} alt="payment image" className='flex h-full' />
+                    <img src={PaymentImage} alt="Payment Image Largest LPG Distribution" className='flex h-full' />
                 </div>
                 <div className='flex-col w-full md:w-1/2'>
                     <div className='flex'>
-                        <img src={GreenStroke} alt="green stroke" />
+                        <img src={GreenStroke} alt="Green Stroke Largest LPG Distribution" />
                         <p className='ml-6 font-normal md:text-xl text-white'>We want you to succeed</p>
                     </div>
                     <div className='font-liquefier mt-6'>
@@ -20,7 +25,7 @@ function HeroSection() {
                         <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal leading-16'>Energy  <br /> Business</span>
                     </div>
                     <p className='font-normal md:text-xl text-white mt-6 leading-[2rem]'>
-                        {"Ignite the growth of your business in the energy sector. With our tailored solutions. Tap into the immense potential of these booming markets. Expand your reach, maximise profits, and become a key player in the LPG and CNG industry."}
+                        Ignite the growth of your business in the energy sector. With our tailored solutions. Tap into the immense potential of these booming markets. Expand your reach, maximize profits, and become a key player in the LPG and CNG industry.
                     </p>
                     <div className='flex gap-4 w-full'>
                         <a
@@ -36,22 +41,10 @@ function HeroSection() {
                             <p className='whitespace-nowrap'>Explore Solutions</p>
                         </a>
                     </div>
-
-
-
                 </div>
-
-
-
-
             </div>
-
-
         </div>
-
-
-
-    )
+    );
 }
 
-export default HeroSection
+export default HeroSection;
