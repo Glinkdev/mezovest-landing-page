@@ -17,23 +17,27 @@ import PriceSection from "./views/PriceSection";
 function NewHome() {
 
     return (
-        <Styled>
-            {/* <Helmet>
+        <div className="w-full !bg-darkGreen">
+            <div className="max-w-[1900px] m-auto ">
+                <Styled>
+                    {/* <Helmet>
                 <title>Biggest LPG Distribution</title>
                 <meta name="description" content="Welcome to the biggest LPG distribution network. We provide reliable LPG distribution services to meet your needs." />
             </Helmet> */}
-            <GrowSection />
-            <PriceSection />
-            <AboutSection />
-            <FitSection />
-            <ThirdSection />
-            <MetlSection />
-            <DetailsPage />
-            <CtaSection />
-            <CompanyInfo />
-            <Footer />
+                    <GrowSection />
+                    <PriceSection />
+                    <AboutSection />
+                    <FitSection />
+                    <ThirdSection />
+                    <MetlSection />
+                    <DetailsPage />
+                    <CtaSection />
+                    <CompanyInfo />
+                    <Footer />
 
-        </Styled>
+                </Styled>
+            </div>
+        </div>
     )
 }
 

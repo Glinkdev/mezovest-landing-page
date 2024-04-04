@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import GreenStroke from "../../../assets/icons/green-stroke.svg"
-import MezoCashImage from "../../../assets/images/mez-cash-img.png";
-import MezoBagImage from "../../../assets/images/mez-shopbag-img.png";
-import MezoPhoneImage from "../../../assets/images/mez-phone-img.png";
-import BikeManImage from "../../../assets/images/bike-man-image.svg";
+import MezoCashImage from "../../../assets/images/mez-fit-1.svg";
+import MezoPhoneImage from "../../../assets/images/mez-fit-2.svg";
+import BikeManImage from "../../../assets/images/mez-fit-3.svg";
 
 
 function FitSection() {

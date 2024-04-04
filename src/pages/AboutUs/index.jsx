@@ -12,16 +12,18 @@ import JoinMezovestSection from "./views/JoinMezovestSection";
 function AboutUs() {
 
     return (
-        <>
-            <AcceptPayemntSection />
-            <OfflineSection />
-            <JoinMezovestSection />
-            {/* <ProcessSteps />
+        <div className="w-full !bg-darkGreen">
+            <div className="max-w-[1900px] m-auto ">
+                <AcceptPayemntSection />
+                <OfflineSection />
+                <JoinMezovestSection />
+                {/* <ProcessSteps />
             <FaqSection /> */}
-            <CtaSection />
-            <CompanyInfo />
-            <Footer />
-        </>
+                <CtaSection />
+                <CompanyInfo />
+                <Footer />
+            </div>
+        </div>
     )
 }
 

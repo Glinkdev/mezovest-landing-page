@@ -15,22 +15,26 @@ import FeedbackCustomer from "../../pages/Customers/views/FeedBackCustomer";
 function WhyChooseUs() {
 
     return (
-        <Styled>
-            <AcceptPayemntSection />
-            <OfflineSection />
-            <CustomerFeedback/>
-            <OnlineSection />
-            <FeedbackCustomer/>
-            <JoinMezovestSection />
-             {/*<FaqSection /> */}
-            <CtaSection />
-            <CompanyInfo />
-            <Footer />
-        </Styled>
+        <div className="w-full !bg-darkGreen">
+            <div className="max-w-[1900px] m-auto ">
+                <Styled>
+                    <AcceptPayemntSection />
+                    <OfflineSection />
+                    <CustomerFeedback />
+                    <OnlineSection />
+                    <FeedbackCustomer />
+                    <JoinMezovestSection />
+                    {/*<FaqSection /> */}
+                    <CtaSection />
+                    <CompanyInfo />
+                    <Footer />
+                </Styled>
+            </div>
+        </div>
     )
 }
 
 export default WhyChooseUs
-const Styled =  styled.div`
+const Styled = styled.div`
     scroll-behavior: smooth;
 `

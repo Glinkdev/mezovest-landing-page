@@ -10,15 +10,17 @@ import Footer from "../../sections/Footer";
 function Customers() {
 
     return (
-        <>
-            <CustomerHeaderSection />
-            <ClientTestimonial />
-            <CustomerFeedback />
-            {/* <CommentSection /> */}
-            <CtaSection />
-            <CompanyInfo />
-            <Footer />
-        </>
+        <div className="w-full !bg-darkGreen">
+            <div className="max-w-[1900px] m-auto ">
+                <CustomerHeaderSection />
+                <ClientTestimonial />
+                <CustomerFeedback />
+                {/* <CommentSection /> */}
+                <CtaSection />
+                <CompanyInfo />
+                <Footer />
+            </div>
+        </div>
     )
 }
 

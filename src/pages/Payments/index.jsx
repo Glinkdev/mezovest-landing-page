@@ -11,16 +11,18 @@ import Footer from "../../sections/Footer";
 function Payments() {
 
     return (
-        <>
-            <AcceptPayemntSection />
-            <OfflineSection />
-            <OnlineSection />
-            {/* <ProcessSteps /> */}
-            <FaqSection />
-            <CtaSection />
-            <CompanyInfo />
-            <Footer />
-        </>
+        <div className="w-full !bg-darkGreen">
+            <div className="max-w-[1900px] m-auto ">
+                <AcceptPayemntSection />
+                <OfflineSection />
+                <OnlineSection />
+                {/* <ProcessSteps /> */}
+                <FaqSection />
+                <CtaSection />
+                <CompanyInfo />
+                <Footer />
+            </div>
+        </div>
     )
 }
 

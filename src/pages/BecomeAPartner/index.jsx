@@ -13,18 +13,20 @@ import CustomerFeedback from "../Customers/views/CustomerFeedback";
 function BecomeAPartner() {
 
     return (
-        <>
-            <AcceptPayemntSection />
-            <OfflineSection />
-            {/* <CustomerFeedback/>
+        <div className="w-full !bg-darkGreen">
+            <div className="max-w-[1900px] m-auto ">
+                <AcceptPayemntSection />
+                <OfflineSection />
+                {/* <CustomerFeedback/>
             <OnlineSection />
             <CustomerFeedback/>
             <JoinMezovestSection /> */}
-             {/*<FaqSection /> */}
-            <CtaSection />
-            <CompanyInfo />
-            <Footer />
-        </>
+                {/*<FaqSection /> */}
+                <CtaSection />
+                <CompanyInfo />
+                <Footer />
+            </div>
+        </div>
     )
 }
 

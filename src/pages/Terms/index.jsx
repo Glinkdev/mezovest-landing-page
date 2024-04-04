@@ -16,16 +16,20 @@ import ContentPage from "./views/ContentPage";
 function Terms() {
 
     return (
-        <Styled>
-            <AcceptPayemntSection />
-            <ContentPage />
-            <CompanyInfo />
-            <Footer />
-        </Styled>
+        <div className="w-full !bg-darkGreen">
+            <div className="max-w-[1900px] m-auto ">
+                <Styled>
+                    <AcceptPayemntSection />
+                    <ContentPage />
+                    <CompanyInfo />
+                    <Footer />
+                </Styled>
+            </div>
+        </div>
     )
 }
 
 export default Terms
-const Styled =  styled.div`
+const Styled = styled.div`
     scroll-behavior: smooth;
 `

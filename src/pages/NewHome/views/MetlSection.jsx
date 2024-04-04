@@ -36,7 +36,7 @@ function MetlSection() {
         navigate("/testimonials")
     }
     return (
-        <div className='py-7 md:pt-36 pb-20 px-6 xl:px-36 h-full min-h-fit font-poppins !bg-[#F1F1F180]'>
+        <div className='py-7 md:pt-36 pb-20 px-6 xl:px-36 h-full min-h-fit font-poppins !bg-[#fff]'>
 
             <div className='flex flex-col md:flex-row w-full'>
                 <div className='flex flex-col md:w-3/5'>

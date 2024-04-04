@@ -1,8 +1,12 @@
 import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import GreenStroke from "../../../assets/icons/green-stroke.svg";
 import MetlTruck from "../../../assets/images/metl-truck.svg";
 import MetlTrailer from "../../../assets/images/metl-trailer.svg";
 import GasPlantImage from "../../../assets/images/gas-plant.svg";
+import Image1 from '../../../assets/images/mezo-board-image.svg'; 
+import Image2 from '../../../assets/images/mezo-squad-image.svg';
 
 function AboutSection() {
     const features = [
@@ -38,10 +42,29 @@ function AboutSection() {
                 <p className='md:text-center leading-[2rem]'>
                     At Mezovest, we are on a mission to revolutionize the commerce landscape, and our focus is squarely on the <span className='text-green font-bold'>dynamic energy industry, specifically LPG aka cooking gas and CNG </span>. As a leading commerce solution company, we are dedicated to providing innovative, efficient, and seamless solutions that cater to the unique needs of businesses operating in the energy sector.
                 </p>
+
+                <div className="carousel-wrapper mb-4 rounded-lg mt-20">
+                    <Carousel
+                        autoPlay={true}
+                        infiniteLoop={true}
+                        interval={5000} // Adjust the interval as needed
+                        showThumbs={false}
+                        showStatus={false}
+                        showArrows={false}
+                        width="100%"
+                    >
+                        <div>
+                            <img src={Image1} alt="Image 1" style={{ width: '100%' }} />
+                        </div>
+                        <div>
+                            <img src={Image2} alt="Image 2" style={{ width: '100%' }} />
+                        </div>
+                    </Carousel>
+                </div>
                 <div className='flex gap-6 overflow-x-scroll mt-10'>
                     {features.map((item) => (
                         <div key={item.index} className='flex flex-col gap-2 min-w-[250px] md:min-w-[363px] leading-[2rem]'>
-                            <img src={item.image} className="h-[265px] w-full"/>
+                            <img src={item.image} className="h-[265px] w-full" />
                             <p ><span className='font-bold'>{item.name}{" "}</span>{item.more}</p>
 
                         </div>

@@ -12,17 +12,19 @@ import GrowthSection from "./views/GrowthSection";
 function Loan() {
 
     return (
-        <>
-            <AcceptPayemntSection />
-            <OfflineSection />
-            <OnlineSection />
-            <GrowthSection />
-            {/* <ProcessSteps /> */}
-            {/* <FaqSection /> */}
-            <CtaSection />
-            <CompanyInfo />
-            <Footer />
-        </>
+        <div className="w-full !bg-darkGreen">
+            <div className="max-w-[1900px] m-auto ">
+                <AcceptPayemntSection />
+                <OfflineSection />
+                <OnlineSection />
+                <GrowthSection />
+                {/* <ProcessSteps /> */}
+                {/* <FaqSection /> */}
+                <CtaSection />
+                <CompanyInfo />
+                <Footer />
+            </div>
+        </div>
     )
 }
 
