@@ -17,15 +17,15 @@ function HeroSection() {
                 <div className='flex-col w-full md:w-1/2'>
                     <div className='flex'>
                         <img src={GreenStroke} alt="Green Stroke Largest LPG Distribution" />
-                        <p className='ml-6 font-normal md:text-xl text-white'>We want you to succeed</p>
+                        <p className='ml-6 font-normal md:text-xl text-white'>Pioneering the future of</p>
                     </div>
                     <div className='font-liquefier mt-6'>
-                        <span className='text-green text-6xl md:text-7xl md:text-[100px] font-normal leading-16 md:whitespace-nowrap'>Grow your</span>
+                        <span className='text-green text-6xl md:text-7xl md:text-[100px] font-normal leading-16 md:whitespace-nowrap'>Commerce</span>
                         <br />
-                        <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal leading-16'>Energy  <br /> Business</span>
+                        <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal leading-16'>For Energy  <br /> Business</span>
                     </div>
                     <p className='font-normal md:text-xl text-white mt-6 leading-[2rem]'>
-                        Ignite the growth of your business in the energy sector. With our tailored solutions. Tap into the immense potential of these booming markets. Expand your reach, maximize profits, and become a key player in the LPG and CNG industry.
+                    Industry leaders in gas & energy business. With Mezovest's comprehensive commerce solutions you can expand your reach, maximise profits, and become a key player in the <span className='font-bold'>LPG and CNG</span> industry.
                     </p>
                     <div className='flex gap-4 w-full'>
                         <a
@@ -33,7 +33,7 @@ function HeroSection() {
                             rel="noopener noreferrer"
                             href="mailto:sales@mezovest.com"
                             className='hidden md:flex p-4 md:px-8 justify-center items-center  bg-green mt-6 cursor-pointer'>
-                            <p className='whitespace-nowrap'>Talk to Sales</p>
+                            <p className='whitespace-nowrap'>Find out how</p>
                         </a>
                         <a
                             href="#products"

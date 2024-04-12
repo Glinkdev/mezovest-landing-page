@@ -6,7 +6,7 @@ import FitSection from "./views/FitSection";
 import MetlSection from "./views/MetlSection";
 import CtaSection from "./views/CtaSection";
 import ThirdSection from "../../sections/ThirdSection";
-import FourthSection from "../../sections/FourthSection";
+import YoutubeSection from "./views/YoutubeSection";
 import CompanyInfo from "./views/CompanyInfo";
 import DetailsPage from "./views/DetailsPage";
 import AboutSection from "./views/AboutSection";
@@ -30,6 +30,7 @@ function NewHome() {
                     <FitSection />
                     <ThirdSection />
                     <MetlSection />
+                    <YoutubeSection />
                     <DetailsPage />
                     <CtaSection />
                     <CompanyInfo />
