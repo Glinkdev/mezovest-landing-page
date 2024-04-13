@@ -7,8 +7,6 @@ import SafetyIcon from "../../../assets/icons/safety-icon.svg";
 import TechnologyIcon from "../../../assets/icons/technology-icon.svg";
 import QualityIcon from "../../../assets/icons/safety-icon.svg";
 import GreenArrowIcon from "../../../assets/icons/green-arrow-icon.svg";
-import PearlRestaurantImage from "../../../assets/images/pearl-restaurant-image.svg";
-import PearlLogo from "../../../assets/images/pearl-logo.svg";
 import ClientSlider from '../../../components/ClientSlider';
 
 function MetlSection() {
