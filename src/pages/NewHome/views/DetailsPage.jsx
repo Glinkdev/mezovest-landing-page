@@ -8,6 +8,8 @@ import GreenUnderline from "../../../assets/icons/green-underline.svg"
 import Vanguard from "../../../assets/icons/vanguard.svg";
 import ThisDay from "../../../assets/icons/thisday.svg";
 import BusinessDay from "../../../assets/icons/business-day.svg"
+import AriseNews from "../../../assets/icons/arisenews-icon.svg"
+
 
 function DetailsPage() {
     const features = [
@@ -45,10 +47,10 @@ function DetailsPage() {
             id: 3,
             icon: ThisDay
         },
-        // {
-        //     id: 4,
-        //     icon: Vanguard
-        // },
+        {
+            id: 4,
+            icon: AriseNews
+        },
         // {
         //     id: 5,
         //     icon: BusinessDay
