@@ -33,7 +33,7 @@ function AcceptPayemntSection() {
             <img src={CallIcon} alt="mezovest email icon" />
             <div className='text-white ml-2'>
               <p className='font-semibold'>Call Us</p>
-              <p className='text-xs'>09133577245</p>
+              <p className='text-xs'>+234 807 400 0005</p>
             </div>
           </a>
         </div>

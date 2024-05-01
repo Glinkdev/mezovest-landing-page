@@ -35,8 +35,8 @@ function CompanyInfo() {
                 <a href='/'>
                     <img src={MezoVestLogo} className="max-w-[200px] cursor-pointer" />
                 </a>
-                <p className='mt-10 md:text-sm whitespace-nowrap'>Sales: 09133577245</p>
-                <p className='mt-2 md:text-sm whitespace-nowrap'>Help Desk: 09133577245</p>
+                <p className='mt-10 md:text-sm whitespace-nowrap'>Sales: +234 807 400 0005</p>
+                <p className='mt-2 md:text-sm whitespace-nowrap'>Help Desk: +234 807 400 0005</p>
                 <p className='mt-2 md:text-sm'>Ajah Lagos </p>
                 <div className='hidden md:flex mt-6'>
                     <div className='mt-4 md:mt-0 grid grid-cols-4 gap-4 items-center  flex justify-center'>

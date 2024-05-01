@@ -42,7 +42,7 @@ function Navigator() {
               <img src={CallIcon} alt="mezovest email icon" className='w-[29px] h-[29px]'/>
               <div className='text-black ml-2 flex align-center flex-col'>
                 <p className='text-xs font-semibold'>Call Us</p>
-                <p className='text-[0.6rem] whitespace-nowrap'>09133577245</p>
+                <p className='text-[0.6rem] whitespace-nowrap'>+234 807 400 0005</p>
               </div>
           </a>
         </div>
