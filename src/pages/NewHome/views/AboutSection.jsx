@@ -7,6 +7,7 @@ import MetlTrailer from "../../../assets/images/metl-trailer.svg";
 import GasPlantImage from "../../../assets/images/gas-plant.svg";
 import Image1 from '../../../assets/images/mezo-board-image.svg'; 
 import Image2 from '../../../assets/images/mezo-squad-image.svg';
+import Image3 from '../../../assets/images/mezo-staff-image.svg';
 
 function AboutSection() {
     const features = [
@@ -53,6 +54,9 @@ function AboutSection() {
                         showArrows={false}
                         width="100%"
                     >
+                         <div>
+                            <img src={Image3} alt="Image 3" style={{ width: '100%' }} />
+                        </div>
                         <div>
                             <img src={Image1} alt="Image 1" style={{ width: '100%' }} />
                         </div>

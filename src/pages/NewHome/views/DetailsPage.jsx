@@ -72,7 +72,7 @@ function DetailsPage() {
                         <p className='ml-3'>Seamless & Profitable Sales</p>
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>
-                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>For <span className='text-green'>Offline</span></h5>
+                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'> <span className='text-green'>For Offline</span></h5>
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>Merchants</h5>
                     </div>
                     <p className='text-sm mt-8 leading-[2rem]'>
@@ -95,7 +95,7 @@ function DetailsPage() {
                         <p className='ml-3'>Discover Boundless Possibilities</p>
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>
-                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>For <span className='text-green'>Online</span></h5>
+                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'> <span className='text-green'>For Online</span></h5>
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal  md:!leading-[5rem] '>Merchants</h5>
                     </div>
                     <p className='text-sm mt-8 leading-[2rem]'>With our robust - yet easy to use platform that lets you sell wherever your customers are — online, anywhere in the world.</p>

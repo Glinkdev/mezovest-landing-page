@@ -46,7 +46,7 @@ function OfflineSection() {
         {
             name: "Aderemi Adekanmbi",
             image: Remi,
-            role: "Bus. Dev. Manager",
+            role: "Technical Manager",
             style: "md:col-span-1",
         },
         {
