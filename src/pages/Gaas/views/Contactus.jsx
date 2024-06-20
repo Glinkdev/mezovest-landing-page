@@ -33,7 +33,7 @@ function Contactus() {
                 <img src={ContactusImage} />
             </div>
     
-            <div className='py-7 md:pt-20 pb-20 px-6 xl:px-36 h-full min-h-fit font-poppins'>
+            <div className='py-7 md:pt-10 pb-10 px-6 xl:px-36 h-full min-h-fit font-poppins'>
             <div className='mt-20 grid grid-cols-2 md:grid-cols-3 gap-14 justify-center max-w-[1005px] m-auto'>
                 {info.map((item) => (
                     <div className='mt flex ' key={item.id}>
