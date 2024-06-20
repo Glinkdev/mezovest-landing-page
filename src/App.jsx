@@ -17,6 +17,7 @@ import WhyChooseUs from "./pages/WhyChooseUs";
 import BecomeAPartner from "./pages/BecomeAPartner";
 import ContactPage from "./pages/ContactPage";
 import Terms from "./pages/Terms";
+import Gaas from "./pages/Gaas";
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
         <Route path="/become-a-partner" element={<BecomeAPartner />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/gaas" element={<Gaas />} />
         <Route path="/*" element={<NewHome />} />
       </Routes>
     </Router>
