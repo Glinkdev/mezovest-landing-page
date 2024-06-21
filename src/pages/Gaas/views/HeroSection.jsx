@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import PaymentImage from "../../../assets/images/blank.svg";
+import PaymentImage from "../../../assets/images/gaas-hero-image.svg";
 import GreenStroke from "../../../assets/icons/green-stroke.svg";
 
 function HeroSection() {
@@ -21,6 +21,9 @@ function HeroSection() {
                     </div>
                     <p className='font-bold text-[20px] md:text-[35px] text-white  tracking-wide leading-16'>
                         Gas as a service
+                    </p>
+                    <p className='text-white py-4'>
+                        Our Gas as a Service (GaaS) solution offers a range of services aimed at providing reliable and efficient access to gas for various uses
                     </p>
                     <div className='flex gap-4 w-full'>
                         <a

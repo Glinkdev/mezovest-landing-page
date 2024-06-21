@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import SmallGreenStroke from "../../../assets/icons/short-green-stroke.svg";
-import MerchantImage from "../../../assets/images/blank.svg";
+import MerchantImage from "../../../assets/images/gaas-distribution-solution-image.svg";
 import AboutUsImage from "../../../assets/images/gaas-aboutus-image.svg";
 
 function AboutUs() {
@@ -27,7 +27,13 @@ function AboutUs() {
                             <h5 className='font-liquefier text-5xl md:text-7xl md:text-[100px] font-normal leading-none md:!leading-[5rem] text-green'>Distributing</h5>
                             <h5 className='font-liquefier text-white text-5xl md:text-7xl md:text-[100px] font-normal leading-none md:!leading-[5rem] '>Solutions</h5>
                         </div>
-                        <p className='text-md mt-8 leading-[2rem] text-white'>In the energy industry, reaching the right markets is key. Mezovest's micro distribution centers (MDCs) strategically located nationwide enable us to reach even the most remote areas efficiently. Our extensive distribution network ensures that LPG and CNG products are readily available to customers and vendors, promoting accessibility and customer loyalty.</p>
+                        <div className='mb-2'>
+                            <p className='text-md mt-8 leading-[2rem] text-white '><span className='font-bold mr-2'>Bulk Delivery:</span>Regular and reliable delivery of CNG to residential, commercial, and industrial customers. This includes setting up distribution networks to reach remote or underserved areas.</p>
+                        </div>
+                        <div className='mb-2'>
+                            <p className='text-md mt-8 leading-[2rem] text-white '><span className='font-bold mr-2'>CNG bottle swap Programs:</span>Providing and exchanging CNG cylinders for households and small businesses to ensure a constant supply of gas for power, and other uses.</p>
+                        </div>
+                        
 
                     </div>
 

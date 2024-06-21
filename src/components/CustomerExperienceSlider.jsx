@@ -11,6 +11,7 @@ import MezoPayIcon from "../assets/icons/mezo-pay-white.svg";
 import MezoPayLimitedIcon from "../assets/icons/mezo-pay-limited-icon.svg";
 import MezoCoinIcon from "../assets/icons/mezocoin-logo-white.svg";
 import GasSenseIcon from "../assets/icons/gassense.svg";
+import GaasIcon from "../assets/icons/mezogaas-logo.svg";
 
 const DotButton = (props) => {
     const { selected, onClick } = props
@@ -100,6 +101,13 @@ function CustomerExperienceSlider() {
             action: "Coming Soon",
             actionUrl: "",
             detail: "Track your gas level and consumption rate to know  how much gas you have left in your cylinder. Get notified when you’re low."
+        },
+        {
+            icon: GaasIcon,
+            action: "Read More",
+            actionUrl: "www.mezovest.com/gaas",
+            detail: "Our Gas as a Service (GaaS) solution offers a range of services aimed at providing reliable and efficient access to gas for various uses."
+
         }
     ]
     return (
@@ -155,7 +163,7 @@ function CustomerExperienceSlider() {
             </div>
             <div className="hidden sm:flex embla__dots flex justify-center flex-row mt-10 space-x-1">
                 {productDetail.map((_, index) => {
-                    if (index === 0 || index === 2) {
+                    if (index === 0 || index === 2 || index == 3) {
                         return (
                             <DotButton
                                 key={index}
