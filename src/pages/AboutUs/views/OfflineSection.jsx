@@ -12,7 +12,7 @@ import PassionImage from "../../../assets/images/aboutus-gas-station-image.svg";
 import TosinThompson from "../../../assets/images/tosin-thompson-image.svg";
 import TosinAshafa from "../../../assets/images/tosin-ashafa-image.svg";
 import MariamAdebayo from "../../../assets/images/mariam-adebayo-image.svg";
-import Tomisin from "../../../assets/images/tomisin.jpg";
+import Tomisin from "../../../assets/images/Tomisinn.png"
 
 import Remi from "../../../assets/images/remi-image.svg";
 import Favour from "../../../assets/images/favour-image.svg";
