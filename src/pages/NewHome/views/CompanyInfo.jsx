@@ -59,7 +59,7 @@ function CompanyInfo() {
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://mezopay.com"
+                        href="https://www.mezopay.com"
                         className='text-sm mt-6'
                     >Mezopay</a>
                     <a

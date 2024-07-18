@@ -11,6 +11,7 @@ import PassionImage from "../../../assets/images/aboutus-gas-station-image.svg";
 
 import TosinThompson from "../../../assets/images/tosin-thompson-image.svg";
 import TosinAshafa from "../../../assets/images/tosin-ashafa-image.svg";
+import Tomisin from "../../../assets/images/tomisin.jpg";
 import MariamAdebayo from "../../../assets/images/mariam-adebayo-image.svg";
 
 import Remi from "../../../assets/images/remi-image.svg";
@@ -33,6 +34,11 @@ function OfflineSection() {
             name: "Tosin Ashafa",
             image: TosinAshafa,
             role: "Co Founder"
+        },
+        {
+            name: "Tomisin Akinmoladun",
+            image: Tomisin,
+            role: "Co founder, CIO"
         },
         {
             name: "Mariam Adebayo",
@@ -185,15 +191,15 @@ function OfflineSection() {
                         <br />
                     </div>
                 </div>
-                <div className='sm:grid-cols-3 grid grid-cols-1 gap-20 md:gap-0 '>
+                <div className='sm:grid-cols-4 grid grid-cols-1 gap-20 md:gap-4 justify-center'>
                     {managers.map((item, index) => (
                     <div className='items-center sm:items-start flex flex-col gap-10' key={index}>
-                        <div className=' w-[220px] h-[220px] md:w-[360px] md:h-[360px]'>
+                        <div className=' w-[220px] h-[220px] md:w-[220px] md:h-[220px]'>
                             <img className='h-full w-full' src={item?.image}/>
                         </div>
                         <div className='flex flex-col gap-2 '>
                             <div className='flex flex-col justify-center sm:justify-left'>
-                                <h4 className='text-2xl leading-none text-left'>{item?.name}</h4>
+                                <h4 className='text-2xl leading-none text-left whitespace-nowrap'>{item?.name}</h4>
                                 <img src={GreenStroke} alt="black stroke" className='w-[80px] h-[20px]' />
                             </div>
                             <p className='text-sm'>{item?.role}</p>
