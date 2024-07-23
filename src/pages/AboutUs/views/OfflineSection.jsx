@@ -36,7 +36,7 @@ function OfflineSection() {
             role: "Co Founder"
         },
         {
-            name: "Tomisin Akinmoladun",
+            name: "Oluwatomisin Akinmoladun",
             image: Tomisin,
             role: "Co founder, CIO"
         },
