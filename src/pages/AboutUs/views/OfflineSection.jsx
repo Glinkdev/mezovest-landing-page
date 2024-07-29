@@ -9,9 +9,9 @@ import ManPhoneImage from "../../../assets/images/aboutus-man-with-phone-image.s
 import PipeImage from "../../../assets/images/cash-image.svg";
 import PassionImage from "../../../assets/images/aboutus-gas-station-image.svg";
 
-import TosinThompson from "../../../assets/images/tosin-thompson-image.svg";
+import TosinThompson from "../../../assets/images/tosinthompson.png";
 import TosinAshafa from "../../../assets/images/tosin-ashafa-image.svg";
-import MariamAdebayo from "../../../assets/images/mariam-adebayo-image.svg";
+import MariamAdebayo from "../../../assets/images/mariam.png";
 import Tomisin from "../../../assets/images/Tomisinn.png"
 
 import Remi from "../../../assets/images/remi-image.svg";
@@ -195,7 +195,7 @@ function OfflineSection() {
                     {managers.map((item, index) => (
                     <div className='items-center sm:items-start flex flex-col gap-10' key={index}>
                         <div className=' w-[220px] h-[220px] md:w-[220px] md:h-[220px]'>
-                            <img className='h-full w-full' src={item?.image}/>
+                            <img className='h-full w-full object-cover' src={item?.image}/>
                         </div>
                         <div className='flex flex-col gap-2 '>
                             <div className='flex flex-col justify-center sm:justify-left'>
