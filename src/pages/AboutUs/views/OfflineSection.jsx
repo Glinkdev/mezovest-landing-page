@@ -199,7 +199,7 @@ function OfflineSection() {
                         </div>
                         <div className='flex flex-col gap-2 '>
                             <div className='flex flex-col justify-center sm:justify-left'>
-                                <h4 className='text-2xl leading-none text-left whitespace-nowrap'>{item?.name}</h4>
+                                <h4 className='text-md font-bold leading-none text-left whitespace-nowrap'>{item?.name}</h4>
                                 <img src={GreenStroke} alt="black stroke" className='w-[80px] h-[20px]' />
                             </div>
                             <p className='text-sm'>{item?.role}</p>
