@@ -31,7 +31,7 @@ function OfflineSection() {
             role: "Founder"
         },
         {
-            name: "Tosin Ashafa",
+            name: "Basheer Tosin Ashafa",
             image: TosinAshafa,
             role: "Co Founder"
         },
