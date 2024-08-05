@@ -17,7 +17,7 @@ import Tomisin from "../../../assets/images/Tomisinn.png"
 import Remi from "../../../assets/images/remi-image.svg";
 import Favour from "../../../assets/images/favour-image.svg";
 import Anthony from "../../../assets/images/anthony-image.svg";
-import Ayokunmi from "../../../assets/images/ayokunmi-image.svg";
+import Ayokunmi from "../../../assets/images/ayokunmi.jpg";
 import Sharon from "../../../assets/images/sharon-image.svg";
 import Tomiwa from "../../../assets/images/tomiwa-image.svg";
 
