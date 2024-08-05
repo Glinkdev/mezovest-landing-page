@@ -1,4 +1,7 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import PaymentImage from "../assets/images/payment-image.svg"
 import GreenStroke from "../assets/icons/green-stroke.svg"
 
@@ -8,7 +11,7 @@ function HeroSection() {
             <div className='flex flex-col md:flex-row mt-10 md:mt-20 xl:mt-36 justify-between'>
                 <div className='flex-col w-full md:max-w-md '>
                     <div className='flex'>
-                        <img src={GreenStroke} alt="green stroke" />
+                        <LazyLoadImage src={GreenStroke} alt="green stroke" />
                         <p className='ml-6 font-normal md:text-xl text-white'>We want you to succeed</p>
                     </div>
                     <div className='font-liquefier mt-20'>
@@ -29,13 +32,13 @@ function HeroSection() {
 
                 </div>
                 <div className='flex mt-20 md:mt-0 justify-center'>
-                    <img src={PaymentImage} alt="payment image" />
+                    <LazyLoadImage src={PaymentImage} alt="payment image" />
                 </div>
 
             </div>
             <div className='flex flex-col w-full mt-40' id="energy">
                 <div className='flex'>
-                    <img src={GreenStroke} alt="green stroke" />
+                    <LazyLoadImage src={GreenStroke} alt="green stroke" />
                     <p className='ml-6 font-normal md:text-xl text-white'>How do we deliver on our promise?</p>
                 </div>
                 <div className='font-liquefier mt-6 '>

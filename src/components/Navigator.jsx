@@ -1,5 +1,8 @@
 import Reata from 'react';
 import RightArrowIcon from "../assets/icons/right-arrow-icon.svg"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import EmailIcon from "../assets/icons/black-email-icon.svg";
 import CallIcon from "../assets/icons/black-call-icon.svg";
 
@@ -32,14 +35,14 @@ function Navigator() {
 
         <div className='md:hidden flex align-center w-full justify-between '>
         <a href="mailto:hello@mezovest.com" className='flex cursor-pointer align-center'>
-              <img src={EmailIcon} alt="mezovest email icon" className='w-[29px] h-[29px]'/>
+              <LazyLoadImage src={EmailIcon} alt="mezovest email icon" className='w-[29px] h-[29px]'/>
               <div className='text-black ml-2 flex align-cente flex-col'>
                 <p className='text-xs font-semibold'>Email us</p>
                 <p className='text-[0.6rem]'>hello@mezovest.com</p>
               </div>
           </a>
           <a href="tel:+2349133577245" className='flex cursor-pointer align-center'>
-              <img src={CallIcon} alt="mezovest email icon" className='w-[29px] h-[29px]'/>
+              <LazyLoadImage src={CallIcon} alt="mezovest email icon" className='w-[29px] h-[29px]'/>
               <div className='text-black ml-2 flex align-center flex-col'>
                 <p className='text-xs font-semibold'>Call Us</p>
                 <p className='text-[0.6rem] whitespace-nowrap'>+234 807 400 0005</p>

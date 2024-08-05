@@ -1,5 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { styled } from 'styled-components';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import useEmblaCarousel from 'embla-carousel-react';
 import PrevIcon from "../assets/icons/prev-icon.svg";
 import NextIcon from "../assets/icons/next-icon.svg";
@@ -48,19 +51,19 @@ function ClientSlider() {
                     <div className="embla__container flex">
                         {clientImages.map((item, index) => (
                             <div className="embla__slide flex justify-center align-center" key={index}>
-                                <img className="h-20" src={item} />
+                                <LazyLoadImage className="h-20" src={item} />
                             </div>
                         ))}
                     </div>
                 </div>
                 {prevBtnEnabled && (
                     <button className="embla__prev flex items-center h-20" onClick={scrollPrev}>
-                        <img src={PrevIcon} />
+                        <LazyLoadImage src={PrevIcon} />
                     </button>
                 )}
                 {nextBtnEnabled && (
                     <button className="embla__next flex items-center h-20" onClick={scrollNext}>
-                        <img src={NextIcon} />
+                        <LazyLoadImage src={NextIcon} />
                     </button>
                 )}
             </div>

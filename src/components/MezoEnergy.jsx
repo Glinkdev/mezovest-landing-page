@@ -1,4 +1,7 @@
 import React, { useCallback } from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import BlackStroke from "../assets/icons/black-stroke.svg";
 import MezoEnergyImage from "../assets/images/mezo-energy.svg";
 import RelaiabilityIcon from "../assets/icons/reliability-icon.svg";
@@ -36,7 +39,7 @@ function MezoEnergy() {
             <div className='flex flex-col md:flex-row w-full'>
                 <div className='flex flex-col md:w-3/5'>
                     <div className='flex'>
-                        <img src={BlackStroke} alt="black stroke" />
+                        <LazyLoadImage src={BlackStroke} alt="black stroke" />
                         <p className='ml-2 text-xl font-normal'>Biggest players in the LPG sector</p>
                     </div>
                     <div className='font-liquefier mt-7'>
@@ -65,7 +68,7 @@ function MezoEnergy() {
                     <div className='flex align-center justify-between mt-9 max-w-[1000px] m-auto'>
                         {qualities.map((item, index) => (
                             <div className='flex flex-col' key={index}>
-                                <img src={item.icon} className="h-9" />
+                                <LazyLoadImage src={item.icon} className="h-9" />
                                 <p className='text-sm mt-1'>{item.title}</p>
                             </div>
                         ))}
@@ -76,7 +79,7 @@ function MezoEnergy() {
                     </div>
                 </div>
                 <div className=' md:w-2/5 mt-10 md:mt-0 flex justify-end'>
-                    <img src={MezoEnergyImage} alt="Mezo Energy Image" className='md:w-[834px]' />
+                    <LazyLoadImage src={MezoEnergyImage} alt="Mezo Energy Image" className='md:w-[834px]' />
                 </div>
 
             </div>
@@ -84,8 +87,8 @@ function MezoEnergy() {
 
             <div className='w-full flex flex-col md:flex-row mt-12'>
                 <div className='md:w-3/5 flex flex-col md:flex-row justify-center relative align-center'>
-                    <img className='w-full md:w-[435px]' src={PearlRestaurantImage} />
-                    <img className='md:w-[285px] z-10 absolute-centering absolute ' src={PearlLogo} />
+                    <LazyLoadImage className='w-full md:w-[435px]' src={PearlRestaurantImage} />
+                    <LazyLoadImage className='md:w-[285px] z-10 absolute-centering absolute ' src={PearlLogo} />
 
 
                 </div>

@@ -1,4 +1,7 @@
 import React, { useCallback, useState, useEffect } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import PropTypes from 'prop-types';
 import useEmblaCarousel from 'embla-carousel-react';
 import { WheelGesturesPlugin } from 'embla-carousel-wheel-gestures'
@@ -121,7 +124,7 @@ function CustomerExperienceSlider() {
                                 <div className="module flex flex-col p-10 justify-between">
                                     <div className='flex flex-col justify-between'>
                                         <div className='flex justify-center h-24'>
-                                            <img src={item.icon} alt="product icon" className='!w-32 m-auto' />
+                                            <LazyLoadImage src={item.icon} alt="product icon" className='!w-32 m-auto' />
                                         </div>
 
                                         <p className='text-sm text-center leading-[1.5rem]'>{item?.detail}</p>

@@ -1,5 +1,8 @@
 import React from 'react';
 import { styled } from 'styled-components';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import SmallWhiteStroke from "../../../assets/images/short-white-stroke.svg";
 import GreenCallIcon from "../../../assets/icons/green-call-icon.svg";
 import GreenEmailIcon from "../../../assets/icons/green-email-icon.svg";
@@ -36,7 +39,7 @@ function JoinMezovestSection() {
     return (
 
         <Styled className='pt-20 pb-20 md:py-20 px-6 xl:px-36 h-full min-h-fit font-poppins text-white bg-joinImage'>
-            <div className='hidden md:flex'><img src={SmallWhiteStroke} className="mr-2" /> <p>{"Experience the power of tailored commerce solutions with Mezovest. Together, let's fuel the future of the LPG and CNG industry."}</p></div>
+            <div className='hidden md:flex'><LazyLoadImage src={SmallWhiteStroke} className="mr-2" /> <p>{"Experience the power of tailored commerce solutions with Mezovest. Together, let's fuel the future of the LPG and CNG industry."}</p></div>
             <div className='font-liquefier mt-2 flex flex-col'>
                 <span className='text-white text-6xl md:text-7xl md:text-[100px] font-normal leading-16 lg:whitespace-nowrap'>Join the Mezo Ecosystem</span>
             </div>
@@ -46,7 +49,7 @@ function JoinMezovestSection() {
             <div className='mt-20 grid grid-cols-1 md:grid-cols-3 gap-20'>
                 {info.map((item) => (
                     <div className='mt flex ' key={item.id}>
-                        <img src={item.image} className="w-[40px] md:w-fit" />
+                        <LazyLoadImage src={item.image} className="w-[40px] md:w-fit" />
                         <div className='ml-2 md:ml-6 justify-center flex flex-col'>
                             <p className='text-md md:text-xl font-medium'>{item?.heading}</p>
                             <p className='text-xs md:text-sm mt-1'>{item?.subheading}</p>
