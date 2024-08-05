@@ -61,7 +61,7 @@ function OfflineSection() {
                     </div>
                 </div>
                 <div className='flex flex-col md:w-1/2 md:relative'>
-                    <LazyLoadImage src={WeighingImage} className="" />
+                     <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={WeighingImage} className="" />
                 </div>
 
             </div>
@@ -95,7 +95,7 @@ function OfflineSection() {
             <div className='flex flex-col w-full mt-20' id="restaurants" ref={restaurantsSection}>
                 <div className='w-full'>
                     <div className='flex'>
-                        <LazyLoadImage src={SmallGreenStroke} />
+                         <LazyLoadImage src={SmallGreenStroke} />
                         <p className='ml-3'>Mezovest is the best choice </p>
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>
@@ -137,7 +137,7 @@ function OfflineSection() {
             <div className='flex flex-col w-full mt-20' id="cooking-gas" ref={cookinGasSection}>
                 <div className='w-full'>
                     <div className='flex'>
-                        <LazyLoadImage src={SmallGreenStroke} />
+                         <LazyLoadImage src={SmallGreenStroke} />
                         <p className='ml-3'>Mezovest is the best choice  </p>
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>

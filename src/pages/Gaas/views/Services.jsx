@@ -72,7 +72,7 @@ function Services() {
     return (
         <div className='flex flex-col  w-full py-10 md:py-20' id="services">
             <div className=' justify-center flex'>
-                <LazyLoadImage src={ServicesImage} />
+                 <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={ServicesImage} />
 
             </div>
 
@@ -80,7 +80,7 @@ function Services() {
                 <div className='grid grid-cols-1 md:grid-cols-2 mt-20 gap-10 items-center'>
                     {sections.map((item, index) => (
                         <div className='flex flex-col md:h-[900px]' key={index}>
-                            <LazyLoadImage src={item.image} />
+                             <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={item.image} />
                             <div className='flex flex-col mt-6 md:mt-10'>
                                 <h5 className='font-liquefier text-5xl md:text-7xl font-normal leading-none md:!leading-[5rem] text-green'>{item.firstHeader}</h5>
                                 <h5 className='font-liquefier text-white text-5xl md:text-7xl font-normal leading-none md:!leading-[5rem] '>{item.secondHeader}</h5>

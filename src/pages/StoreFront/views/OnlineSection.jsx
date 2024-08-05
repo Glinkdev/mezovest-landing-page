@@ -38,11 +38,11 @@ function OnlineSection() {
         <div className='py-7 md:pt-10 pb-10 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
             <div className='flex flex-col-reverse flex-col lg:flex-row w-full mt-5 gap-20'>
                 <div className='md:w-1/2 mt-5 md:mt-0 flex '>
-                    <LazyLoadImage src={MerchantImage} alt="mezo pay terminal" />
+                     <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={MerchantImage} alt="mezo pay terminal" />
                 </div>
                 <div className='md:w-1/2'>
                     <div className='flex'>
-                        <LazyLoadImage src={SmallGreenStroke} />
+                         <LazyLoadImage src={SmallGreenStroke} />
                         <p className='ml-3'>Better sales and user experience</p>
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>

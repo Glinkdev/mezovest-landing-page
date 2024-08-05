@@ -27,7 +27,7 @@ function OfflineSection() {
             <div className='flex flex-col lg:flex-row w-full gap-10'>
                 <div className='flex flex-col md:w-3/5'>
                     <div className='flex'>
-                        <LazyLoadImage src={GreenStroke} alt="black stroke" />
+                         <LazyLoadImage  src={GreenStroke} alt="black stroke" />
                         <p className='ml-2 text-xl font-normal'>Get it when you need it</p>
                     </div>
                     <div className='font-liquefier mt-7'>
@@ -41,7 +41,7 @@ function OfflineSection() {
                     </div>
                 </div>
                 <div className='flex md:w-2/5  md:flex justify-end relative'>
-                   <LazyLoadImage src={OfflineImage} alt="Mezo Energy Image" />
+                    <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={OfflineImage} alt="Mezo Energy Image" />
                 </div>
 
             </div>

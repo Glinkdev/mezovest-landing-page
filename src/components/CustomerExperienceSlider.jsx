@@ -124,7 +124,7 @@ function CustomerExperienceSlider() {
                                 <div className="module flex flex-col p-10 justify-between">
                                     <div className='flex flex-col justify-between'>
                                         <div className='flex justify-center h-24'>
-                                            <LazyLoadImage src={item.icon} alt="product icon" className='!w-32 m-auto' />
+                                             <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={item.icon} alt="product icon" className='!w-32 m-auto' />
                                         </div>
 
                                         <p className='text-sm text-center leading-[1.5rem]'>{item?.detail}</p>

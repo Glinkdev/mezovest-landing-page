@@ -18,7 +18,7 @@ function ProductDetail({ name, icon, features, action, detail, height, actionTyp
                 <div className='md:w-1/3 flex items-center md:items-start justify-center md:justify-between flex-col  py-5 md:py-10 md:pr-4'>
                     <div className={`${icon?.length > 1 ? "grid-cols-2" : "grid-cols-1"} grid md:grid-cols-none  gap-8 md:flex md:flex-col`}>
                         {icon && icon.map((item, index) => (
-                            <LazyLoadImage key={index} src={item} alt="mezopay icon" className='!w-52  md:col-span-1' />
+                             <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  key={index} src={item} alt="mezopay icon" className='!w-52  md:col-span-1' />
 
                         ))}
                     </div>
@@ -26,7 +26,7 @@ function ProductDetail({ name, icon, features, action, detail, height, actionTyp
                     <div className='md:mt-10 hidden md:flex md:flex-col'>
                         {features && features.map((item, index) => (
                             <div key={index} className="flex mb-6 align-center items-center">
-                                <LazyLoadImage src={ShieldIcon} alt="shield icon" />
+                                 <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={ShieldIcon} alt="shield icon" />
                                 <p className='text-base font-semibold ml-4 text-white flex items-center align-center'>{item}</p>
                             </div>
                         ))}
@@ -48,7 +48,7 @@ function ProductDetail({ name, icon, features, action, detail, height, actionTyp
                     <div className='py-5 md:hidden grid grid-cols-2 gap-4 w-full justify-between'>
                         {features && features.map((item, index) => (
                             <div key={index} className="flex mb-6 col-span-1 align-center items-center">
-                                <LazyLoadImage src={ShieldIcon} alt="shield icon" />
+                                 <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={ShieldIcon} alt="shield icon" />
                                 <p className='text-sm md:text-base font-semibold ml-1 md:ml-4 text-white  flex items-center align-center'>{item}</p>
                             </div>
                         ))}

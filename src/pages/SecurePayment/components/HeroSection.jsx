@@ -21,7 +21,7 @@ function HeroSection() {
                 <div className='flex flex-col lg:flex-row mt-10 md:mt-14 justify-between relative w-full gap-8'>
                     <div className='flex-col w-full md:w-3/5'>
                         <div className='flex'>
-                            <LazyLoadImage src={GreenStroke} alt="green stroke" />
+                             <LazyLoadImage src={GreenStroke} alt="green stroke" />
                             <p className='ml-6 font-normal md:text-xl text-white'>contactless payments using</p>
                         </div>
                         <div className='font-liquefier mt-6'>
@@ -50,7 +50,7 @@ function HeroSection() {
                         </div>
                         <div className='flex gap-10 w-full overflow-x-scroll mt-10'>
                             {PaymentLogos.map((item, index) => (
-                                <LazyLoadImage key={index} src={item} />
+                                 <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  key={index} src={item} />
                             ))}
                         </div>
 
@@ -58,11 +58,11 @@ function HeroSection() {
                     </div>
 
                     <div className='flex w-full mt-10 md:mt-0 md:w-2/5 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden justify-center md:justify-end items-center relative'>
-                        <LazyLoadImage src={PaymentImage} alt="payment image" className='flex w-[451px] z-10' />
+                         <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={PaymentImage} alt="payment image" className='flex w-[451px] z-10' />
                     </div>
 
                     <div className='absolute w-full justify-end hidden xl:flex'>
-                        <LazyLoadImage src={LaptopImage} alt="payment image" className='flex w-[451px] z-0 absolute -right-36' />
+                         <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={LaptopImage} alt="payment image" className='flex w-[451px] z-0 absolute -right-36' />
                     </div>
                 </div>
 

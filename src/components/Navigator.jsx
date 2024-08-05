@@ -35,14 +35,14 @@ function Navigator() {
 
         <div className='md:hidden flex align-center w-full justify-between '>
         <a href="mailto:hello@mezovest.com" className='flex cursor-pointer align-center'>
-              <LazyLoadImage src={EmailIcon} alt="mezovest email icon" className='w-[29px] h-[29px]'/>
+               <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={EmailIcon} alt="mezovest email icon" className='w-[29px] h-[29px]'/>
               <div className='text-black ml-2 flex align-cente flex-col'>
                 <p className='text-xs font-semibold'>Email us</p>
                 <p className='text-[0.6rem]'>hello@mezovest.com</p>
               </div>
           </a>
           <a href="tel:+2349133577245" className='flex cursor-pointer align-center'>
-              <LazyLoadImage src={CallIcon} alt="mezovest email icon" className='w-[29px] h-[29px]'/>
+               <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={CallIcon} alt="mezovest email icon" className='w-[29px] h-[29px]'/>
               <div className='text-black ml-2 flex align-center flex-col'>
                 <p className='text-xs font-semibold'>Call Us</p>
                 <p className='text-[0.6rem] whitespace-nowrap'>+234 807 400 0005</p>

@@ -19,7 +19,7 @@ function HeroSection() {
             <div className='flex flex-col lg:flex-row mt-10 md:mt-14 justify-between relative w-full gap-8'>
                 <div className='flex-col w-full md:w-1/2'>
                     <div className='flex'>
-                        <LazyLoadImage src={GreenStroke} alt="green stroke" />
+                         <LazyLoadImage src={GreenStroke} alt="green stroke" />
                         <p className='ml-6 font-normal md:text-xl text-white'>Reach your online customers</p>
                     </div>
                     <div className='font-liquefier mt-6'>
@@ -48,7 +48,7 @@ function HeroSection() {
                     </div>
                     <div className='flex gap-10 w-full overflow-x-scroll mt-10'>
                         {PaymentLogos.map((item, index) => (
-                            <LazyLoadImage key={index} src={item}/>
+                             <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  key={index} src={item}/>
                         ))}
                     </div>
 
@@ -57,7 +57,7 @@ function HeroSection() {
 
                 <div className='hidden md:flex mt-20 md:mt-0 justify-center md:justify-end md:w-1/2 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden md:absolute -right-36 justify-end items-center'>
 
-                    <LazyLoadImage src={PaymentImage} alt="payment image" className='flex ' />
+                     <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={PaymentImage} alt="payment image" className='flex ' />
                 </div>
                 
 

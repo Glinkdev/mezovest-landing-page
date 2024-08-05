@@ -66,7 +66,7 @@ function OfflineSection() {
                     </div>
                 </div>
                 <div className='flex flex-col md:w-1/2 md:relative'>
-                    <LazyLoadImage src={BecomeAPartner} className="md:absolute md:-top-32" />
+                     <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={BecomeAPartner} className="md:absolute md:-top-32" />
                 </div>
 
             </div>
@@ -80,7 +80,7 @@ function OfflineSection() {
                 <div className='flex flex-col md:flex-row gap-10 justify-between mt-10'>
                 {info.map((item) => (
                     <div className='mt flex ' key={item.id}>
-                        <LazyLoadImage src={item.image} className="w-[50px] h-[50px]"/>
+                         <LazyLoadImage src={item.image} className="w-[50px] h-[50px]"/>
                         <div className='ml-2  justify-center flex flex-col'>
                             <p className='text-md md:text-xl font-medium'>{item?.heading}</p>
                             <p className='text-xs md:text-sm mt-1'>{item?.subheading}</p>

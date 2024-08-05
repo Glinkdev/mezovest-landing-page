@@ -51,19 +51,19 @@ function ClientSlider() {
                     <div className="embla__container flex">
                         {clientImages.map((item, index) => (
                             <div className="embla__slide flex justify-center align-center" key={index}>
-                                <LazyLoadImage className="h-20" src={item} />
+                                 <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  className="h-20" src={item} />
                             </div>
                         ))}
                     </div>
                 </div>
                 {prevBtnEnabled && (
                     <button className="embla__prev flex items-center h-20" onClick={scrollPrev}>
-                        <LazyLoadImage src={PrevIcon} />
+                         <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={PrevIcon} />
                     </button>
                 )}
                 {nextBtnEnabled && (
                     <button className="embla__next flex items-center h-20" onClick={scrollNext}>
-                        <LazyLoadImage src={NextIcon} />
+                         <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={NextIcon} />
                     </button>
                 )}
             </div>

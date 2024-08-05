@@ -18,7 +18,7 @@ function HeroSection() {
             <div className='flex flex-col lg:flex-row mt-10  justify-between relative w-full '>
                 <div className='flex-col w-full'>
                     <div className='flex justify-center'>
-                        <LazyLoadImage src={GreenStroke} alt="green stroke" />
+                         <LazyLoadImage src={GreenStroke} alt="green stroke" />
                         <p className='ml-6 font-normal md:text-xl text-white'>Join forces with Mezovest as a valued partner</p>
                     </div>
                     <div className='font-liquefier mt-6 flex justify-center'>

@@ -120,7 +120,7 @@ function OfflineSection() {
                 <div className='flex flex-col md:flex-row justify-between mt-10 gap-10'>
                     {info.map((item) => (
                         <div className='mt flex ' key={item.id}>
-                            <LazyLoadImage src={item.image} className="w-[50px] h-[50px]" />
+                             <LazyLoadImage src={item.image} className="w-[50px] h-[50px]" />
                             <div className='ml-2  justify-center flex flex-col'>
                                 <p className='text-md md:text-xl font-medium'>{item?.heading}</p>
                                 <p className='text-xs md:text-sm mt-1'>{item?.subheading}</p>

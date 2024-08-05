@@ -46,15 +46,15 @@ function OnlineSection() {
             </div>
             <div className='flex flex-col lg:flex-row w-full mt-20 md:gap-20 justify-between'>
                 <div className='md:w-4/7 mt-10 md:mt-0 flex justify-center '>
-                    <LazyLoadImage src={MerchantImage} alt="mezo pay terminal" />
+                     <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={MerchantImage} alt="mezo pay terminal" />
                 </div>
                 <div className='md:w-3/7 flex justify-center'>
-                    <LazyLoadImage src={PosImage} alt="mezo pay terminal" />
+                     <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={PosImage} alt="mezo pay terminal" />
                 </div>
 
             </div>
             <div className='hidden md:flex '>
-                <p className='font-bold mr-10'>Transform your business from this</p> <LazyLoadImage src={ArrrowIcon}/><p className='font-bold  ml-10'>to this</p>
+                <p className='font-bold mr-10'>Transform your business from this</p>  <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={ArrrowIcon}/><p className='font-bold  ml-10'>to this</p>
             </div>
         </div>
     )

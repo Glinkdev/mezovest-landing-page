@@ -51,7 +51,7 @@ function Footer() {
                         rel = "noopener noreferrer"
                         href = { item?.link}
                     >
-                        <LazyLoadImage src={item.icon} className="col-span-1 ml-4 " />
+                         <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={item.icon} className="col-span-1 ml-4 " />
                     </a>
                 ))} 
         </div> */}

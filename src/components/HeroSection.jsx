@@ -32,13 +32,13 @@ function HeroSection() {
 
                 </div>
                 <div className='flex mt-20 md:mt-0 justify-center'>
-                    <LazyLoadImage src={PaymentImage} alt="payment image" />
+                     <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={PaymentImage} alt="payment image" />
                 </div>
 
             </div>
             <div className='flex flex-col w-full mt-40' id="energy">
                 <div className='flex'>
-                    <LazyLoadImage src={GreenStroke} alt="green stroke" />
+                     <LazyLoadImage src={GreenStroke} alt="green stroke" />
                     <p className='ml-6 font-normal md:text-xl text-white'>How do we deliver on our promise?</p>
                 </div>
                 <div className='font-liquefier mt-6 '>

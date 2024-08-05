@@ -104,14 +104,14 @@ function Navigator() {
                                 <p className="cursor-pointer font-bold text-sm">
                                     {"Solutions"}
                                 </p>
-                                <LazyLoadImage src={DropDownIcon} />
+                                 <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={DropDownIcon} />
                             </div>
                             {openSubmenu &&
                                 <div className='sub-menu-modal gap-8 absolute mt-4 z-50'>
                                     {subMenu.map((item, index) => (
                                         <div className='flex gap-4' key={index}>
                                             <div>
-                                                <LazyLoadImage src={item.icon} />
+                                                 <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={item.icon} />
                                             </div>
                                             <div className='flex flex-col text-xs w-[180px]'>
                                                 <p className='font-semibold text-green pb-2 border-b border-gray-300'>{item.name}</p>
@@ -141,7 +141,7 @@ function Navigator() {
                         href="mailto:sales@mezovest.com"
                         className="pointer font-bold text-sm flex">
                             Talk to sales 
-                        <LazyLoadImage src={RightArrowIcon} className="ml-2" />
+                         <LazyLoadImage src={RightArrowIcon} className="ml-2" />
                     </a>
                 </div>
             </div>

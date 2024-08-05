@@ -15,7 +15,7 @@ function ProcessSteps() {
 
             </div>
             <div className='py-7 md:pt-20 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins overflow-x-scroll max-w-screen'>
-                <LazyLoadImage src={ProcessStepImage} className="w-full min-w-[800px]  " />
+                 <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={ProcessStepImage} className="w-full min-w-[800px]  " />
             </div>
         </>
     )

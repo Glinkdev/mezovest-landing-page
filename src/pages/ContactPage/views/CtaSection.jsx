@@ -23,7 +23,7 @@ function CtaSection() {
                     </div>
                 </div>
                 {/* <div className='hidden md:flex absolute right-0 top-0'>
-                    <LazyLoadImage src={PhoneImage}/>
+                     <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={PhoneImage}/>
                 </div> */}
             </div>
            

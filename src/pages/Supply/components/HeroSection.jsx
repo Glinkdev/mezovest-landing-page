@@ -19,7 +19,7 @@ function HeroSection() {
             <div className='flex flex-col lg:flex-row mt-10 md:mt-14 justify-between relative w-full'>
                 <div className='flex-col w-full '>
                     <div className='flex'>
-                        <LazyLoadImage src={GreenStroke} alt="green stroke" />
+                         <LazyLoadImage src={GreenStroke} alt="green stroke" />
                         <p className='ml-6 font-normal md:text-xl text-white'>Eliminate your logistics hassles with our</p>
                     </div>
                     <div className='font-liquefier mt-6'>
@@ -46,9 +46,9 @@ function HeroSection() {
                             <p className='whitespace-nowrap'>Talk to Sales</p>
                         </a>
                     </div>
-                    <div className='flex gap-10 w-full overflow-x-scroll mt-10'>
+                    <div className='flex justify-between w-full overflow-x-scroll mt-10'>
                         {PaymentLogos.map((item, index) => (
-                            <LazyLoadImage key={index} src={item}/>
+                             <LazyLoadImage height={"100%"} effect="blur" className="h-20" key={index} src={item}/>
                         ))}
                     </div>
 
@@ -57,7 +57,7 @@ function HeroSection() {
 
                 <div className='hidden mt-10 md:mt-0 justify-center md:justify-end md:w-1/2  max-h-[400px] md:max-h-full  relative'>
 
-                    <LazyLoadImage src={PaymentImage} alt="payment image" className='flex md:-right-20 md:absolute md:-right-36' />
+                     <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={PaymentImage} alt="payment image" className='flex md:-right-20 md:absolute md:-right-36' />
                 </div>
                 
 

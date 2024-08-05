@@ -51,11 +51,11 @@ function GrowthSection() {
             <div className='py-7 md:pt-7 pb-6 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
                 <div className='flex flex-col-reverse flex-col lg:flex-row w-full mt-20 gap-20'>
                     <div className='md:w-1/2 mt-10 md:mt-0 flex '>
-                        <LazyLoadImage src={GasPlantImage} alt="mezo pay terminal" />
+                         <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={GasPlantImage} alt="mezo pay terminal" />
                     </div>
                     <div className='md:w-1/2'>
                         <div className='flex'>
-                            <LazyLoadImage src={SmallGreenStroke} />
+                             <LazyLoadImage src={SmallGreenStroke} />
                             <p className='ml-3'>Be unstoppable </p>
                         </div>
                         <div className='flex flex-col mt-6 md:mt-10'>
@@ -74,7 +74,7 @@ function GrowthSection() {
                    
                     <div className='md:w-1/2'>
                         <div className='flex'>
-                            <LazyLoadImage src={SmallGreenStroke} />
+                             <LazyLoadImage src={SmallGreenStroke} />
                             <p className='ml-3'>Inventory Financing  helps you</p>
                         </div>
                         <div className='flex flex-col mt-6 md:mt-10'>
@@ -85,7 +85,7 @@ function GrowthSection() {
 
                     </div>
                     <div className='md:w-1/2 mt-10 md:mt-0 flex '>
-                        <LazyLoadImage src={StayAheadImage} alt="mezo pay terminal" />
+                         <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={StayAheadImage} alt="mezo pay terminal" />
                     </div>
 
 

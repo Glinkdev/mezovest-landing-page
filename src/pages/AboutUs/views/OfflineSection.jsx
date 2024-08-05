@@ -24,9 +24,7 @@ import Ayokunmi from "../../../assets/images/ayokunmi.jpg";
 import Sharon from "../../../assets/images/sharon-image.svg";
 import Tomiwa from "../../../assets/images/tomiwa-image.svg";
 
-
 function OfflineSection() {
-
     const managers = [
         {
             name: "Tosin Thompson",
@@ -48,8 +46,7 @@ function OfflineSection() {
             image: MariamAdebayo,
             role: "Chief Operations Officer"
         },
-
-    ]
+    ];
 
     const leaders = [
         {
@@ -80,27 +77,26 @@ function OfflineSection() {
             name: "Eshonikisomo Sharon",
             image: Sharon,
             role: "Administrator",
-            style: "md:col-span-1 md:col-start-2"
+            style: "md:col-span-1 md:col-start-2",
         },
         {
             name: "Omotomiwa Osikomiaya",
             image: Tomiwa,
             role: "BDM | HOD Recovery",
-            style: "md:col-span-1 md:col-start-3"
+            style: "md:col-span-1 md:col-start-3",
         },
-
-    ]
+    ];
 
     return (
         <div className='py-7 md:pt-36 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
             <div className='flex flex-col md:flex-row relative md:gap-10'>
-                <LazyLoadImage src={OfficeImage} className="md:absolute md:-top-96 w-screen md:w-fit" />
-                <LazyLoadImage src={PhoneImage} className="absolute md:-top-80 md:right-0 w-[70%] md:w-fit right-[15%] top-[80%] " />
+                 <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={OfficeImage} className="md:absolute md:-top-96 w-screen md:w-fit" />
+                 <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={PhoneImage} className="absolute md:-top-80 md:right-0 w-[70%] md:w-fit right-[15%] top-[80%]"/>
             </div>
             <div className='flex flex-col lg:flex-row w-full gap-10 mt-72 gap-20'>
-                <div className='flex flex-col md:w-1/2 '>
+                <div className='flex flex-col md:w-1/2'>
                     <div className='flex'>
-                        <LazyLoadImage src={GreenStroke} alt="black stroke" />
+                         <LazyLoadImage src={GreenStroke} alt="black stroke" />
                         <p className='ml-2 text-xl font-normal'>Our Commitments to</p>
                     </div>
                     <div className='font-liquefier mt-7'>
@@ -115,7 +111,7 @@ function OfflineSection() {
                 </div>
                 <div className='flex flex-col md:w-1/2'>
                     <div className='flex'>
-                        <LazyLoadImage src={GreenStroke} alt="black stroke" />
+                         <LazyLoadImage  src={GreenStroke} alt="black stroke" />
                         <p className='ml-2 text-xl font-normal'>Driving Efficiency with our</p>
                     </div>
                     <div className='font-liquefier mt-7'>
@@ -128,29 +124,27 @@ function OfflineSection() {
                         <p>Mezovest offers a robust logistics infrastructure that ensures the smooth flow of products from manufacturers to vendors. Our strategic partnerships with trusted carriers and our state-of-the-art tracking systems guarantee timely and reliable deliveries, enabling businesses to focus on growth and customer satisfaction.</p>
                     </div>
                 </div>
-
             </div>
             <div className='mt-20 w-full'>
                 <div className='w-full grid grid-cols-3 grid-row-2 gap-4'>
-                    <div className="row-span-2 col-span-1">
-                        <LazyLoadImage src={LightImage} className="h-full w-full object-cover" />
+                    <div className="row-span-2 col-span-1  h-full">
+                         <LazyLoadImage height={"100%"} width={"100%"} effect="blur" src={LightImage} className="h-full w-full object-cover"  />
+                    </div>
+                    <div className="col-span-1 row-span-1 h-full">
+                         <LazyLoadImage height={"100%"} width={"100%"} src={ManPhoneImage} className="h-full w-full object-cover" effect="blur" />
                     </div>
                     <div className="col-span-1 row-span-1">
-                        <LazyLoadImage src={ManPhoneImage} className="h-full w-full object-cover" />
-                    </div>
-                    <div className="col-span-1 row-span-1">
-                        <LazyLoadImage src={PipeImage} className="h-full w-full object-cover" />
+                         <LazyLoadImage height={"100%"} width={"100%"} src={PipeImage} className="h-full w-full object-cover" effect="blur" />
                     </div>
                     <div className="col-span-2 row-span-1">
-                        <LazyLoadImage src={PassionImage} className="h-full w-full object-cover" />
+                         <LazyLoadImage height={"100%"} width={"100%"} src={PassionImage} className="h-full w-full object-cover" effect="blur" />
                     </div>
                 </div>
-
             </div>
             <div className='flex flex-col lg:flex-row w-full gap-10 mt-20 gap-20'>
-                <div className='flex flex-col md:w-1/2 '>
+                <div className='flex flex-col md:w-1/2'>
                     <div className='flex'>
-                        <LazyLoadImage src={GreenStroke} alt="black stroke" />
+                         <LazyLoadImage src={GreenStroke} alt="black stroke" />
                         <p className='ml-2 text-xl font-normal'>Reaching every corner with our</p>
                     </div>
                     <div className='font-liquefier mt-7'>
@@ -165,7 +159,7 @@ function OfflineSection() {
                 </div>
                 <div className='flex flex-col md:w-1/2'>
                     <div className='flex'>
-                        <LazyLoadImage src={GreenStroke} alt="black stroke" />
+                         <LazyLoadImage src={GreenStroke} alt="black stroke" />
                         <p className='ml-2 text-xl font-normal'>We fuel growth by providing</p>
                     </div>
                     <div className='font-liquefier mt-7'>
@@ -178,13 +172,11 @@ function OfflineSection() {
                         <p>{"We recognise the financial challenges businesses face in the energy sector, and that's why we offer tailor-made financing solutions. Our credit loans provide much-needed working capital to eligible vendors, allowing them to expand their operations and seize growth opportunities. Additionally, our inventory financing is tailored to businesses in the LPG and CNG sector to optimise their stock levels without straining cash flow."}</p>
                     </div>
                 </div>
-
             </div>
-
             <div className='flex flex-col w-full gap-10 mt-20 gap-20'>
                 <div className='flex flex-col justify-center w-full'>
                     <div className='flex justify-center'>
-                        <LazyLoadImage src={GreenStroke} alt="black stroke" />
+                         <LazyLoadImage src={GreenStroke} alt="black stroke" />
                         <p className='ml-2 text-xl font-normal'>Dedicated to the mission</p>
                     </div>
                     <div className='font-liquefier mt-7 text-center'>
@@ -196,42 +188,37 @@ function OfflineSection() {
                 </div>
                 <div className='sm:grid-cols-4 grid grid-cols-1 gap-20 md:gap-4 justify-center'>
                     {managers.map((item, index) => (
-                    <div className='items-center sm:items-start flex flex-col gap-10' key={index}>
-                        <div className=' w-[220px] h-[220px] md:w-[220px] md:h-[220px]'>
-                            <LazyLoadImage className='h-full w-full object-cover' src={item?.image}/>
-                        </div>
-                        <div className='flex flex-col gap-2 '>
-                            <div className='flex flex-col justify-center sm:justify-left'>
-                                <h4 className='text-md font-bold leading-none text-left whitespace-nowrap'>{item?.name}</h4>
-                                <LazyLoadImage src={GreenStroke} alt="black stroke" className='w-[80px] h-[20px]' />
+                        <div className='items-center sm:items-start flex flex-col gap-10' key={index}>
+                            <div className=' w-[220px] h-[220px] md:w-[220px] md:h-[220px]'>
+                                 <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  className='h-full w-full object-cover' src={item?.image}/>
                             </div>
-                            <p className='text-sm'>{item?.role}</p>
+                            <div className='flex flex-col gap-2 '>
+                                <div className='flex flex-col justify-center sm:justify-left'>
+                                    <h4 className='text-md font-bold leading-none text-left whitespace-nowrap'>{item?.name}</h4>
+                                    <img src={GreenStroke} alt="black stroke" className='w-[80px] h-[20px]' />
+                                </div>
+                                <p className='text-sm'>{item?.role}</p>
+                            </div>
                         </div>
-
-                    </div>))}
-
+                    ))}
                 </div>
             </div>
             <div className='flex flex-col max-w-[] w-full gap-10 mt-20 gap-26 justify-center'>
-            <hr/>
-            <div className='grid grid-cols-1 md:grid-cols-4 gap-10 flex justify-center items-center'>
-                {leaders.map((item, index) => (
-                    <div key={index} className={`flex flex-col gap-2 items-center ${item?.style} `}>
-                        <div className='w-[120px] h-[120px] rounded-full '>
-                            <LazyLoadImage className='h-full w-full rounded-full' src={item?.image}/>
+                <hr />
+                <div className='grid grid-cols-1 md:grid-cols-4 gap-10 flex justify-center items-center'>
+                    {leaders.map((item, index) => (
+                        <div key={index} className={`flex flex-col gap-2 items-center ${item?.style}`}>
+                            <div className='w-[120px] h-[120px] rounded-full'>
+                                 <LazyLoadImage height={"100%"} width={"100%"} effect="blur" className='h-full w-full rounded-full' src={item?.image} />
+                            </div>
+                            <h4 className='text-base font-bold'>{item?.name}</h4>
+                            <p className='text-sm'>{item?.role}</p>
                         </div>
-                        <h4 className='text-base font-bold'>{item?.name}</h4>
-                        <p className='text-sm'>{item?.role}</p>
-
-                    </div>
-                ))}
-
+                    ))}
+                </div>
             </div>
-            </div>
-
         </div>
-
-    )
+    );
 }
 
-export default OfflineSection
+export default OfflineSection;

@@ -37,7 +37,7 @@ function AboutSection() {
         <div className='py-7 md:pt-36 md:pb-38 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
             <div className='flex flex-col w-full'>
                 <div className='flex md:justify-center'>
-                    <LazyLoadImage src={GreenStroke} alt="green stroke" />
+                     <LazyLoadImage src={GreenStroke} alt="green stroke" />
                     <p className='ml-6 font-normal md:text-xl text-black'>We want you to succeed</p>
                 </div>
                 <div className='font-liquefier mt-6 flex md:justify-center'>
@@ -58,20 +58,20 @@ function AboutSection() {
                         width="100%"
                     >
                          <div>
-                            <LazyLoadImage src={Image3} alt="Image 3" style={{ width: '100%' }} />
+                             <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={Image3} alt="Image 3" style={{ width: '100%' }} />
                         </div>
                         <div>
-                            <LazyLoadImage src={Image1} alt="Image 1" style={{ width: '100%' }} />
+                             <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={Image1} alt="Image 1" style={{ width: '100%' }} />
                         </div>
                         <div>
-                            <LazyLoadImage src={Image2} alt="Image 2" style={{ width: '100%' }} />
+                             <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={Image2} alt="Image 2" style={{ width: '100%' }} />
                         </div>
                     </Carousel>
                 </div>
                 <div className='flex gap-6 overflow-x-scroll mt-10'>
                     {features.map((item) => (
                         <div key={item.index} className='flex flex-col gap-2 min-w-[250px] md:min-w-[363px] leading-[2rem]'>
-                            <LazyLoadImage src={item.image} className="h-[265px] w-full" />
+                             <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={item.image} className="h-[265px] w-full" />
                             <p ><span className='font-bold'>{item.name}{" "}</span>{item.more}</p>
 
                         </div>

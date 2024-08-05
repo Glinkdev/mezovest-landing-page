@@ -11,7 +11,7 @@ function HeroSection() {
             <div className='flex flex-col md:flex-row mt-10 md:mt-14 justify-between'>
                 <div className='flex-col w-full'>
                     <div className='flex'>
-                        <LazyLoadImage src={GreenStroke} alt="green stroke" />
+                         <LazyLoadImage src={GreenStroke} alt="green stroke" />
                         <p className='ml-6 font-normal md:text-xl text-white'>Because we deliver our promise</p>
                     </div>
                     <div className='font-liquefier mt-6'>

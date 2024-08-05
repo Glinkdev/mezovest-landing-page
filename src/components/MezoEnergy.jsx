@@ -39,7 +39,7 @@ function MezoEnergy() {
             <div className='flex flex-col md:flex-row w-full'>
                 <div className='flex flex-col md:w-3/5'>
                     <div className='flex'>
-                        <LazyLoadImage src={BlackStroke} alt="black stroke" />
+                         <LazyLoadImage src={BlackStroke} alt="black stroke" />
                         <p className='ml-2 text-xl font-normal'>Biggest players in the LPG sector</p>
                     </div>
                     <div className='font-liquefier mt-7'>
@@ -68,7 +68,7 @@ function MezoEnergy() {
                     <div className='flex align-center justify-between mt-9 max-w-[1000px] m-auto'>
                         {qualities.map((item, index) => (
                             <div className='flex flex-col' key={index}>
-                                <LazyLoadImage src={item.icon} className="h-9" />
+                                 <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={item.icon} className="h-9" />
                                 <p className='text-sm mt-1'>{item.title}</p>
                             </div>
                         ))}
@@ -79,7 +79,7 @@ function MezoEnergy() {
                     </div>
                 </div>
                 <div className=' md:w-2/5 mt-10 md:mt-0 flex justify-end'>
-                    <LazyLoadImage src={MezoEnergyImage} alt="Mezo Energy Image" className='md:w-[834px]' />
+                     <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={MezoEnergyImage} alt="Mezo Energy Image" className='md:w-[834px]' />
                 </div>
 
             </div>
@@ -87,8 +87,8 @@ function MezoEnergy() {
 
             <div className='w-full flex flex-col md:flex-row mt-12'>
                 <div className='md:w-3/5 flex flex-col md:flex-row justify-center relative align-center'>
-                    <LazyLoadImage className='w-full md:w-[435px]' src={PearlRestaurantImage} />
-                    <LazyLoadImage className='md:w-[285px] z-10 absolute-centering absolute ' src={PearlLogo} />
+                     <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  className='w-full md:w-[435px]' src={PearlRestaurantImage} />
+                     <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  className='md:w-[285px] z-10 absolute-centering absolute ' src={PearlLogo} />
 
 
                 </div>

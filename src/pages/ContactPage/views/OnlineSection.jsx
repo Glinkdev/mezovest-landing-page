@@ -14,7 +14,7 @@ function OnlineSection() {
             <div className='flex flex-col w-full mt-20'>
                 <div className='w-full'>
                     <div className='flex'>
-                        <LazyLoadImage src={SmallGreenStroke} />
+                         <LazyLoadImage src={SmallGreenStroke} />
                         <p className='ml-3'>Mezovest is the best choice  </p>
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>

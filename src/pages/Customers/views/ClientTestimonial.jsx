@@ -12,8 +12,8 @@ function ClientTestimonial() {
 
             <div className='w-full flex flex-col md:flex-row mt-12'>
                 <div className='md:w-3/5 flex flex-col md:flex-row justify-center relative align-center'>
-                    <LazyLoadImage className='w-full md:w-[435px]' src={PearlRestaurantImage} />
-                    <LazyLoadImage className='md:w-[285px] z-10 absolute-centering absolute ' src={PearlLogo} />
+                     <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  className='w-full md:w-[435px]' src={PearlRestaurantImage} />
+                     <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  className='md:w-[285px] z-10 absolute-centering absolute ' src={PearlLogo} />
 
 
                 </div>

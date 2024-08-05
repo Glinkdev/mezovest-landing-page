@@ -38,11 +38,11 @@ function OnlineSection() {
         <div className='py-7 md:pt-20 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
             <div className='flex flex-col lg:flex-row w-full mt-20 gap-20'>
                 <div className='md:w-1/2 mt-10 md:mt-0 flex '>
-                    <LazyLoadImage src={MerchantImage} alt="mezo pay terminal" />
+                     <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={MerchantImage} alt="mezo pay terminal" />
                 </div>
                 <div className='md:w-1/2'>
                     <div className='flex'>
-                        <LazyLoadImage src={SmallGreenStroke} />
+                         <LazyLoadImage src={SmallGreenStroke} />
                         <p className='ml-3'>Also accept payments</p>
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>
@@ -54,7 +54,7 @@ function OnlineSection() {
                     <div className='flex flex-col mt-10 gap-14'>
                         {features.map((item, index) => (
                             <div className='flex  align-center' key={index}>
-                                <LazyLoadImage src={RightArrowIcon} alt="right arrow icon" />
+                                 <LazyLoadImage src={RightArrowIcon} alt="right arrow icon" />
                                 <div className='flex whitespace-break-spaces justify-center'>
                                     <a href={item.link} className='text-xs md:text-sm justify-center items-center font-bold text-green text-underline ml-2 underline-offset-2 cursor-pointer underline whitespace-nowrap float-left'>{item?.title}</a>
                                     <span className='hidden md:flex text-xs md:text-sm ml-2 text-black font-normal !no-underline underline-offset-0'>{item?.description}</span>

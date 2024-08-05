@@ -19,7 +19,7 @@ function HeroSection() {
             <div className='flex flex-col lg:flex-row mt-10 md:mt-20 justify-between relative w-full mb-60'>
                 <div className='flex-col w-full'>
                     <div className='flex'>
-                        <LazyLoadImage src={GreenStroke} alt="green stroke" />
+                         <LazyLoadImage src={GreenStroke} alt="green stroke" />
                         <p className='ml-6 font-normal md:text-xl text-white'>We want you to succeed</p>
                     </div>
                     <div className='font-liquefier mt-6'>

@@ -120,7 +120,7 @@ function MobileMenu({ show, close, }) {
                         <div className=' md:hidden w-full bg-white h-screen pt-8 p-5 z-50 '>
                             <div className='flex justify-between'>
                                 <p className=' text-2xl font-semibold'> Menu</p>
-                                <LazyLoadImage src={MobileCancelIcon} alt="cancel icon" onClick={() => close()} />
+                                 <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={MobileCancelIcon} alt="cancel icon" onClick={() => close()} />
                             </div>
                             <div className='flex flex-col gap-10 mt-10'>
                                 <div>
@@ -137,10 +137,10 @@ function MobileMenu({ show, close, }) {
                                             return (
                                                 <div className='flex gap-3 mt-6 ' key={index}>
                                                     <div>
-                                                        <LazyLoadImage src={item.icon} />
+                                                         <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={item.icon} />
                                                     </div>
                                                     <div className='flex flex-col text-sm '>
-                                                        <p className='font-semibold text-black pb-2 flex gap-20' onClick={() => toggleNavBar(item.name)}><span className='mr-2 w-[40px]'>{item.name} </span> <LazyLoadImage src={DropDownIcon} className={`${showMoreNav ? "rotate-180" : ""}`} /></p>
+                                                        <p className='font-semibold text-black pb-2 flex gap-20' onClick={() => toggleNavBar(item.name)}><span className='mr-2 w-[40px]'>{item.name} </span>  <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={DropDownIcon} className={`${showMoreNav ? "rotate-180" : ""}`} /></p>
                                                         {showMoreNav &&
                                                             <div className='flex flex-col gap-4 mt-2'>
                                                                 {item.subItems.map((subItem, index) => (
