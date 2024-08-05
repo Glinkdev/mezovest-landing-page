@@ -1,4 +1,7 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import GreenStroke from "../../../assets/icons/green-stroke.svg";
 import OfflineImage from "../../../assets/images/distribution-network-image.svg";
 import LocationTable from "../../../assets/images/location-table.svg";
@@ -11,7 +14,7 @@ function OfflineSection() {
             <div className='flex flex-col lg:flex-row w-full gap-10'>
                 <div className='flex flex-col md:w-1/2'>
                     <div className='flex'>
-                        <img src={GreenStroke} alt="black stroke" />
+                        <LazyLoadImage src={GreenStroke} alt="black stroke" />
                         <p className='ml-2 text-xl font-normal'>Leverage our strategic and</p>
                     </div>
                     <div className='font-liquefier mt-7'>
@@ -25,7 +28,7 @@ function OfflineSection() {
                     </div>
                 </div>
                 <div className='flex md:w-1/2  md:flex justify-end relative'>
-                   <img src={OfflineImage} alt="Mezo Energy Image" />
+                   <LazyLoadImage src={OfflineImage} alt="Mezo Energy Image" />
                 </div>
 
             </div>
@@ -38,7 +41,7 @@ function OfflineSection() {
                 </div>
 
                 <div className='mt-14 overflow-x-scroll'>
-                    <img src={LocationTable} alt="location table" className='min-w-[600px]'/> 
+                    <LazyLoadImage src={LocationTable} alt="location table" className='min-w-[600px]'/> 
                 </div>
             </div>
 

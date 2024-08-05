@@ -1,4 +1,7 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import GreenStroke from "../../../assets/icons/green-stroke.svg";
 import SSlogo from "../../../assets/icons/ss-logo-white.svg";
 import Tlogo from "../../../assets/icons/t-white-icon.svg";
@@ -16,7 +19,7 @@ function HeroSection() {
             <div className='flex flex-col lg:flex-row mt-10  xl:mt-14 justify-between relative w-full items-center'>
                 <div className='flex-col w-full md:w-1/2'>
                     <div className='flex'>
-                        <img src={GreenStroke} alt="green stroke" />
+                        <LazyLoadImage src={GreenStroke} alt="green stroke" />
                         <p className='ml-6 font-normal md:text-xl text-white'>Keep your business ahead with</p>
                     </div>
                     <div className='font-liquefier mt-6'>
@@ -45,7 +48,7 @@ function HeroSection() {
                     </div>
                     <div className='flex gap-10 w-full overflow-x-scroll mt-10'>
                         {PaymentLogos.map((item, index) => (
-                            <img key={index} src={item}/>
+                            <LazyLoadImage key={index} src={item}/>
                         ))}
                     </div>
 
@@ -54,7 +57,7 @@ function HeroSection() {
 
                 <div className='flex mt-20 md:mt-0 justify-center md:justify-start md:w-1/2 overflow-hidden overflow-hidden md:absolute -right-36'>
 
-                    <img src={PaymentImage} alt="payment image" className='flex h-full md:-right-20' />
+                    <LazyLoadImage src={PaymentImage} alt="payment image" className='flex h-full md:-right-20' />
                 </div>
                 
 

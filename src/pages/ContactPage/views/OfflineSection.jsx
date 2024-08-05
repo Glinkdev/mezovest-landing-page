@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import { styled } from 'styled-components';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import GreenStroke from "../../../assets/icons/green-stroke.svg"
 import OfflineImage from "../../../assets/images/fast-reliable-image.svg";
 import MezoBagImage from "../../../assets/images/mez-shopbag-img.png";
@@ -117,7 +120,7 @@ function OfflineSection() {
                 <div className='flex flex-col md:flex-row justify-between mt-10 gap-10'>
                     {info.map((item) => (
                         <div className='mt flex ' key={item.id}>
-                            <img src={item.image} className="w-[50px] h-[50px]" />
+                            <LazyLoadImage src={item.image} className="w-[50px] h-[50px]" />
                             <div className='ml-2  justify-center flex flex-col'>
                                 <p className='text-md md:text-xl font-medium'>{item?.heading}</p>
                                 <p className='text-xs md:text-sm mt-1'>{item?.subheading}</p>

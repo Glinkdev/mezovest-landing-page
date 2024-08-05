@@ -1,4 +1,7 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import PhoneImage from "../../../assets/images/short-phone-mockup.png"
 
 function CtaSection() {
@@ -20,7 +23,7 @@ function CtaSection() {
                     </div>
                 </div>
                 {/* <div className='hidden md:flex absolute right-0 top-0'>
-                    <img src={PhoneImage}/>
+                    <LazyLoadImage src={PhoneImage}/>
                 </div> */}
             </div>
            

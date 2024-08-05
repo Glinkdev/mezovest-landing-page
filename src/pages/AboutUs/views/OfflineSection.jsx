@@ -1,4 +1,7 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import GreenStroke from "../../../assets/icons/green-stroke.svg"
 import OfflineImage from "../../../assets/images/fast-reliable-image.svg";
 import MezoBagImage from "../../../assets/images/mez-shopbag-img.png";
@@ -91,13 +94,13 @@ function OfflineSection() {
     return (
         <div className='py-7 md:pt-36 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
             <div className='flex flex-col md:flex-row relative md:gap-10'>
-                <img src={OfficeImage} className="md:absolute md:-top-96 w-screen md:w-fit" />
-                <img src={PhoneImage} className="absolute md:-top-80 md:right-0 w-[70%] md:w-fit right-[15%] top-[80%] " />
+                <LazyLoadImage src={OfficeImage} className="md:absolute md:-top-96 w-screen md:w-fit" />
+                <LazyLoadImage src={PhoneImage} className="absolute md:-top-80 md:right-0 w-[70%] md:w-fit right-[15%] top-[80%] " />
             </div>
             <div className='flex flex-col lg:flex-row w-full gap-10 mt-72 gap-20'>
                 <div className='flex flex-col md:w-1/2 '>
                     <div className='flex'>
-                        <img src={GreenStroke} alt="black stroke" />
+                        <LazyLoadImage src={GreenStroke} alt="black stroke" />
                         <p className='ml-2 text-xl font-normal'>Our Commitments to</p>
                     </div>
                     <div className='font-liquefier mt-7'>
@@ -112,7 +115,7 @@ function OfflineSection() {
                 </div>
                 <div className='flex flex-col md:w-1/2'>
                     <div className='flex'>
-                        <img src={GreenStroke} alt="black stroke" />
+                        <LazyLoadImage src={GreenStroke} alt="black stroke" />
                         <p className='ml-2 text-xl font-normal'>Driving Efficiency with our</p>
                     </div>
                     <div className='font-liquefier mt-7'>
@@ -130,16 +133,16 @@ function OfflineSection() {
             <div className='mt-20 w-full'>
                 <div className='w-full grid grid-cols-3 grid-row-2 gap-4'>
                     <div className="row-span-2 col-span-1">
-                        <img src={LightImage} className="h-full w-full object-cover" />
+                        <LazyLoadImage src={LightImage} className="h-full w-full object-cover" />
                     </div>
                     <div className="col-span-1 row-span-1">
-                        <img src={ManPhoneImage} className="h-full w-full object-cover" />
+                        <LazyLoadImage src={ManPhoneImage} className="h-full w-full object-cover" />
                     </div>
                     <div className="col-span-1 row-span-1">
-                        <img src={PipeImage} className="h-full w-full object-cover" />
+                        <LazyLoadImage src={PipeImage} className="h-full w-full object-cover" />
                     </div>
                     <div className="col-span-2 row-span-1">
-                        <img src={PassionImage} className="h-full w-full object-cover" />
+                        <LazyLoadImage src={PassionImage} className="h-full w-full object-cover" />
                     </div>
                 </div>
 
@@ -147,7 +150,7 @@ function OfflineSection() {
             <div className='flex flex-col lg:flex-row w-full gap-10 mt-20 gap-20'>
                 <div className='flex flex-col md:w-1/2 '>
                     <div className='flex'>
-                        <img src={GreenStroke} alt="black stroke" />
+                        <LazyLoadImage src={GreenStroke} alt="black stroke" />
                         <p className='ml-2 text-xl font-normal'>Reaching every corner with our</p>
                     </div>
                     <div className='font-liquefier mt-7'>
@@ -162,7 +165,7 @@ function OfflineSection() {
                 </div>
                 <div className='flex flex-col md:w-1/2'>
                     <div className='flex'>
-                        <img src={GreenStroke} alt="black stroke" />
+                        <LazyLoadImage src={GreenStroke} alt="black stroke" />
                         <p className='ml-2 text-xl font-normal'>We fuel growth by providing</p>
                     </div>
                     <div className='font-liquefier mt-7'>
@@ -181,7 +184,7 @@ function OfflineSection() {
             <div className='flex flex-col w-full gap-10 mt-20 gap-20'>
                 <div className='flex flex-col justify-center w-full'>
                     <div className='flex justify-center'>
-                        <img src={GreenStroke} alt="black stroke" />
+                        <LazyLoadImage src={GreenStroke} alt="black stroke" />
                         <p className='ml-2 text-xl font-normal'>Dedicated to the mission</p>
                     </div>
                     <div className='font-liquefier mt-7 text-center'>
@@ -195,12 +198,12 @@ function OfflineSection() {
                     {managers.map((item, index) => (
                     <div className='items-center sm:items-start flex flex-col gap-10' key={index}>
                         <div className=' w-[220px] h-[220px] md:w-[220px] md:h-[220px]'>
-                            <img className='h-full w-full object-cover' src={item?.image}/>
+                            <LazyLoadImage className='h-full w-full object-cover' src={item?.image}/>
                         </div>
                         <div className='flex flex-col gap-2 '>
                             <div className='flex flex-col justify-center sm:justify-left'>
                                 <h4 className='text-md font-bold leading-none text-left whitespace-nowrap'>{item?.name}</h4>
-                                <img src={GreenStroke} alt="black stroke" className='w-[80px] h-[20px]' />
+                                <LazyLoadImage src={GreenStroke} alt="black stroke" className='w-[80px] h-[20px]' />
                             </div>
                             <p className='text-sm'>{item?.role}</p>
                         </div>
@@ -215,7 +218,7 @@ function OfflineSection() {
                 {leaders.map((item, index) => (
                     <div key={index} className={`flex flex-col gap-2 items-center ${item?.style} `}>
                         <div className='w-[120px] h-[120px] rounded-full '>
-                            <img className='h-full w-full rounded-full' src={item?.image}/>
+                            <LazyLoadImage className='h-full w-full rounded-full' src={item?.image}/>
                         </div>
                         <h4 className='text-base font-bold'>{item?.name}</h4>
                         <p className='text-sm'>{item?.role}</p>

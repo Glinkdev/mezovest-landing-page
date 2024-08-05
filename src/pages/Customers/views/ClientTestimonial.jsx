@@ -1,4 +1,7 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import PearlRestaurantImage from "../../../assets/images/pearl-restaurant-image.svg";
 import PearlLogo from "../../../assets/images/pearl-logo.svg";
 import ClientSlider from '../../../components/ClientSlider';
@@ -9,8 +12,8 @@ function ClientTestimonial() {
 
             <div className='w-full flex flex-col md:flex-row mt-12'>
                 <div className='md:w-3/5 flex flex-col md:flex-row justify-center relative align-center'>
-                    <img className='w-full md:w-[435px]' src={PearlRestaurantImage} />
-                    <img className='md:w-[285px] z-10 absolute-centering absolute ' src={PearlLogo} />
+                    <LazyLoadImage className='w-full md:w-[435px]' src={PearlRestaurantImage} />
+                    <LazyLoadImage className='md:w-[285px] z-10 absolute-centering absolute ' src={PearlLogo} />
 
 
                 </div>
