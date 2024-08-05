@@ -1,4 +1,7 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import MezovestLogo  from "../assets/icons/mezovest-white-logo.svg"
 //"../assets/images/mezovest-logo.svg";
 import Navigator from '../components/Navigator';
@@ -94,17 +97,17 @@ function FirstSection() {
   return (
     <div className='py-7 md:pt-11 md:pb-24 px-6 xl:px-36 !bg-darkGreen h-full min-h-screen font-poppins '>
        <div className='flex justify-between'>
-        <img src={MezovestLogo} alt="Mezovest Logo" className='h-[40px]' />
+        <LazyLoadImage src={MezovestLogo} alt="Mezovest Logo" className='h-[40px]' />
         <div className='hidden md:flex'>
           <a href="mailto:hello@mezovest.com" className='flex cursor-pointer'>
-              <img src={EmailIcon} alt="mezovest email icon" />
+              <LazyLoadImage src={EmailIcon} alt="mezovest email icon" />
               <div className='text-white ml-2'>
                 <p className='font-semibold'>Email us</p>
                 <p className='text-xs'>hello@mezovest.com</p>
               </div>
           </a>
           <a href="tel:+23491335772459" className='flex cursor-pointer ml-6'>
-              <img src={CallIcon} alt="mezovest email icon"/>
+              <LazyLoadImage src={CallIcon} alt="mezovest email icon"/>
               <div className='text-white ml-2'>
                 <p className='font-semibold'>Call Us</p>
                 <p className='text-xs'>+234 807 400 0005</p>

@@ -1,4 +1,7 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import { useNavigate } from 'react-router-dom';
 import TwitterIcon from "../assets/icons/twitter-icon.svg";
 import InstagramIcon from "../assets/icons/instagram-icon.svg";
@@ -47,7 +50,7 @@ function Footer() {
                         rel = "noopener noreferrer"
                         href = { item?.link}
                     >
-                        <img src={item.icon} className="col-span-1 ml-4 " />
+                        <LazyLoadImage src={item.icon} className="col-span-1 ml-4 " />
                     </a>
                 ))} 
         </div> */}

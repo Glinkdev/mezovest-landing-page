@@ -1,4 +1,7 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import ProcessStepImage from "../../../assets/images/storefront-process-steps.svg";
 
 function ProcessSteps() {
@@ -15,7 +18,7 @@ function ProcessSteps() {
             </div>
             <div className='py-7 md:pt-20 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins overflow-x-scroll max-w-screen'>
 
-                <img src={ProcessStepImage} className="w-full min-w-[800px]  " />
+                <LazyLoadImage src={ProcessStepImage} className="w-full min-w-[800px]  " />
 
             </div>
         </>

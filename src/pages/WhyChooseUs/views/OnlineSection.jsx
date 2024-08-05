@@ -1,4 +1,7 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import SmallGreenStroke from "../../../assets/icons/short-green-stroke.svg";
 import MerchantImage from "../../../assets/images/cashflow-management-image.svg";
 import RightArrowIcon from "../../../assets/icons/right-arrow-icon.svg"
@@ -10,7 +13,7 @@ function OnlineSection() {
             <div className='flex flex-col w-full mt-20'>
                 <div className='w-full'>
                     <div className='flex'>
-                        <img src={SmallGreenStroke} />
+                        <LazyLoadImage src={SmallGreenStroke} />
                         <p className='ml-3'>Mezovest is the best choice  </p>
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>

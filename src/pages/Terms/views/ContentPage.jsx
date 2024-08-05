@@ -1,4 +1,7 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import GreenDot from "../../../assets/icons/green-dot.svg";
 
 function ContentPage() {
@@ -7,7 +10,7 @@ function ContentPage() {
         <div className='w-full md:w-2/5 hidden md:flex flex-col'>
             <span className='text-black text-2xl font-semibold leading-16 md:whitespace-nowrap'>Content  </span>
             <h2 className='text-[#CCC] text-xl mt-4 font-semibold ml-2'>Terms of Service</h2>
-            <h2 className='text-green text-2xl mt-8 font-semibold ml-2 flex md:whitespace-nowrap'><img src={GreenDot} /> <span className='ml-2'>Privacy & Usage Policy</span></h2>
+            <h2 className='text-green text-2xl mt-8 font-semibold ml-2 flex md:whitespace-nowrap'><LazyLoadImage src={GreenDot} /> <span className='ml-2'>Privacy & Usage Policy</span></h2>
 
         </div>
         <div className='w-full md:w-3/5'>

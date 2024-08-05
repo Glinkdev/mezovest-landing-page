@@ -1,5 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import GreenStroke from "../../../assets/icons/green-stroke.svg"
 import OfflineImage from "../../../assets/images/fast-reliable-image.svg";
 import MezoBagImage from "../../../assets/images/mez-shopbag-img.png";
@@ -58,7 +61,7 @@ function OfflineSection() {
                     </div>
                 </div>
                 <div className='flex flex-col md:w-1/2 md:relative'>
-                    <img src={WeighingImage} className="" />
+                    <LazyLoadImage src={WeighingImage} className="" />
                 </div>
 
             </div>
@@ -92,7 +95,7 @@ function OfflineSection() {
             <div className='flex flex-col w-full mt-20' id="restaurants" ref={restaurantsSection}>
                 <div className='w-full'>
                     <div className='flex'>
-                        <img src={SmallGreenStroke} />
+                        <LazyLoadImage src={SmallGreenStroke} />
                         <p className='ml-3'>Mezovest is the best choice </p>
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>
@@ -134,7 +137,7 @@ function OfflineSection() {
             <div className='flex flex-col w-full mt-20' id="cooking-gas" ref={cookinGasSection}>
                 <div className='w-full'>
                     <div className='flex'>
-                        <img src={SmallGreenStroke} />
+                        <LazyLoadImage src={SmallGreenStroke} />
                         <p className='ml-3'>Mezovest is the best choice  </p>
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>
