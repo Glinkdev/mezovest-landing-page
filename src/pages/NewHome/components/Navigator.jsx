@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import { useNavigate } from 'react-router-dom';
 import { styled } from 'styled-components';
 import RightArrowIcon from "../../../assets/icons/right-arrow-icon.svg"
@@ -101,14 +104,14 @@ function Navigator() {
                                 <p className="cursor-pointer font-bold text-sm">
                                     {"Solutions"}
                                 </p>
-                                <img src={DropDownIcon} />
+                                <LazyLoadImage src={DropDownIcon} />
                             </div>
                             {openSubmenu &&
                                 <div className='sub-menu-modal gap-8 absolute mt-4 z-50'>
                                     {subMenu.map((item, index) => (
                                         <div className='flex gap-4' key={index}>
                                             <div>
-                                                <img src={item.icon} />
+                                                <LazyLoadImage src={item.icon} />
                                             </div>
                                             <div className='flex flex-col text-xs w-[180px]'>
                                                 <p className='font-semibold text-green pb-2 border-b border-gray-300'>{item.name}</p>
@@ -138,7 +141,7 @@ function Navigator() {
                         href="mailto:sales@mezovest.com"
                         className="pointer font-bold text-sm flex">
                             Talk to sales 
-                        <img src={RightArrowIcon} className="ml-2" />
+                        <LazyLoadImage src={RightArrowIcon} className="ml-2" />
                     </a>
                 </div>
             </div>

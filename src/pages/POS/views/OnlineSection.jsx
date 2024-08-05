@@ -1,4 +1,7 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import SmallGreenStroke from "../../../assets/icons/short-green-stroke.svg";
 import MerchantImage from "../../../assets/images/mezo-business-image.svg";
 import PosImage from "../../../assets/images/terminal-image.svg";
@@ -43,15 +46,15 @@ function OnlineSection() {
             </div>
             <div className='flex flex-col lg:flex-row w-full mt-20 md:gap-20 justify-between'>
                 <div className='md:w-4/7 mt-10 md:mt-0 flex justify-center '>
-                    <img src={MerchantImage} alt="mezo pay terminal" />
+                    <LazyLoadImage src={MerchantImage} alt="mezo pay terminal" />
                 </div>
                 <div className='md:w-3/7 flex justify-center'>
-                    <img src={PosImage} alt="mezo pay terminal" />
+                    <LazyLoadImage src={PosImage} alt="mezo pay terminal" />
                 </div>
 
             </div>
             <div className='hidden md:flex '>
-                <p className='font-bold mr-10'>Transform your business from this</p> <img src={ArrrowIcon}/><p className='font-bold  ml-10'>to this</p>
+                <p className='font-bold mr-10'>Transform your business from this</p> <LazyLoadImage src={ArrrowIcon}/><p className='font-bold  ml-10'>to this</p>
             </div>
         </div>
     )

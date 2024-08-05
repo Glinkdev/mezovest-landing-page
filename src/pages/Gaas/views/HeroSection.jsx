@@ -1,5 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import PaymentImage from "../../../assets/images/gaas-hero-image.svg";
 import GreenStroke from "../../../assets/icons/green-stroke.svg";
 
@@ -13,7 +16,7 @@ function HeroSection() {
             <div className='flex flex-col lg:flex-row mt-10 md:mt-14 relative w-full gap-10 p-6 md:p-0 items-center justify-center'>
                 <div className='flex-col w-full md:w-1/2 md:ml-40'>
                     <div className='flex'>
-                        <img src={GreenStroke} alt="Green Stroke Largest LPG Distribution" />
+                        <LazyLoadImage src={GreenStroke} alt="Green Stroke Largest LPG Distribution" />
                         <p className='ml-6 font-normal text-[20px] md:text-xl text-white tracking-wide'>Introducing</p>
                     </div>
                     <div className='font-poppins mt-6'>
@@ -41,7 +44,7 @@ function HeroSection() {
                     </div>
                 </div>
                 <div className='md:flex mt-20 md:mt-0 justify-end md:w-1/2 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden '>
-                    <img src={PaymentImage} alt="Payment Image Largest LPG Distribution" className='flex md:h-[596px] w-full' />
+                    <LazyLoadImage src={PaymentImage} alt="Payment Image Largest LPG Distribution" className='flex md:h-[596px] w-full' />
                 </div>
             </div>
         </div>

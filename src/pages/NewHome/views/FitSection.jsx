@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import GreenStroke from "../../../assets/icons/green-stroke.svg"
 import MezoCashImage from "../../../assets/images/mez-fit-1.svg";
 import MezoPhoneImage from "../../../assets/images/mez-fit-2.svg";
@@ -41,7 +44,7 @@ function FitSection() {
             <div className='flex flex-col md:flex-row w-full'>
                 <div className='flex flex-col md:w-1/2'>
                     <div className='flex'>
-                        <img src={GreenStroke} alt="black stroke" />
+                        <LazyLoadImage src={GreenStroke} alt="black stroke" />
                         <p className='ml-2 text-xl font-normal'>How do we deliver our promise?</p>
                     </div>
                     <div className='font-liquefier mt-7'>
@@ -71,13 +74,13 @@ function FitSection() {
                 <div className="hidden md:flex w-1/2 justify-end">
                 <div className='md:w-[700px] mt-10 md:mt-0 md:flex justify-end relative'>
                     <div className='h-[417px] w-[241px] absolute top-10 right-10 z-20'>
-                        <img src={BikeManImage} alt="Mezo Energy Image" />
+                        <LazyLoadImage src={BikeManImage} alt="Mezo Energy Image" />
                     </div>
                     <div className='h-[417px] w-[241px] absolute top-0 left-10 z-0'>
-                        <img src={MezoCashImage} alt="Mezo Energy Image" />
+                        <LazyLoadImage src={MezoCashImage} alt="Mezo Energy Image" />
                     </div>
                     <div className='h-[417px] w-[241px] absolute -bottom-52  left-1/3 z-10'>
-                        <img src={MezoPhoneImage} alt="Mezo Energy Image"  />
+                        <LazyLoadImage src={MezoPhoneImage} alt="Mezo Energy Image"  />
                     </div>
                    
                 </div>

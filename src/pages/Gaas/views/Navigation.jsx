@@ -1,4 +1,7 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import MezovestLogo from "../../../assets/icons/mezovest-white-logo.svg"
 import ArrowIcon from "../../../assets/icons/arrow-icon.svg"
 
@@ -14,7 +17,7 @@ function Navigation() {
         <div className='py-11 px-6 xl:px-36 h-full font-poppins '>
             <div className='flex justify-between' >
                 <a href="/" className='flex '>
-                    <img src={MezovestLogo} alt="Mezovest Logo" className='max-w-[70%] md:max-w-full h-[40px]' />
+                    <LazyLoadImage src={MezovestLogo} alt="Mezovest Logo" className='max-w-[70%] md:max-w-full h-[40px]' />
                 </a>
                 <div className='hidden md:flex gap-20 text-[#fff]'>
                     <a href="#about" className='flex cursor-pointer font-bold'>
@@ -35,7 +38,7 @@ function Navigation() {
                         className='flex items-center'
                     >
                         <p className='flex cursor-pointer font-bold text-[#fff] text-[12px] md:text-sm  items-center'>
-                            GET STARTED <img src={ArrowIcon} className="w-4 ml-2" />
+                            GET STARTED <LazyLoadImage src={ArrowIcon} className="w-4 ml-2" />
                         </p>
                     </a>
                 </div>

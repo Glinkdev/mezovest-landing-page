@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { styled } from 'styled-components';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import PositiveIcon from "../../../assets/icons/positive-price-icon.svg";
 import NegativeIcon from "../../../assets/icons/negative-price-icon.svg";
 import MetlTruck from "../../../assets/images/metl-truck.svg";
@@ -39,7 +42,7 @@ function PriceSection() {
                     <div className='flex m-auto w-full'>
                         <div className='w-2/5 flex-col justify-center text-left flex border-r pr-2 md:ml-4'>
                             <p className='text-white text-[12px] md:text-sm text-left md:ml-3'>GAS PRICE UPDATE:</p>
-                            <h2 className={`${priceData?.progression === "increment" ? "text-green" : "text-[#FF8E8E]"}  text-[12px] md:text-2xl font-semibold flex items-center justify-start mt-2 whitespace-nowrap`}><span className='mr-2'><img className="h-[15px]" src={ priceData?.progression === "increment" ? PositiveIcon : NegativeIcon} /></span>{`N ${formatMoney(parseFloat(priceData?.price))} / 20MT`}</h2>
+                            <h2 className={`${priceData?.progression === "increment" ? "text-green" : "text-[#FF8E8E]"}  text-[12px] md:text-2xl font-semibold flex items-center justify-start mt-2 whitespace-nowrap`}><span className='mr-2'><LazyLoadImage className="h-[15px]" src={ priceData?.progression === "increment" ? PositiveIcon : NegativeIcon} /></span>{`N ${formatMoney(parseFloat(priceData?.price))} / 20MT`}</h2>
                         </div>
 
                         <div className='flex justify-center items-center px-2 py-2 md:py-4 scrolling-container w-3/5 mt-2 md:mt-0'>

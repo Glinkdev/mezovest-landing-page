@@ -1,4 +1,7 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import SmallGreenStroke from "../../../assets/icons/short-green-stroke.svg";
 import MerchantImage from "../../../assets/images/repayment-image.svg";
 import GasPlantImage from "../../../assets/images/boost-your-growth-image.svg";
@@ -48,11 +51,11 @@ function GrowthSection() {
             <div className='py-7 md:pt-7 pb-6 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
                 <div className='flex flex-col-reverse flex-col lg:flex-row w-full mt-20 gap-20'>
                     <div className='md:w-1/2 mt-10 md:mt-0 flex '>
-                        <img src={GasPlantImage} alt="mezo pay terminal" />
+                        <LazyLoadImage src={GasPlantImage} alt="mezo pay terminal" />
                     </div>
                     <div className='md:w-1/2'>
                         <div className='flex'>
-                            <img src={SmallGreenStroke} />
+                            <LazyLoadImage src={SmallGreenStroke} />
                             <p className='ml-3'>Be unstoppable </p>
                         </div>
                         <div className='flex flex-col mt-6 md:mt-10'>
@@ -71,7 +74,7 @@ function GrowthSection() {
                    
                     <div className='md:w-1/2'>
                         <div className='flex'>
-                            <img src={SmallGreenStroke} />
+                            <LazyLoadImage src={SmallGreenStroke} />
                             <p className='ml-3'>Inventory Financing  helps you</p>
                         </div>
                         <div className='flex flex-col mt-6 md:mt-10'>
@@ -82,7 +85,7 @@ function GrowthSection() {
 
                     </div>
                     <div className='md:w-1/2 mt-10 md:mt-0 flex '>
-                        <img src={StayAheadImage} alt="mezo pay terminal" />
+                        <LazyLoadImage src={StayAheadImage} alt="mezo pay terminal" />
                     </div>
 
 

@@ -1,4 +1,7 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import MerchantImage from "../../../assets/images/gaas-infrastructure-image.svg";
 import EnergySolImage from "../../../assets/images/gaas-energy-sol-image.svg";
 import RenewableImage from "../../../assets/images/gaas-renewable-image.svg";
@@ -69,7 +72,7 @@ function Services() {
     return (
         <div className='flex flex-col  w-full py-10 md:py-20' id="services">
             <div className=' justify-center flex'>
-                <img src={ServicesImage} />
+                <LazyLoadImage src={ServicesImage} />
 
             </div>
 
@@ -77,7 +80,7 @@ function Services() {
                 <div className='grid grid-cols-1 md:grid-cols-2 mt-20 gap-10 items-center'>
                     {sections.map((item, index) => (
                         <div className='flex flex-col md:h-[900px]' key={index}>
-                            <img src={item.image} />
+                            <LazyLoadImage src={item.image} />
                             <div className='flex flex-col mt-6 md:mt-10'>
                                 <h5 className='font-liquefier text-5xl md:text-7xl font-normal leading-none md:!leading-[5rem] text-green'>{item.firstHeader}</h5>
                                 <h5 className='font-liquefier text-white text-5xl md:text-7xl font-normal leading-none md:!leading-[5rem] '>{item.secondHeader}</h5>

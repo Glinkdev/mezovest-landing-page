@@ -1,4 +1,7 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import GreenStroke from "../../../assets/icons/green-stroke.svg";
@@ -34,7 +37,7 @@ function AboutSection() {
         <div className='py-7 md:pt-36 md:pb-38 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins'>
             <div className='flex flex-col w-full'>
                 <div className='flex md:justify-center'>
-                    <img src={GreenStroke} alt="green stroke" />
+                    <LazyLoadImage src={GreenStroke} alt="green stroke" />
                     <p className='ml-6 font-normal md:text-xl text-black'>We want you to succeed</p>
                 </div>
                 <div className='font-liquefier mt-6 flex md:justify-center'>
@@ -55,20 +58,20 @@ function AboutSection() {
                         width="100%"
                     >
                          <div>
-                            <img src={Image3} alt="Image 3" style={{ width: '100%' }} />
+                            <LazyLoadImage src={Image3} alt="Image 3" style={{ width: '100%' }} />
                         </div>
                         <div>
-                            <img src={Image1} alt="Image 1" style={{ width: '100%' }} />
+                            <LazyLoadImage src={Image1} alt="Image 1" style={{ width: '100%' }} />
                         </div>
                         <div>
-                            <img src={Image2} alt="Image 2" style={{ width: '100%' }} />
+                            <LazyLoadImage src={Image2} alt="Image 2" style={{ width: '100%' }} />
                         </div>
                     </Carousel>
                 </div>
                 <div className='flex gap-6 overflow-x-scroll mt-10'>
                     {features.map((item) => (
                         <div key={item.index} className='flex flex-col gap-2 min-w-[250px] md:min-w-[363px] leading-[2rem]'>
-                            <img src={item.image} className="h-[265px] w-full" />
+                            <LazyLoadImage src={item.image} className="h-[265px] w-full" />
                             <p ><span className='font-bold'>{item.name}{" "}</span>{item.more}</p>
 
                         </div>

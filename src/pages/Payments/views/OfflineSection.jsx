@@ -1,4 +1,7 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import GreenStroke from "../../../assets/icons/green-stroke.svg"
 import OfflineImage from "../../../assets/images/pos-simulation-image.svg";
 import MezoBagImage from "../../../assets/images/mez-shopbag-img.png";
@@ -31,7 +34,7 @@ function OfflineSection() {
             <div className='flex flex-col lg:flex-row w-full gap-10'>
                 <div className='flex flex-col md:w-3/5'>
                     <div className='flex'>
-                        <img src={GreenStroke} alt="black stroke" />
+                        <LazyLoadImage src={GreenStroke} alt="black stroke" />
                         <p className='ml-2 text-xl font-normal'>Collect payments anywhere</p>
                     </div>
                     <div className='font-liquefier mt-7'>
@@ -73,7 +76,7 @@ function OfflineSection() {
                     </div>
                 </div>
                 <div className='md:w-2/5 md:-right-40 md:flex justify-end relative'>
-                   <img src={OfflineImage} alt="Mezo Energy Image"  className='max-w-[650px] h-full'/>
+                   <LazyLoadImage src={OfflineImage} alt="Mezo Energy Image"  className='max-w-[650px] h-full'/>
                 </div>
 
             </div>

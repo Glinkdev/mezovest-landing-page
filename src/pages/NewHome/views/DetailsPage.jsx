@@ -1,4 +1,7 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import GreenStroke from "../../../assets/icons/green-stroke.svg"
 import MezoPayTerminal from "../../../assets/images/mezopay-terminal-image.svg";
 import SmallGreenStroke from "../../../assets/icons/short-green-stroke.svg";
@@ -64,11 +67,11 @@ function DetailsPage() {
             </div>
             <div className='flex flex-col md:flex-row w-full mt-20 flex-col-reverse'>
                 <div className='md:w-3/5 mt-10 md:mt-0'>
-                    <img src={MezoPayTerminal} alt="mezo pay terminal" />
+                    <LazyLoadImage src={MezoPayTerminal} alt="mezo pay terminal" />
                 </div>
                 <div className='md:w-2/5'>
                     <div className='flex'>
-                        <img src={SmallGreenStroke} />
+                        <LazyLoadImage src={SmallGreenStroke} />
                         <p className='ml-3'>Seamless & Profitable Sales</p>
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>
@@ -91,7 +94,7 @@ function DetailsPage() {
 
                 <div className='md:w-1/2'>
                     <div className='flex'>
-                        <img src={SmallGreenStroke} />
+                        <LazyLoadImage src={SmallGreenStroke} />
                         <p className='ml-3'>Discover Boundless Possibilities</p>
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>
@@ -103,7 +106,7 @@ function DetailsPage() {
                     <div className='flex flex-col mt-6'>
                         {features.map((item, index) => (
                             <div className='flex mt-6 align-center' key={index}>
-                                <img src={RightArrowIcon} alt="right arrow icon" />
+                                <LazyLoadImage src={RightArrowIcon} alt="right arrow icon" />
                                 <div className='flex flex-col sm:flex-row whitespace-break-spaces justify-center align-center'>
                                     <a href={item.link} className='text-xs md:text-sm justify-center items-center font-bold text-green text-underline ml-2 underline-offset-2 cursor-pointer underline whitespace-nowrap float-left'>{item?.title}</a>
                                     <span className='flex text-xs md:text-sm ml-2 text-black font-normal !no-underline underline-offset-0'>{item?.description}</span>
@@ -126,18 +129,18 @@ function DetailsPage() {
 
                 </div>
                 <div className='md:w-1/2 mt-10 md:mt-0 flex justify-end'>
-                    <img src={MerchantImage} alt="mezo pay terminal" />
+                    <LazyLoadImage src={MerchantImage} alt="mezo pay terminal" />
                 </div>
 
             </div>
             <div className='flex flex-col w-full mt-20'>
                 <div className='w-full justify-center' >
                     <h5 className='font-liquefier text-grey text-5xl md:text-7xl font-normal md:!leading-[5rem] text-center'>As seen in the media</h5>
-                    <img src={GreenUnderline} className="m-auto" />
+                    <LazyLoadImage src={GreenUnderline} className="m-auto" />
                 </div>
                 <div className='mt-10 grid grid-cols-3 gap-2 md:flex justify-between items-center max-w-[700px] w-full m-auto'>
                     {media.map((item) => (
-                        <img key={item.id}src={item.icon} alt={"media"} className={"h-[69px] md:h-full"}/>
+                        <LazyLoadImage key={item.id}src={item.icon} alt={"media"} className={"h-[69px] md:h-full"}/>
                     ))}
                 </div>
 

@@ -1,4 +1,7 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import { useNavigate } from 'react-router-dom';
 import styled from "styled-components"
 import MezoVestLogo from "../../../assets/icons/mezovest-black-logo.svg";
@@ -33,7 +36,7 @@ function CompanyInfo() {
         <div className='py-7 md:pt-14 pb-20 px-6 xl:px-36 !bg-white h-full min-h-fit font-poppins flex md:flex-row flex-col justify-between md:gap-28 max-w-[1400px] m-auto'>
             <div className='flex flex-col md:w-1/5'>
                 <a href='/'>
-                    <img src={MezoVestLogo} className="max-w-[200px] cursor-pointer" />
+                    <LazyLoadImage src={MezoVestLogo} className="max-w-[200px] cursor-pointer" />
                 </a>
                 <p className='mt-10 md:text-sm whitespace-nowrap'>Sales: +234 807 400 0005</p>
                 <p className='mt-2 md:text-sm whitespace-nowrap'>Help Desk: +234 807 400 0005</p>
@@ -47,7 +50,7 @@ function CompanyInfo() {
                                 rel="noopener noreferrer"
                                 href={item?.link}
                             >
-                                <img src={item.icon} />
+                                <LazyLoadImage src={item.icon} />
                             </a>
                         ))}
                     </div>

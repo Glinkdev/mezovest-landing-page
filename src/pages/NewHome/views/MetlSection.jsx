@@ -1,4 +1,7 @@
 import React, { useCallback } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import { useNavigate } from 'react-router-dom';
 import BlackStroke from "../../../assets/icons/black-stroke.svg";
 import MezoEnergyImage from "../../../assets/images/metl-human-image.svg";
@@ -39,7 +42,7 @@ function MetlSection() {
             <div className='flex flex-col md:flex-row w-full'>
                 <div className='flex flex-col md:w-3/5'>
                     <div className='flex'>
-                        <img src={BlackStroke} alt="black stroke" />
+                        <LazyLoadImage src={BlackStroke} alt="black stroke" />
                         <p className='ml-2 text-xl font-normal'>Biggest players in the LPG sector</p>
                     </div>
                     <div className='font-liquefier mt-7'>
@@ -70,7 +73,7 @@ function MetlSection() {
 
                 </div>
                 <div className=' md:w-2/5 mt-10 md:mt-0 flex justify-end md:ml-20'>
-                    <img src={MezoEnergyImage} alt="Mezo Energy Image" className='w-full h-full max-w-[1000px]' />
+                    <LazyLoadImage src={MezoEnergyImage} alt="Mezo Energy Image" className='w-full h-full max-w-[1000px]' />
                 </div>
 
             </div>
@@ -79,14 +82,14 @@ function MetlSection() {
             <div className='flex align-center justify-between mt-12 md:mt-28 max-w-[800px] m-auto'>
                 {qualities.map((item, index) => (
                     <div className='flex flex-col' key={index}>
-                        <img src={item.icon} className="h-12 fill-green" />
+                        <LazyLoadImage src={item.icon} className="h-12 fill-green" />
                         <p className='text-lg font-medium mt-1 '>{item.title}</p>
                     </div>
                 ))}
             </div>
 
             <div className='w-full flex flex-col md:flex-row mt-12 md:mt-28 flex'>
-                <span className='flex flex-col md:flex-row'>Discover how Mezoenergy helped businesses in the food industry. <span onClick={moveToReadMore} className='md:ml-2 text-green whitespace-nowrap flex cursor-pointer '>Read more <img src={GreenArrowIcon} alt="right-icon" className='ml-2' /></span></span>
+                <span className='flex flex-col md:flex-row'>Discover how Mezoenergy helped businesses in the food industry. <span onClick={moveToReadMore} className='md:ml-2 text-green whitespace-nowrap flex cursor-pointer '>Read more <LazyLoadImage src={GreenArrowIcon} alt="right-icon" className='ml-2' /></span></span>
             </div>
 
             <div className='w-full flex flex-col md:flex-row mt-12 justify-between gap-10'>

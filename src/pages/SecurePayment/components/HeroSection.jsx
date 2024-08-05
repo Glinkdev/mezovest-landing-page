@@ -1,4 +1,7 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import GreenStroke from "../../../assets/icons/green-stroke.svg";
 import SSlogo from "../../../assets/icons/ss-logo-white.svg";
 import Tlogo from "../../../assets/icons/t-white-icon.svg";
@@ -18,7 +21,7 @@ function HeroSection() {
                 <div className='flex flex-col lg:flex-row mt-10 md:mt-14 justify-between relative w-full gap-8'>
                     <div className='flex-col w-full md:w-3/5'>
                         <div className='flex'>
-                            <img src={GreenStroke} alt="green stroke" />
+                            <LazyLoadImage src={GreenStroke} alt="green stroke" />
                             <p className='ml-6 font-normal md:text-xl text-white'>contactless payments using</p>
                         </div>
                         <div className='font-liquefier mt-6'>
@@ -47,7 +50,7 @@ function HeroSection() {
                         </div>
                         <div className='flex gap-10 w-full overflow-x-scroll mt-10'>
                             {PaymentLogos.map((item, index) => (
-                                <img key={index} src={item} />
+                                <LazyLoadImage key={index} src={item} />
                             ))}
                         </div>
 
@@ -55,11 +58,11 @@ function HeroSection() {
                     </div>
 
                     <div className='flex w-full mt-10 md:mt-0 md:w-2/5 overflow-hidden max-h-[400px] md:max-h-full overflow-hidden justify-center md:justify-end items-center relative'>
-                        <img src={PaymentImage} alt="payment image" className='flex w-[451px] z-10' />
+                        <LazyLoadImage src={PaymentImage} alt="payment image" className='flex w-[451px] z-10' />
                     </div>
 
                     <div className='absolute w-full justify-end hidden xl:flex'>
-                        <img src={LaptopImage} alt="payment image" className='flex w-[451px] z-0 absolute -right-36' />
+                        <LazyLoadImage src={LaptopImage} alt="payment image" className='flex w-[451px] z-0 absolute -right-36' />
                     </div>
                 </div>
 
