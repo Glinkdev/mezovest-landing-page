@@ -16,6 +16,7 @@ import TosinThompson from "../../../assets/images/tosinthompson.png";
 import TosinAshafa from "../../../assets/images/tosin-ashafa-image.svg";
 import MariamAdebayo from "../../../assets/images/mariam.png";
 import Tomisin from "../../../assets/images/Tomisinn.png"
+import OlusegunEkundayo from "../../../assets/images/olusegunekundayo.jpg"
 
 import Remi from "../../../assets/images/remi-image.svg";
 import Favour from "../../../assets/images/favour-image.svg";
@@ -45,6 +46,11 @@ function OfflineSection() {
             name: "Mariam Adebayo",
             image: MariamAdebayo,
             role: "Chief Operations Officer"
+        },
+        {
+            name: "Olusegun Ekundayo",
+            image: OlusegunEkundayo,
+            role: "Chief Strategy Officer"
         },
     ];
 
@@ -186,7 +192,7 @@ function OfflineSection() {
                         <br />
                     </div>
                 </div>
-                <div className='sm:grid-cols-4 grid grid-cols-1 gap-20 md:gap-4 justify-center'>
+                <div className='sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 grid grid-cols-1 gap-20 md:gap-4 justify-center'>
                     {managers.map((item, index) => (
                         <div className='items-center sm:items-start flex flex-col gap-10' key={index}>
                             <div className=' w-[220px] h-[220px] md:w-[220px] md:h-[220px]'>
