@@ -1,8 +1,6 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
-import GreenStroke from "../../../assets/icons/green-stroke.svg"
 import MezoPayTerminal from "../../../assets/images/mezopay-terminal-image.svg";
 import SmallGreenStroke from "../../../assets/icons/short-green-stroke.svg";
 import MerchantImage from "../../../assets/images/merchant-image.svg";
@@ -76,7 +74,7 @@ function DetailsPage() {
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'> <span className='text-green'>For Offline</span></h5>
-                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>Merchants</h5>
+                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'>LPG & CNG merchants</h5>
                     </div>
                     <p className='text-sm mt-8 leading-[2rem]'>
                         Experience the power of our secure and user-friendly POS terminal. Seamlessly sell to your customers, process card payments, generate invoices, and even purchase cooking gas. Unlock a world of possibilities with our versatile solution.
@@ -99,7 +97,7 @@ function DetailsPage() {
                     </div>
                     <div className='flex flex-col mt-6 md:mt-10'>
                         <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal md:!leading-[5rem]'> <span className='text-green'>For Online</span></h5>
-                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal  md:!leading-[5rem] '>Merchants</h5>
+                        <h5 className='font-liquefier text-black text-5xl md:text-7xl md:text-[100px] font-normal  md:!leading-[5rem] '>LPG & CNG merchants</h5>
                     </div>
                     <p className='text-sm mt-8 leading-[2rem]'>With our robust - yet easy to use platform that lets you sell wherever your customers are — online, anywhere in the world.</p>
 

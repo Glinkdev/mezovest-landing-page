@@ -41,8 +41,8 @@ function MetlSection() {
 
             <div className='flex flex-col md:flex-row w-full'>
                 <div className='flex flex-col md:w-3/5'>
-                    <div className='flex'>
-                         <LazyLoadImage src={BlackStroke} alt="black stroke" />
+                    <div className='flex items-center'>
+                         <hr className="bg-[#203035] h-[10px] w-[100px]" />
                         <p className='ml-2 text-xl font-normal'>Biggest players in the LPG sector</p>
                     </div>
                     <div className='font-liquefier mt-7'>
@@ -89,7 +89,7 @@ function MetlSection() {
             </div>
 
             <div className='w-full flex flex-col md:flex-row mt-12 md:mt-28 flex'>
-                <span className='flex flex-col md:flex-row'>Discover how Mezoenergy helped businesses in the food industry. <span onClick={moveToReadMore} className='md:ml-2 text-green whitespace-nowrap flex cursor-pointer '>Read more  <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={GreenArrowIcon} alt="right-icon" className='ml-2' /></span></span>
+                <span className='flex flex-col text-[20px] md:flex-row'>Discover how Mezoenergy helped businesses in the food industry. <span onClick={moveToReadMore} className='md:ml-2 text-green whitespace-nowrap flex cursor-pointer '>Read more  <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={GreenArrowIcon} alt="right-icon" className='ml-2' /></span></span>
             </div>
 
             <div className='w-full flex flex-col md:flex-row mt-12 justify-between gap-10'>
@@ -105,7 +105,7 @@ function MetlSection() {
                     </iframe>
                 </div>
                 <div className='md:w-2/5 flex-col md:ml-24 mt-4 md:mt-0'>
-                    <p className='text-lg font-medium leading-[2rem]'>
+                    <p className='text-lg font-normal leading-[2rem]'>
                         For quite some time now, METL has been our trusted solution for all our cooking gas
                         requirements. Their commitment to on-time delivery has been truly remarkable.
                         We can always rely on them without any hesitation.
