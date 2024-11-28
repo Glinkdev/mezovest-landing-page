@@ -13,6 +13,7 @@ import AboutSection from "./views/AboutSection";
 
 import Footer from "./views/Footer";
 import PriceSection from "./views/PriceSection";
+import EventsGallery from "./views/EventsGallery";
 
 function NewHome() {
 
@@ -31,6 +32,7 @@ function NewHome() {
                     <ThirdSection />
                     <MetlSection />
                     <YoutubeSection />
+                    <EventsGallery />
                     <DetailsPage />
                     <CtaSection />
                     <CompanyInfo />

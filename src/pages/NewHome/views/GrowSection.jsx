@@ -5,7 +5,6 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import MezovestLogo from "../../../assets/icons/mezovest-white-logo.svg"
 import { createModal } from "react-prompt-modal";
 import Navigator from '../components/Navigator';
-import HeroSection from '../components/HeroSection';
 import MezHeroImg from "../../../assets/icons/mez-hero-img.svg"
 import EmailIcon from "../../../assets/icons/email-icon.svg";
 import CallIcon from "../../../assets/icons/call-icon.svg";
@@ -30,14 +29,14 @@ function GrowSection() {
         </a>
         <div className='hidden md:flex'>
           <a href="mailto:hello@mezovest.com" className='flex cursor-pointer'>
-             <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={EmailIcon} alt="mezovest email icon" />
+             <LazyLoadImage height={"37px"} width={"37px"} effect="blur"  src={EmailIcon} alt="mezovest email icon" />
             <div className='text-white ml-2'>
               <p className='font-semibold'>Email us</p>
               <p className='text-xs'>hello@mezovest.com</p>
             </div>
           </a>
           <a href="tel:+2349133577245" className='flex cursor-pointer ml-6'>
-             <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={CallIcon} alt="mezovest email icon" />
+             <LazyLoadImage height={"37px"} width={"37px"} effect="blur"  src={CallIcon} alt="mezovest email icon" />
             <div className='text-white ml-2'>
               <p className='font-semibold'>Call Us</p>
               <p className='text-xs'>+234 807 400 0005</p>

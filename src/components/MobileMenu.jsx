@@ -120,7 +120,7 @@ function MobileMenu({ show, close, }) {
                         <div className=' md:hidden w-full bg-white h-screen pt-8 p-5 z-50 '>
                             <div className='flex justify-between'>
                                 <p className=' text-2xl font-semibold'> Menu</p>
-                                 <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={MobileCancelIcon} alt="cancel icon" onClick={() => close()} />
+                                 <LazyLoadImage height={"25px"} width={"25px"} effect="blur"  src={MobileCancelIcon} alt="cancel icon" onClick={() => close()} />
                             </div>
                             <div className='flex flex-col gap-10 mt-10'>
                                 <div>
