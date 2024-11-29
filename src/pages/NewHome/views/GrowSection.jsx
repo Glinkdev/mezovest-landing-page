@@ -5,7 +5,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import MezovestLogo from "../../../assets/icons/mezovest-white-logo.svg"
 import { createModal } from "react-prompt-modal";
 import Navigator from '../components/Navigator';
-import MezHeroImg from "../../../assets/icons/mez-hero-img.svg"
+import HeroSection from '../components/HeroSection';
 import EmailIcon from "../../../assets/icons/email-icon.svg";
 import CallIcon from "../../../assets/icons/call-icon.svg";
 import MenuBar from "../../../assets/icons/mobile-menu-icon.svg";
