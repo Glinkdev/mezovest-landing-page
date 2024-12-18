@@ -31,10 +31,6 @@ function Navigator() {
             name: "Blog",
             href: "https://blog.mezovest.com"
         },
-        {
-            name: "Careers",
-            href: "/careers"
-        },
     ]
     const subMenu = [
         {

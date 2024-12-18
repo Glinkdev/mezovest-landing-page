@@ -18,6 +18,7 @@ import BecomeAPartner from "./pages/BecomeAPartner";
 import ContactPage from "./pages/ContactPage";
 import Terms from "./pages/Terms";
 import Gaas from "./pages/Gaas";
+import Careers from "./pages/Careers";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<NewHome />} />
         <Route path="/new" element={<Home />} />
+        <Route path="/careers" element={<Careers />} />
         <Route path="/payment" element={<Payments />} />
         <Route path="/testimonials" element={<Customers />} />
         <Route path="/send" element={<SendMoney />} />
