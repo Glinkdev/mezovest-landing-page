@@ -24,7 +24,7 @@ function GrowSection() {
     <div className='py-7 md:pt-11 md:pb-24 px-6 xl:px-36 !bg-darkGreen h-full h-fit md:min-h-screen font-poppins '>
       <div className='flex justify-between' >
         <a href="/" className='flex '>
-        <img src={MezovestLogo} alt="Mezovest Logo" className='h-[40px]' />
+          <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={MezovestLogo} alt="Mezovest Logo" className='h-[40px]' />
         </a>
         <div className='hidden md:flex'>
           <a href="mailto:hello@mezovest.com" className='flex cursor-pointer'>
