@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
+import MezovestLogo from "../../../assets/icons/mezovest-white-logo.svg"
 import { createModal } from "react-prompt-modal";
 import Navigator from '../components/Navigator';
 import HeroSection from '../components/HeroSection';
@@ -24,7 +24,7 @@ function GrowSection() {
     <div className='py-7 md:pt-11 md:pb-24 px-6 xl:px-36 !bg-darkGreen h-full h-fit md:min-h-screen font-poppins '>
       <div className='flex justify-between' >
         <a href="/" className='flex '>
-        <LazyLoadImage height={"100%"} width={"100%"} effect="blur"  src={"/img/logo-santa.png"} alt="Mezovest Logo" className='h-[50px]' />
+        <img src={MezovestLogo} alt="Mezovest Logo" className='h-[40px]' />
         </a>
         <div className='hidden md:flex'>
           <a href="mailto:hello@mezovest.com" className='flex cursor-pointer'>

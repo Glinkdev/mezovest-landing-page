@@ -6,7 +6,7 @@ import GreenStroke from "../../../assets/icons/green-stroke.svg";
 function HeroSection() {
     return (
         <div>
-            <img height={"100%"} width={"100%"} effect="blur"  src={"/img/banner-santa.png"} alt="Mezovest Logo" className='w-full mt-20' />
+            {/* <img height={"100%"} width={"100%"} effect="blur"  src={"/img/banner-santa.png"} alt="Mezovest Logo" className='w-full mt-20' /> */}
             
             <div className='flex flex-col md:flex-row  w-full pb-10'>
                 <Helmet>
