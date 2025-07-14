@@ -38,11 +38,6 @@ function OfflineSection() {
             role: "Co Founder"
         },
         {
-            name: "Oluwatomisin Akinmoladun",
-            image: Tomisin,
-            role: "Co founder, CIO"
-        },
-        {
             name: "Mariam Adebayo",
             image: MariamAdebayo,
             role: "Chief Operations Officer"
@@ -68,28 +63,16 @@ function OfflineSection() {
             style: "md:col-span-1",
         },
         {
-            name: "Anthony Nwike",
-            image: Anthony,
-            role: "Head of Marketing",
-            style: "md:col-span-1",
-        },
-        {
-            name: "Ayokunmi Aderinoye",
-            image: Ayokunmi,
-            role: "Head HR | Legal",
-            style: "md:col-span-1",
-        },
-        {
             name: "Eshonikisomo Sharon",
             image: Sharon,
             role: "Administrator",
-            style: "md:col-span-1 md:col-start-2",
+            style: "md:col-span-1",
         },
         {
             name: "Omotomiwa Osikomiaya",
             image: Tomiwa,
             role: "BDM | HOD Recovery",
-            style: "md:col-span-1 md:col-start-3",
+            style: "md:col-span-1",
         },
     ];
 
@@ -192,7 +175,7 @@ function OfflineSection() {
                         <br />
                     </div>
                 </div>
-                <div className='sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 grid grid-cols-1 gap-20 md:gap-4 justify-center'>
+                <div className='sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 grid grid-cols-1 gap-20 md:gap-4 justify-center'>
                     {managers.map((item, index) => (
                         <div className='items-center sm:items-start flex flex-col gap-10' key={index}>
                             <div className=' w-[220px] h-[220px] md:w-[220px] md:h-[220px]'>
