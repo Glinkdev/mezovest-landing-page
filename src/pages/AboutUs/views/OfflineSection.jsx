@@ -42,11 +42,6 @@ function OfflineSection() {
             image: MariamAdebayo,
             role: "Chief Operations Officer"
         },
-        {
-            name: "Olusegun Ekundayo",
-            image: OlusegunEkundayo,
-            role: "Chief Strategy Officer"
-        },
     ];
 
     const leaders = [
