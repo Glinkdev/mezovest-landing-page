@@ -170,7 +170,7 @@ function OfflineSection() {
                         <br />
                     </div>
                 </div>
-                <div className='sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 grid grid-cols-1 gap-20 md:gap-4 justify-center'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-3 place-items-center'>
                     {managers.map((item, index) => (
                         <div className='items-center sm:items-start flex flex-col gap-10' key={index}>
                             <div className=' w-[220px] h-[220px] md:w-[220px] md:h-[220px]'>
